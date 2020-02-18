@@ -1,15 +1,19 @@
 import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Header from '../components/Header'
+import Header from './header'
 import Footer from '../components/Footer'
 import AuthorList from '../components/AuthorsList'
 import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
+import MenuHOC from './HOC/MenuHOC'
 
-export default function Root() {
+import HomeIcon from '@material-ui/icons/Home'
+import ListIcon from '@material-ui/icons/List'
+
+function Root({ handleOpenMenu }) {
   return (
     <Fragment>
-      <Header select="select lang" />
+      <Header select="select lang" handleOpenMenu={handleOpenMenu} />
       <main>
         <Switch>
           <Route exact path="/" component={Main} />
@@ -21,3 +25,8 @@ export default function Root() {
     </Fragment>
   )
 }
+
+export default MenuHOC([
+  { title: 'Главная', icon: <HomeIcon />, path: '/' },
+  { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' }
+])(Root)

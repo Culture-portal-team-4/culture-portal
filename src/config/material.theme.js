@@ -6,7 +6,10 @@ const theme = createMuiTheme({
       main: '#000'
     },
     secondary: {
-      main: '#49c5b6'
+      main: '#49c5b6',
+      border: '#E6EAEA',
+      gradientStart: '#061207',
+      gradientEnd: '#49c5b6'
     },
     text: {
       primary: '#000'
