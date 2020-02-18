@@ -34,9 +34,5 @@ const style = makeStyles(theme => ({
     textTransform: 'uppercase'
   }
 }))
-// font-size: 2em;
-//     background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     display: inline-block;
+
 export default style

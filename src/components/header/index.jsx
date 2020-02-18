@@ -4,14 +4,14 @@ import styles from './style'
 import { Typography, IconButton } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 
-const Header = ({ select }) => {
+const Header = ({ handleOpenMenu }) => {
   const classes = styles()
 
   return (
     <header class={classes.header}>
       <div class={classes.headerContainer}>
         <div className={classes.boxLeft}>
-          <IconButton>
+          <IconButton onClick={handleOpenMenu}>
             <MenuIcon />
           </IconButton>
         </div>

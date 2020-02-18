@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from '@material-ui/core/styles'
+import theme from './config/material.theme'
+import Root from './components/root'
 
-import Header from './components/header'
-import Footer from './components/Footer'
-
-function App({ children }) {
+function App() {
   return (
-    <Fragment>
-      <Header select="select lang" />
-      <main> {children} </main>
-      <Footer />
-    </Fragment>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Root />
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
