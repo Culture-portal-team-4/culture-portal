@@ -6,10 +6,20 @@ const theme = createMuiTheme({
       main: '#000'
     },
     secondary: {
-      main: '#000'
+      main: '#49c5b6'
     },
     text: {
       primary: '#000'
+    }
+  },
+  typography: {
+    button: {
+      fontSize: 12,
+      fontWeight: 300
+    },
+    textField: {
+      fontSize: 12,
+      fontWeight: 300
     }
   }
 })
