@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import styles from './style'
 
@@ -9,7 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import { Grid, Typography } from '@material-ui/core'
 
-export default function AuthorsListItem({ id, name, img }) {
+const AuthorsListItem = ({ id, name, img, description }) => {
   const classes = styles()
   const history = useHistory()
 
@@ -22,7 +23,7 @@ export default function AuthorsListItem({ id, name, img }) {
             {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Photographers description
+            {description}
           </Typography>
         </CardContent>
         <CardActions>
@@ -38,3 +39,12 @@ export default function AuthorsListItem({ id, name, img }) {
     </Grid>
   )
 }
+
+AuthorsListItem.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  img: PropTypes.string,
+  description: PropTypes.string
+}
+
+export default React.memo(AuthorsListItem)

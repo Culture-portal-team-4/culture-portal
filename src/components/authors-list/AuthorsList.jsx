@@ -1,16 +1,28 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState, useMemo } from 'react'
+import PropTypes from 'prop-types'
+import data from '../../data/data.json'
+
 import { Grid, Typography, Box } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
-import data from '../../data/data.json'
 import AuthorsListItem from './AuthorsListItem'
-import { filters } from '../../utils'
+import { doFilter } from '../../utils'
 
-export default function AuthorsList() {
+export default function AuthorsList({ photographers }) {
   const [search, setSearch] = useState(null)
-  const { photographers } = data
+
+  const filterAuthors = useMemo(
+    () =>
+      doFilter(photographers, search, [
+        'name',
+        'yearsOfLife'
+      ]).map(photographer => (
+        <AuthorsListItem {...photographer} key={photographer.id} />
+      )),
+    [photographers, search]
+  )
 
   return (
-    <Fragment>
+    <>
       <Grid item sm={12}>
         <Box mb={2} color="text.title">
           <Typography variant="h4" component="h1">
@@ -29,12 +41,16 @@ export default function AuthorsList() {
         </Grid>
       </Grid>
       <Grid item container spacing={2} sm={12}>
-        {filters(photographers, search, ['name', 'yearsOfLife']).map(
-          photographer => (
-            <AuthorsListItem {...photographer} key={photographer.id} />
-          )
-        )}
+        {filterAuthors}
       </Grid>
-    </Fragment>
+    </>
   )
+}
+
+AuthorsList.propTypes = {
+  photographers: PropTypes.array
+}
+
+AuthorsList.defaultProps = {
+  photographers: data.photographers
 }
