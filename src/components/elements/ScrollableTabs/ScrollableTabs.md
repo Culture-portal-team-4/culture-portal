@@ -1,4 +1,4 @@
-Tabs:
+ScrollableTabs:
 
 ```js
 <ScrollableTabs 

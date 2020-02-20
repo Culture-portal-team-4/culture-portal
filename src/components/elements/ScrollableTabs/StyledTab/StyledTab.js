@@ -1,16 +1,5 @@
 import { withStyles } from "@material-ui/core/styles"
-import React from 'react'
-import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
-
-const StyledTabs = withStyles(theme => ({
-  root: {
-    borderBottom: "1px solid #e8e8e8"
-  },
-  indicator: {
-    backgroundColor: theme.palette.secondary.main
-  }
-}))(props => <Tabs {...props} />)
 
 const StyledTab = withStyles(theme => ({
   root: {
@@ -26,6 +15,6 @@ const StyledTab = withStyles(theme => ({
     },
   },
   selected: {}
-}))(props => <Tab {...props} />)
+}))(Tab)
 
-export {StyledTabs, StyledTab}
+export default StyledTab
