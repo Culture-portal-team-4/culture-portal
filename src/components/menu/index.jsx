@@ -11,7 +11,7 @@ export default function Menu({ navigations, open, onClose }) {
     <Drawer open={open} onClose={onClose}>
       <ul className={classes.list}>
         {navigations.map(navigation => (
-          <li>
+          <li key={navigation.title}>
             <NavLink
               exact
               to={navigation.path}
