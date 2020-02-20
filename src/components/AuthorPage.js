@@ -1,8 +1,10 @@
 import React from 'react';
+import AuthorInformation from "./author-information/AuthorInformation";
 
 const Author = () => {
+
   return (
-      <p>Author information</p>
+      <AuthorInformation />
   );
 };
 
