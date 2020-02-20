@@ -8,8 +8,8 @@ const Header = ({ handleOpenMenu }) => {
   const classes = styles()
 
   return (
-    <header class={classes.header}>
-      <div class={classes.headerContainer}>
+    <header className={classes.header}>
+      <div className={classes.headerContainer}>
         <div className={classes.boxLeft}>
           <IconButton onClick={handleOpenMenu}>
             <MenuIcon />

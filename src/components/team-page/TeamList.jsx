@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import data from '../../data/data.json'
 import TeamListItem from './TeamListItem'
 import { Grid, Typography, Box } from '@material-ui/core'
