@@ -2,14 +2,11 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const style = makeStyles(theme => ({
 
-    photo: {
-        //position: 'fixed',
-
-        width: '220px',
-        height: '180px',
-        zIndex: 302
+    large: {
+        width: theme.spacing(30),
+        height: theme.spacing(30),
     }
 
-}))
+}));
 
 export default style

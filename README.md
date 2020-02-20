@@ -24,6 +24,15 @@ npm run build
 | 2h | markup for author page |
 | 4h | setup geowidget |
 
+*helly-15*
+
+| time spent | feature |
+|-------------|-------------|
+| 2h | data JSON creation |
+| 5h | learning project structure and technologies |
+| 2h | author description component |
+
+
 
 ## Description
 The portal contains the following components / functional parts / blocks:
