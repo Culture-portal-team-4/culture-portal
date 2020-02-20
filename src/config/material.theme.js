@@ -12,7 +12,9 @@ const theme = createMuiTheme({
       gradientEnd: '#49c5b6'
     },
     text: {
-      primary: '#000'
+      title: '#061207',
+      primary: '#061207',
+      secondary: '#061207'
     }
   },
   typography: {
