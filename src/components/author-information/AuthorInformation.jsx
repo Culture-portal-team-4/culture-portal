@@ -11,25 +11,29 @@ import PropTypes from "prop-types";
 AuthorInformation.propTypes = {
     id: PropTypes.number
 };
-export default function AuthorInformation() {
-    const { photographers } = data;
+AuthorInformation.defaultProps = {
+    id: 0,
+    photographers: data.photographers
+};
+export default function AuthorInformation(props) {
     const classes = styles();
     const {id} = useParams();
+    const  author = props.photographers[id];
     return (
         <Container>
             <Grid item container direction="column" alignItems="center" sm={12}>
                     <Box mb={5} mt={5} >
-                        <Avatar alt="Author Photo" src={photographers[id].img} variant="rounded" className={classes.large} />
+                        <Avatar alt="Author Photo" src={author.img} variant="rounded" className={classes.large} />
                     </Box>
                     <Box  color="text.title" mb={2} >
                         <Typography variant="h4" component="h1">
-                            {photographers[id].name}
+                            {author.name}
                         </Typography>
                     </Box>
 
                 <Box color="text.primary" mb={2} >
                     <Typography variant="h6" component="h2">
-                    {photographers[id].yearsOfLife}
+                    {author.yearsOfLife}
                     </Typography>
                 </Box>
             </Grid>
