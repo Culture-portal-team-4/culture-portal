@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -9,6 +7,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import data from "../../../data/data";
+import AuthorOfDay from "../author-of-day/AuthorOfDay";
+import TeamList from "../../team-page/TeamList";
 
 function TabPanelDescription(props) {
     const { children, value, index, ...other } = props;
@@ -29,8 +29,8 @@ function TabPanelDescription(props) {
 
 TabPanel.propTypes = {
     children: PropTypes.node,
-    index: PropTypes.any.isRequired,
-    value: PropTypes.any.isRequired,
+    index: PropTypes.any,
+    value: PropTypes.any,
     mainPageData: PropTypes.object
 };
 
@@ -69,10 +69,11 @@ export default function TabPanel(props) {
                 {description}
             </TabPanelDescription>
             <TabPanelDescription value={value} index={1}>
-                Item Two
+                <AuthorOfDay/>
             </TabPanelDescription>
             <TabPanelDescription value={value} index={2}>
-                Item Three
+                <TeamList/>
+
             </TabPanelDescription>
         </div>
     );

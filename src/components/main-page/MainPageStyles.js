@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const style = makeStyles(theme => ({
+const styles = makeStyles(theme => ({
 
     large: {
         width: theme.spacing(30),
@@ -10,4 +10,4 @@ const style = makeStyles(theme => ({
 
 }));
 
-export default style
+export default styles
