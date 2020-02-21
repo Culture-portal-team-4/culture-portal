@@ -1,10 +1,6 @@
 import {makeStyles} from "@material-ui/core/styles";
 import {red} from "@material-ui/core/colors";
 
-
-
-
-
 const styles = makeStyles(theme => ({
     root: {
         maxWidth: 1000,

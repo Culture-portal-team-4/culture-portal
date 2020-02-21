@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import useStyles from "./TabPanelStyles";
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -49,7 +49,7 @@ TabPanel.defaultProps = {
 };
 
 export default function TabPanel(props) {
-
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const  description = props.mainPageData.description;
     const handleChange = (event, newValue) => {
@@ -57,7 +57,7 @@ export default function TabPanel(props) {
     };
 
     return (
-        <div >
+        <div className={classes.root} >
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Intro" {...a11yProps(0)} />
