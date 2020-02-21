@@ -5,6 +5,7 @@ const style = makeStyles(theme => ({
     large: {
         width: theme.spacing(30),
         height: theme.spacing(30),
+
     }
 
 }));
