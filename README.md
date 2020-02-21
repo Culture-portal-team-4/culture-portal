@@ -15,6 +15,7 @@ npm run build
 | time spent | feature |
 |-------------|-------------|
 | 4h | base structure of the project with CRA |
+| 6h | add tabs element for styleguide |
 
 *Viacheslav*
 
