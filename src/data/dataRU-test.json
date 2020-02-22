@@ -1,0 +1,274 @@
+{
+  "mainPage": {
+    "id": "1",
+    "title": "Information on this portal is dedicated to\n\"Belarusian Photographers\"",
+    "description": "The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
+  },
+  "photographers": [
+    {
+      "name": "Антон Прушинский",
+      "yearsOfLife": "1826-1863",
+      "img": "https://img.tyt.by/n/fotofact/02/5/istoriya_foto_06.jpg",
+      "biography": [
+        {
+          "year": "1826",
+          "info": "He was born in 1826, in the same year, when Joseph Nieps made the first photograph in the world in the French city of Le Gras, or rather heliogravure with a view from his window"
+        },
+        {
+          "year": "1850",
+          "info": "When Prushinsky was 24 years old, he opened the first photo workshop in Belarus. It was located on the current Lenin Street in Minsk."
+        },
+        {
+          "year": "1856",
+          "info": "The earliest photo of Prushinsky, which has been preserved, is considered the first Belarusian photograph. It depicts Prushinsky's mother - Rose. True, when looking at the photograph, it is not clear whether she considered the moment historical or, with censure, watched her son’s obscure hobby, when in 1858 Anton stood in front of her with an expensive apparatus discharged from abroad"
+        },
+        {
+          "year": "1863",
+          "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
+        }
+      ],
+      "masterpiece": [
+        {
+          "year": "1856",
+          "work": "My mother.Rosa."
+        },
+        {
+          "year": "1860",
+          "work": "Portrait of Vincent-Dunin Marcinkevich"
+        }
+      ],
+      "gallery": [
+        {
+          "year": "1856",
+          "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+        },
+        {
+          "year": "1860",
+          "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+      "placeOfLiving": "Minsk"
+    },
+    {
+      "name": "Benedict Tyszkiewicz",
+      "yearsOfLife": "1852-1935",
+      "img": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
+      "biography": [
+        {
+          "year": "1852",
+          "info": "Benedict Tyszkiewicz was born in 1852. And while more and more photo studios appeared in Minsk, the young aristocrat received a versatile education, made archaeological expeditions to the East and traveled around Africa."
+        },
+        {
+          "year": "1880",
+          "info": "In the early 1880s, after the death of his wife, left with three young children, thirty-year-old Benedict returned to his native land and settled in a hunting estate on the edge of the Nalibokskaya Pushcha. The count was actively carried away by photography, mastered the technique in detail, arranged a darkroom in his estate and captured the life around him on camera."
+        },
+        {
+          "year": "1890",
+          "info": "Tyszkiewicz became a real reporter, taking pictures of rural residents, aristocrats, the whole life of Belarus at the turn of the century."
+        },
+        {
+          "year": "1900",
+          "info": "Already at the time of Tyszkiewicz it was not enough just to master the technique of photography, it was necessary to masterfully capture the moment, catch the mood and convey the idea using the picture."
+        }
+      ],
+      "masterpiece": [
+        {
+          "year": "1878",
+          "work": "Afternoon tea"
+        },
+        {
+          "year": "1880",
+          "work": "Hold me the straw"
+        }
+      ],
+      "gallery": [
+        {
+          "year": "1878",
+          "link": "https://planetabelarus.by/upload/medialibrary/e13/e1316dc466dd948ff12384aa816d1f33.jpg"
+        },
+        {
+          "year": "1880",
+          "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=ZXLNSBkEpyU",
+      "placeOfLiving": " Nalibokskaya Pushcha"
+    },
+    {
+      "name": "Jan Bułhak",
+      "yearsOfLife": "1876–1950",
+      "img": "https://planetabelarus.by/upload/medialibrary/925/9256e21c77f15c7ae072292cef39d8a4.jpg",
+      "biography": [
+        {
+          "year": "1876",
+          "info": "Jan Bułhak was born on October 6, 1876 in Ostaszyn (Belarusian: Асташын), near Navahrudak (Belarusian: Навагрудак), Russian Empire (now Belarus). "
+        },
+        {
+          "year": "1888",
+          "info": "In 1888, Jan entered a gymnasium (a pre-Revolution secondary public school of the Russian Empire) in Wilno (present-day Vilnius), finishing it in 1897. "
+        },
+        {
+          "year": "1899",
+          "info": "From 1897 to 1899, he studied literature, history and philosophy at Jagiellonian University, Kraków, but did not graduate because of lack of money. Back home, he lived in the village of Peresieka (Belarusian: Пярэсека) near Minsk, where he inherited a manor after his great-uncle's death. From there, Bułhak sent his news stories to Wilno newspapers"
+        },
+        {
+          "year": "1901",
+          "info": "In 1901, he married a cousin, Hanna Haciska. After his father's death, he sold the manor and bought a mansion from the Radziwiłłs in Belitsa, near Minsk. On April 27, 1906, the couple had a son, Janusz Bułhak, who would become a composer and a photographer."
+        }
+      ],
+      "masterpiece": [
+        {
+          "year": "1888",
+          "work": "The castle at the lake"
+        },
+        {
+          "year": "1890",
+          "work": "Old Riga"
+        }
+      ],
+      "gallery": [
+        {
+          "year": "1888",
+          "link": "https://planetabelarus.by/upload/medialibrary/f23/f23bdcd0195e60d68a5da9665a75e97a.jpg"
+        },
+        {
+          "year": "1890",
+          "link": "https://planetabelarus.by/upload/medialibrary/3c5/3c5d68e488cf77a06c5213d844a0451b.jpg"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=MqbNbWbjLS0",
+      "placeOfLiving": "Novogrudok "
+    },
+    {
+      "name": "Sergei Brushko",
+      "yearsOfLife": "1958–2000",
+      "img": "http://arhiv.znyata.com/brushko/brushko_sergej_400.jpg",
+      "biography": [
+        {
+          "year": "1958",
+          "info": "Siarhei Brushko, born on 28 May 1958 in the town of Haradzieja, near Niasviž, Minsk Region"
+        },
+        {
+          "year": "1964",
+          "info": "With his first camera received as a birthday gift at 6, Siarhei Brushko dedicated his entire life to photography. In his youth, Brushko earned extra money by shooting village holidays, and with the money he bought chemicals for photography and rare Czech photo magazines, for which he travelled to Lithuania."
+        },
+        {
+          "year": "1975",
+          "info": "After graduating from school, he decided to study geography at the Belarusian State University, but was one point below the passing score at the entrance exams. Brushko returned to photography, when, after the army, he went to be trained as a photography technologist at a vocational school in Maladziečna."
+        },
+        {
+          "year": "1998",
+          "info": "The active period lasted about 10 years. In the mid-90s, the photographer was diagnosed with incurable Raynaud’s syndrome. It was during this time that his only book was published, Brushko’s co-project with the Swiss photographer Hugo Jaeggi “Die Hoffnung stirbt zuletzt: Belarus im Jahre Zwölf nach Tschernobyl” (1998)."
+        }
+      ],
+      "masterpiece": [
+        {
+          "year": "1970",
+          "work": "Autumn"
+        },
+        {
+          "year": "1990",
+          "work": "Learning to live"
+        },
+        {
+          "year": "1996",
+          "work": "Summer song"
+        }
+      ],
+      "gallery": [
+        {
+          "year": "1970",
+          "link": "http://arhiv.znyata.com/brushko/brushko_18.jpg"
+        },
+        {
+          "year": "1990",
+          "link": "http://arhiv.znyata.com/brushko/brushko_39.jpg"
+        },
+        {
+          "year": "1996",
+          "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=wFPNXczkHYg",
+      "placeOfLiving": "Maladziečna "
+    },
+    {
+      "name": "Aleh Lukashevich",
+      "yearsOfLife": "born March 27, 1972",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Aleh_Lukashevich._Cannes_Film_Festival.jpg/220px-Aleh_Lukashevich._Cannes_Film_Festival.jpg",
+      "biography": [
+        {
+          "year": "1972",
+          "info": "Aleh Lukashevich was born in the town of Lyachavičy (Belarus) on March 27, 1972."
+        },
+        {
+          "year": "1995",
+          "info": " In 1995 he graduated from the Faculty of Journalism of the Belarusian State University. In 1996 he majored as a director and a TV cameraman at CIRNEA International Centre, Paris (France). He is the first Belarusian journalist to have been accredited at the International Film Festivals in Cannes, Venice, and Berlin."
+        },
+        {
+          "year": "2005",
+          "info": "Since 1994 Aleh has been working at the Belarusian Television; he created a number of TV projects: “New Collection”, “Our Heritage”, “Shot!”, “Epoch”."
+        },
+        {
+          "year": "2011",
+          "info": " In May 2011, he was the Head of the National Pavilion of the Republic of Belarus at the 64th International Cannes Film Festival."
+        }
+      ],
+      "masterpiece": [
+        {
+          "year": "2005",
+          "work": "Myself"
+        },
+        {
+          "year": "2010",
+          "work": "The photo"
+        }
+      ],
+      "gallery": [
+        {
+          "year": "2005",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/5/59/Aleh_Lukashevich.Paris.2014.jpg"
+        },
+        {
+          "year": "1990",
+          "link": "https://www.velvet.by/files/userfiles/13522/309255_156487087773168_100002356342611_294692_223942174_n.jpg"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=3Hqz7yAsbWI",
+      "placeOfLiving": "Lyachavičy "
+    }
+  ],
+  "developers": [
+    {
+      "name": "Denis",
+      "github": "https://github.com/iosDeveloperDK",
+      "userPic": "https://avatars3.githubusercontent.com/u/18685570?s=400&v=4"
+    },
+    {
+      "name": "Viktar",
+      "github": "https://github.com/jetalai3",
+      "userPic": "https://avatars0.githubusercontent.com/u/18378501?s=400&v=4"
+    },
+    {
+      "name": "Marina",
+      "github": "https://github.com/jetalai3",
+      "userPic": "https://avatars0.githubusercontent.com/u/18378501?s=400&v=4"
+    },
+    {
+      "name": "Lena",
+      "github": "https://github.com/slolkunchik",
+      "userPic": "https://avatars3.githubusercontent.com/u/43445836?s=400&v=4"
+    },
+    {
+      "name": "Yulia",
+      "github": "https://github.com/yuliagushcha",
+      "userPic": "https://avatars3.githubusercontent.com/u/32578327?s=400&v=4"
+    },
+    {
+      "name": "Viacheslav",
+      "github": "https://github.com/Viacheslav-ed",
+      "userPic": "https://avatars0.githubusercontent.com/u/33626997?s=460&v=4"
+    }
+  ]
+}

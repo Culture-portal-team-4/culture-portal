@@ -5,9 +5,14 @@ export default navigations => {
   return Component => {
     return props => {
       const [open, setOpen] = useState(false)
+      const [locale, setLocale] = useState( 'En')
 
       const handleOpenMenu = () => {
         setOpen(!open)
+      }
+
+      const handleSelectChange = (value) => {
+        setLocale(value)
       }
 
       return (
@@ -17,7 +22,11 @@ export default navigations => {
             open={open}
             onClose={handleOpenMenu}
           />
-          <Component {...props} handleOpenMenu={handleOpenMenu} />
+          <Component
+              {...props}
+              locale={locale}
+              handleOpenMenu={handleOpenMenu}
+              handleSelectChange={handleSelectChange}/>
         </Fragment>
       )
     }
