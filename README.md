@@ -16,6 +16,8 @@ npm run build
 |-------------|-------------|
 | 4h | base structure of the project with CRA |
 | 6h | add tabs element for styleguide |
+| 9.5h | setup Redux for changing language |
+| 0.5h | add thunk |
 
 *Viacheslav*
 
