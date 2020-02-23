@@ -13,6 +13,9 @@ import data from '../../../data/data.json';
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
+const getRandomArbitrary=() =>{
+    return (Math.floor(Math.random() * 4));
+};
 
 AuthorOfDay.propTypes = {
     randomAuthorData: PropTypes.object
@@ -23,13 +26,7 @@ AuthorOfDay.defaultProps = {
 
 export default function AuthorOfDay(props) {
     const classes = styles();
-    const  randomAuthorData= props.randomAuthorData;
-
-    const getRandomArbitrary=() =>{
-        return (Math.floor(Math.random() * 4));
-    };
-    const randomAuthorNumber = getRandomArbitrary();
-    const randomAuthorDetails =randomAuthorData[randomAuthorNumber];
+    const randomAuthorDetails = props.randomAuthorData[getRandomArbitrary()];
     return (
         <Card className={classes.root}>
             <CardHeader
