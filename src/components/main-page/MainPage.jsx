@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 import logo from "./logo.png";
 import Button from "@material-ui/core/Button";
 import {Link} from "react-router-dom";
-import TabPanel from "./tab-panel/TabPanel";
+import TabPanelDescription from "./tab-panel/TabPanelDescription";
 
 MainPage.propTypes = {
     mainPageData: PropTypes.object
@@ -39,7 +39,7 @@ export default function MainPage(props) {
                        Want to know more?
                    </Link>
                 </Button>
-                <TabPanel/>
+                <TabPanelDescription/>
             </Grid>
         </Container>
 
