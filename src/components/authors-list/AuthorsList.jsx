@@ -48,7 +48,14 @@ export default function AuthorsList({ photographers }) {
 }
 
 AuthorsList.propTypes = {
-  photographers: PropTypes.array
+  photographers: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      img: PropTypes.string,
+      description: PropTypes.string
+    })
+  )
 }
 
 AuthorsList.defaultProps = {
