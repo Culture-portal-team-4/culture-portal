@@ -15,6 +15,7 @@ npm run build
 | time spent | feature |
 |-------------|-------------|
 | 4h | base structure of the project with CRA |
+| 6h | add tabs element for styleguide |
 
 *Viacheslav*
 
@@ -23,6 +24,15 @@ npm run build
 | 3h | design and markup for main page |
 | 2h | markup for author page |
 | 4h | setup geowidget |
+
+*helly-15*
+
+| time spent | feature |
+|-------------|-------------|
+| 2h | data JSON creation |
+| 5h | learning project structure and technologies |
+| 2h | author description component |
+| 8h | main page |
 
 
 ## Description
