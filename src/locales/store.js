@@ -1,6 +1,13 @@
-import { CHANGE_LOCALE } from '../constants'
 import RuData from '../data/dataRU-test'
 import EnData from '../data/data'
+
+const CHANGE_LOCALE = 'CHANGE_LOCALE'
+export const LANGUAGES = ['En', 'Ru']
+
+export const changedLocale = (locale) => ({
+  type: CHANGE_LOCALE,
+  locale,
+});
 
 const initialState = EnData;
 
@@ -15,16 +22,15 @@ function defineData(locale) {
   }
 }
 
-const localeReducer = (state = initialState, { locale, type }) => {
+export const localeReducer = (state = initialState, { locale, type }) => {
   const newData = defineData(locale);
   switch (type) {
     case CHANGE_LOCALE:
       return {
+        ...state,
         ...newData,
       };
     default:
       return state;
   }
 }
-
-export default localeReducer;

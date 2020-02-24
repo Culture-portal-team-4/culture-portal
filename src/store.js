@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
-import rootReducer from './reducers/rootReducer'
+import rootReducer from './rootReducer'
 
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers =

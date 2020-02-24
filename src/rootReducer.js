@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import localeReducer from "./localeReducer";
+import { localeReducer } from './locales/store';
 
 const rootReducer = combineReducers({localeReducer})
 

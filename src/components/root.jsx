@@ -9,7 +9,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
 import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
-import { changedLocale } from '../actions/actionCreator'
+import { changedLocale } from '../locales/store'
 import TeamList from './team-page/TeamList'
 import { Grid } from '@material-ui/core'
 

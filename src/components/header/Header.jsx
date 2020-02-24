@@ -5,7 +5,7 @@ import { Typography, IconButton } from '@material-ui/core'
 import { Select } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
-import { LANGUAGES } from '../../constants'
+import { LANGUAGES } from '../../locales/store'
 
 const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
   const classes = styles()
