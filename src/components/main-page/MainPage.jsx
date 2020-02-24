@@ -28,8 +28,8 @@ export default function MainPage(props) {
                 </Box>
                 <Box  color="text.title" mb={2} width={1/2}>
                     <Typography variant="h5" component="h1" align = "center" paragraph={true}>
-                        {rhyme.split('\n').map(i => {
-                        return <p>{i}</p>
+                        {rhyme.split('\n').map((i,index) => {
+                        return <p key ={index}>{i}</p>
                     })}
                     </Typography>
                 </Box>

@@ -4,8 +4,8 @@ import Box from '@material-ui/core/Box'
 import PropTypes from 'prop-types'
 
 export default function TabPanel(props) {
-  const { children, activeTabIndex, index, ...other } = props
-  const isHidden = activeTabIndex !== index
+  const { children, activeTabIndex, index, ...other } = props;
+  const isHidden = activeTabIndex !== index;
 
   return (
       <Typography
@@ -22,7 +22,7 @@ export default function TabPanel(props) {
 }
 
 TabPanel.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.elementType).isRequired,
+  children: PropTypes.node,
   activeTabIndex: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
 };
