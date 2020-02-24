@@ -42,7 +42,7 @@ export default function AuthorInformation(props) {
                     <AuthorsTimeline timeLineItems={author.biography} />
                 </Box>
                 <Box mb={5} mt={5} >
-                    <YandexMap timeLineItems={author.locationsCoords} />
+                    <YandexMap locationsCoords={author.locationsCoords} />
                 </Box>
             </Grid>
         </Container>
