@@ -4,8 +4,19 @@ import EnData from '../data/data'
 
 const initialState = EnData;
 
+function defineData(locale) {
+  switch (locale) {
+    case 'Ru':
+      return RuData;
+    case 'En':
+      return EnData;
+    default:
+      return EnData;
+  }
+}
+
 const localeReducer = (state = initialState, { locale, type }) => {
-  const newData = locale === 'Ru' ? RuData : EnData;
+  const newData = defineData(locale);
   switch (type) {
     case CHANGE_LOCALE:
       return {

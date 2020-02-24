@@ -1,18 +1,13 @@
 import React, { useState, Fragment } from 'react'
-import Menu from '../menu'
+import Menu from '../menu/Menu'
 
 export default navigations => {
   return Component => {
     return props => {
       const [open, setOpen] = useState(false)
-      const [locale, setLocale] = useState( 'En')
 
       const handleOpenMenu = () => {
         setOpen(!open)
-      }
-
-      const handleSelectChange = (value) => {
-        setLocale(value)
       }
 
       return (
@@ -24,9 +19,8 @@ export default navigations => {
           />
           <Component
               {...props}
-              locale={locale}
               handleOpenMenu={handleOpenMenu}
-              handleSelectChange={handleSelectChange}/>
+          />
         </Fragment>
       )
     }

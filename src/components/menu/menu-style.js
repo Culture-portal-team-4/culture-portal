@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const style = makeStyles(theme => ({
+const menuStyle = makeStyles(theme => ({
   list: {
     marginTop: theme.spacing(2)
   },
@@ -23,4 +23,4 @@ const style = makeStyles(theme => ({
   }
 }))
 
-export default style
+export default menuStyle

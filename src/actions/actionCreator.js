@@ -1,6 +1,6 @@
 import { CHANGE_LOCALE } from '../constants'
 
-export const changeLocale = (locale) => ({
+export const changedLocale = (locale) => ({
   type: CHANGE_LOCALE,
   locale,
 });

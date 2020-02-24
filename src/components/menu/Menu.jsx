@@ -2,7 +2,7 @@ import React from 'react'
 import { Drawer, Typography } from '@material-ui/core'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { NavLink } from 'react-router-dom'
-import styles from './style'
+import styles from './menu-style'
 
 export default function Menu({ navigations, open, onClose }) {
   const classes = styles()
