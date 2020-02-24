@@ -1,9 +1,9 @@
 {
   "title": "Anton Prushinsky",
-  "thumbnail": "/img/Anton Prushinsky.jpg",
-  "years-of-life": "1826-1863",
+  "image": "/img/Anton Prushinsky.jpg",
+  "yearsOfLife": "1826-1863",
   "en": {
-    "full-name": "Anton Prushinsky",
+    "fullName": "Anton Prushinsky",
     "gallery": [
       {
         "title": "My mother.Rosa.",
@@ -48,7 +48,7 @@
     "placeOfLiving": "Minsk"
   },
   "bu": {
-    "full-name": " Антон Прушынскі",
+    "fullName": " Антон Прушынскі",
     "gallery": [],
     "biography": [
       {
@@ -82,7 +82,7 @@
     "placeOfLiving": "Мінск"
   },
   "ru": {
-    "full-name": " Антон Прушинский",
+    "fullName": " Антон Прушинский",
     "biography": [
       {
         "year": 1826,

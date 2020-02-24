@@ -3,9 +3,9 @@ backend:
   repo: Culture-portal-team-4/culture-portal
   branch: netlify-cms
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
+    create: 'Netlify-cms: Create {{collection}} “{{slug}}”'
+    update: 'Netlify-cms: Update {{collection}} “{{slug}}”'
+    delete: 'Netlify-cms: Delete {{collection}} “{{slug}}”'
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
@@ -22,14 +22,14 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Github", name: "github", widget: "string"}
-      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Image", name: "image", widget: "image"}
       - label: "Tasks"
         name: "tasks"
         widget: "list"
         fields: 
           - {label: "Task", name: "task", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
-          - {label: "Spent time", name: "spent-time", widget: "string"}
+          - {label: "Spent time", name: "spentTime", widget: "string"}
       - label: "Full name"
         name: "full-name"
         widget: "object"
@@ -46,8 +46,8 @@ collections:
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "thumbnail", widget: "image"}
-      - {label: "Years of life", name: "years-of-life", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Years of life", name: "yearsOfLife", widget: "string"}
       - label: "EN"
         name: "en"
         widget: "object"
@@ -79,7 +79,7 @@ collections:
         name: "bu"
         widget: "object"
         fields:
-          - {label: "Full name", name: "full-name", widget: "string"}
+          - {label: "Full name", name: "fullName", widget: "string"}
           - label: "Gallery"
             name: "gallery"
             widget: "list"
@@ -106,7 +106,7 @@ collections:
         name: "ru"
         widget: "object"
         fields:
-          - {label: "Full name", name: "full-name", widget: "string"}
+          - {label: "Full name", name: "fullName", widget: "string"}
           - label: "Gallery"
             name: "gallery"
             widget: "list"
