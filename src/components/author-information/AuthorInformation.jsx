@@ -7,6 +7,7 @@ import Container from "@material-ui/core/Container";
 import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
 import AuthorsTimeline from '../timeline/AuthorsTimeline';
+import Video from '../Video/Video';
 
 
 AuthorInformation.propTypes = {
@@ -36,6 +37,9 @@ export default function AuthorInformation(props) {
                     <Typography variant="h6" component="h2">
                     {author.yearsOfLife}
                     </Typography>
+                </Box>
+                <Box mb={5} mt={5} >
+                    <Video youTubeVideoUrl={author.video} id={id}/>
                 </Box>
                 <Box mb={5} mt={5} >
                     <AuthorsTimeline timeLineItems={author.biography} />
