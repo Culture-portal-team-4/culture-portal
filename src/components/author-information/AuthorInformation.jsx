@@ -6,7 +6,7 @@ import { Grid, Typography, Box } from '@material-ui/core';
 import Container from "@material-ui/core/Container";
 import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
-import AuthorsTimeline from '../timeline/Timeline';
+import AuthorsTimeline from '../timeline/AuthorsTimeline';
 
 
 AuthorInformation.propTypes = {
@@ -38,7 +38,7 @@ export default function AuthorInformation(props) {
                     </Typography>
                 </Box>
                 <Box mb={5} mt={5} >
-                    <AuthorsTimeline biography={author.biography} />
+                    <AuthorsTimeline timeLineItems={author.biography} />
                 </Box>
             </Grid>
         </Container>
