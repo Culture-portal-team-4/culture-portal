@@ -16,7 +16,7 @@ npm run build
 |-------------|-------------|
 | 4h | base structure of the project with CRA |
 | 6h | add tabs element for styleguide |
-| 9.5h | setup Redux for changing language |
+| 12h | setup Redux for changing language, apply redux hooks |
 | 0.5h | add thunk |
 
 *Viacheslav*
@@ -34,7 +34,7 @@ npm run build
 | 2h | data JSON creation |
 | 5h | learning project structure and technologies |
 | 2h | author description component |
-
+| 8h | main page |
 
 
 ## Description
