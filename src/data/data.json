@@ -50,7 +50,11 @@
         }
       ],
       "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
-      "placeOfLiving": "Minsk"
+      "placeOfLiving": "Minsk",
+      "locationsCoords": {
+        "lat": "53.9000000",
+        "lng": "27.5666700"
+      }
     },
     {
       "id": "2",
@@ -96,7 +100,11 @@
         }
       ],
       "video": "https://www.youtube.com/watch?v=ZXLNSBkEpyU",
-      "placeOfLiving": " Nalibokskaya Pushcha"
+      "placeOfLiving": " Nalibokskaya Pushcha",
+      "locationsCoords": {
+        "lat": "54.0088871",
+        "lng": "26.2513793"
+      }
     },
     {
       "id": "3",
@@ -142,7 +150,11 @@
         }
       ],
       "video": "https://www.youtube.com/watch?v=MqbNbWbjLS0",
-      "placeOfLiving": "Novogrudok "
+      "placeOfLiving": "Novogrudok ",
+      "locationsCoords": {
+        "lat": "53.5942000",
+        "lng": "25.8191000"
+      }
     },
     {
       "id": "4",
@@ -196,7 +208,11 @@
         }
       ],
       "video": "https://www.youtube.com/watch?v=wFPNXczkHYg",
-      "placeOfLiving": "Maladziečna "
+      "placeOfLiving": "Maladziečna",
+      "locationsCoords": {
+        "lat": "54.3167000",
+        "lng": "26.8540000"
+      }
     },
     {
       "id": "5",
@@ -242,7 +258,11 @@
         }
       ],
       "video": "https://www.youtube.com/watch?v=3Hqz7yAsbWI",
-      "placeOfLiving": "Lyachavičy "
+      "placeOfLiving": "Lyachavičy",
+      "locationsCoords": {
+        "lat": "53.0388000",
+        "lng": "26.2656000"
+      }
     }
   ],
   "developers": [

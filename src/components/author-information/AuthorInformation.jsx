@@ -7,6 +7,7 @@ import Container from "@material-ui/core/Container";
 import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
 import AuthorsTimeline from '../timeline/AuthorsTimeline';
+import YandexMap from '../YandexMap/YandexMap';
 
 
 AuthorInformation.propTypes = {
@@ -39,6 +40,9 @@ export default function AuthorInformation(props) {
                 </Box>
                 <Box mb={5} mt={5} >
                     <AuthorsTimeline timeLineItems={author.biography} />
+                </Box>
+                <Box mb={5} mt={5} >
+                    <YandexMap timeLineItems={author.locationsCoords} />
                 </Box>
             </Grid>
         </Container>
