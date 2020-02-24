@@ -33,6 +33,7 @@ npm run build
 | 5h | learning project structure and technologies |
 | 2h | author description component |
 | 8h | main page |
+| 4h | photo gallery |
 
 
 ## Description
