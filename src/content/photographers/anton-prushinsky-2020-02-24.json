@@ -1,0 +1,74 @@
+{
+  "title": "Anton Prushinsky",
+  "thumbnail": "/img/Anton Prushinsky.jpg",
+  "years-of-life": "1826-1863",
+  "en": {
+    "full-name": "Anton Prushinsky",
+    "biography": [
+      {
+        "year": 1826,
+        "info": "He was born in 1826, in the same year, when Joseph Nieps made the first photograph in the world in the French city of Le Gras, or rather heliogravure with a view from his window"
+      },
+      {
+        "year": 1850,
+        "info": "When Prushinsky was 24 years old, he opened the first photo workshop in Belarus. It was located on the current Lenin Street in Minsk."
+      },
+      {
+        "year": 1856,
+        "info": "The earliest photo of Prushinsky, which has been preserved, is considered the first Belarusian photograph. It depicts Prushinsky's mother - Rose. True, when looking at the photograph, it is not clear whether she considered the moment historical or, with censure, watched her son’s obscure hobby, when in 1858 Anton stood in front of her with an expensive apparatus discharged from abroad."
+      },
+      {
+        "year": 1863,
+        "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+    "placeOfLiving": "Minsk"
+  },
+  "bu": {
+    "full-name": " Антон Прушынскі",
+    "biography": [
+      {
+        "year": 1826,
+        "info": "be"
+      },
+      {
+        "year": 1850,
+        "info": "be"
+      },
+      {
+        "year": 1856,
+        "info": "be"
+      },
+      {
+        "year": 1863,
+        "info": "be"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+    "placeOfLiving": "Мінск"
+  },
+  "ru": {
+    "full-name": " Антон Прушинский",
+    "biography": [
+      {
+        "year": 1826,
+        "info": "ru"
+      },
+      {
+        "year": 1848,
+        "info": "ru"
+      },
+      {
+        "year": 1856,
+        "info": "ru"
+      },
+      {
+        "year": 1861,
+        "info": "ru"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+    "placeOfLiving": "Минск"
+  }
+}
