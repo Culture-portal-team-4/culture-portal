@@ -16,15 +16,9 @@ const openUrl = url => {
 }
 
 export default function TeamListItem({ index, name, userPic, github }) {
-  const [isAnimated, setAnimated] = useState(false)
-
-  useEffect(() => {
-    setAnimated(true)
-  }, [])
-
   return (
     <Grid item md={3} sm={6} xs={12}>
-      <AnimationWrapper index={index} pose={isAnimated ? 'on' : 'off'}>
+      <AnimationWrapper index={index}>
         <Card>
           <CardHeader
             avatar={<Avatar src={userPic} />}

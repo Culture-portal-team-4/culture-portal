@@ -1,17 +1,51 @@
-import posed from 'react-pose'
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
-const animationTime = 300
+export default function AnimationWrapper({
+  variants,
+  index,
+  children,
+  delay,
+  duration
+}) {
+  const [isAnimated, setAnimated] = useState(false)
 
-const AnimationWrapper = posed.div({
-  on: {
-    opacity: 1,
-    x: '0%',
-    delay: ({ index }) => index * animationTime
+  useEffect(() => {
+    setAnimated(true)
+  }, [])
+
+  return (
+    <motion.div
+      variants={variants}
+      initial="off"
+      transition={{ delay: index * delay, duration }}
+      animate={isAnimated ? 'on' : 'off'}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
+AnimationWrapper.propTypes = {
+  variants: PropTypes.object,
+  children: PropTypes.node,
+  index: PropTypes.number,
+  delay: PropTypes.number,
+  duration: PropTypes.number
+}
+
+AnimationWrapper.defaultProps = {
+  variants: {
+    on: {
+      opacity: 1,
+      x: '0%'
+    },
+    off: {
+      opacity: 0,
+      x: '-100%'
+    }
   },
-  off: {
-    opacity: 0,
-    x: '-100%'
-  }
-})
-
-export default AnimationWrapper
+  delay: 0.3,
+  index: 1
+}

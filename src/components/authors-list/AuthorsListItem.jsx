@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import styles from './style'
@@ -13,17 +13,12 @@ import { Grid, Typography } from '@material-ui/core'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
 const AuthorsListItem = ({ id, name, img, description }) => {
-  const [isAnimated, setAnimated] = useState(false)
   const classes = styles()
   const history = useHistory()
 
-  useEffect(() => {
-    setAnimated(true)
-  }, [])
-
   return (
     <Grid item md={3} sm={4} xs={12}>
-      <AnimationWrapper pose={isAnimated ? 'on' : 'off'}>
+      <AnimationWrapper delay={0.1}>
         <Card>
           <CardMedia component="img" className={classes.media} image={img} />
           <CardContent>
