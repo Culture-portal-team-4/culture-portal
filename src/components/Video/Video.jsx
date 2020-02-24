@@ -47,7 +47,6 @@ function Video({ youTubeVideoUrl, id, width, height }) {
             });
           }}
           title={id}
-          className="video"
           src={youTubeVideoUrl}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           width={width}

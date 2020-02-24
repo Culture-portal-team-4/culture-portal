@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
 import AuthorsTimeline from '../timeline/AuthorsTimeline';
-import Video from '../Video/Video';
+import Video from '../video/Video';
 
 
 AuthorInformation.propTypes = {
