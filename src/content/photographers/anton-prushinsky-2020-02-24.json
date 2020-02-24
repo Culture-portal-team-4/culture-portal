@@ -4,6 +4,18 @@
   "years-of-life": "1826-1863",
   "en": {
     "full-name": "Anton Prushinsky",
+    "gallery": [
+      {
+        "title": "My mother.Rosa.",
+        "year": 1856,
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      },
+      {
+        "title": "Portrait of Vincent-Dunin Marcinkevich",
+        "year": 1860,
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      }
+    ],
     "biography": [
       {
         "year": 1826,
@@ -22,11 +34,22 @@
         "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
       }
     ],
+    "masterpiece": [
+      {
+        "year": 1859,
+        "work": "My mother.Rosa."
+      },
+      {
+        "year": 1860,
+        "work": "Portrait of Vincent-Dunin Marcinkevich"
+      }
+    ],
     "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
     "placeOfLiving": "Minsk"
   },
   "bu": {
     "full-name": " Антон Прушынскі",
+    "gallery": [],
     "biography": [
       {
         "year": 1826,
@@ -43,6 +66,16 @@
       {
         "year": 1863,
         "info": "be"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": 1856,
+        "work": "My mother.Rosa."
+      },
+      {
+        "year": 1860,
+        "work": "Portrait of Vincent-Dunin Marcinkevich"
       }
     ],
     "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
