@@ -18,7 +18,7 @@ const getRandomArbitrary=() =>{
 };
 
 AuthorOfDay.propTypes = {
-    randomAuthorData: PropTypes.object
+    randomAuthorData: PropTypes.array
 };
 AuthorOfDay.defaultProps = {
     randomAuthorData: data.photographers,
