@@ -15,8 +15,8 @@ export default function TeamList() {
         </Box>
       </Grid>
       <Grid item container spacing={2} sm={12}>
-        {developers.map(developer => (
-          <TeamListItem {...developer} key={developer.name} />
+        {developers.map((developer, index) => (
+          <TeamListItem {...developer} index={index} key={developer.name} />
         ))}
       </Grid>
     </Grid>
