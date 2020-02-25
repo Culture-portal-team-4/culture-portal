@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Culture-portal-team-4/culture-portal
-  branch: netlify-cms
+  branch: TASK-20-add-information-to-redux
   commit_messages:
     create: 'Netlify-cms: Create {{collection}} “{{slug}}”'
     update: 'Netlify-cms: Update {{collection}} “{{slug}}”'
@@ -35,7 +35,7 @@ collections:
         widget: "object"
         fields:
           - {label: "EN", name: "en", widget: "string"}
-          - {label: "BU", name: "bu", widget: "string"}
+          - {label: "BY", name: "by", widget: "string"}
           - {label: "RU", name: "ru", widget: "string"}
 
   - name: "photographers"
@@ -46,60 +46,65 @@ collections:
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image", name: "image", widget: "string"}
       - {label: "Years of life", name: "yearsOfLife", widget: "string"}
+      - {label: "Video", name: "video", widget: "string"}
+      - label: "Locations Coords"
+        name: "locationsCoords"
+        widget: "object"
+        fields:
+          - {label: "LAT", name: "lat", widget: "string"}
+          - {label: "LNG", name: "lng", widget: "string"}
       - label: "EN"
         name: "en"
         widget: "object"
         fields:
           - {label: "Full name", name: "full-name", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
           - label: "Gallery"
             name: "gallery"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Link", name: "link", widget: "string"}
           - label: "Biography"
             name: "biography"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Info", name: "info", widget: "string"}
           - label: "Masterpiece"
             name: "masterpiece"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Work", name: "work", widget: "string"}
-          - {label: "Video", name: "video", widget: "string"}
           - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}
 
-      - label: "BU"
-        name: "bu"
+      - label: "BY"
+        name: "by"
         widget: "object"
         fields:
           - {label: "Full name", name: "fullName", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
           - label: "Gallery"
             name: "gallery"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Link", name: "link", widget: "string"}
           - label: "Biography"
             name: "biography"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Info", name: "info", widget: "string"}
           - label: "Masterpiece"
             name: "masterpiece"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Work", name: "work", widget: "string"}
-          - {label: "Video", name: "video", widget: "string"}
           - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}
 
       - label: "RU"
@@ -107,24 +112,23 @@ collections:
         widget: "object"
         fields:
           - {label: "Full name", name: "fullName", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
           - label: "Gallery"
             name: "gallery"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Link", name: "link", widget: "string"}
           - label: "Biography"
             name: "biography"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Info", name: "info", widget: "string"}
           - label: "Masterpiece"
             name: "masterpiece"
             widget: "list"
             fields:
-              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Year", name: "year", widget: "string"}
               - {label: "Work", name: "work", widget: "string"}
-          - {label: "Video", name: "video", widget: "string"}
           - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}

@@ -1,0 +1,139 @@
+{
+  "title": "Benedict Tyszkiewicz",
+  "image": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
+  "yearsOfLife": "1852-1935",
+  "locationsCoords": {
+    "lat": "54.0088871",
+    "lng": "26.2513793"
+  },
+  "video": "https://www.youtube.com/embed/ZXLNSBkEpyU",
+  "en": {
+    "fullName": "Benedict Tyszkiewicz",
+    "description": "description",
+    "gallery": [
+      {
+        "year": "1878",
+        "link": "https://planetabelarus.by/upload/medialibrary/e13/e1316dc466dd948ff12384aa816d1f33.jpg"
+      },
+      {
+        "year": "1880",
+        "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1852",
+        "info": "Benedict Tyszkiewicz was born in 1852. And while more and more photo studios appeared in Minsk, the young aristocrat received a versatile education, made archaeological expeditions to the East and traveled around Africa."
+      },
+      {
+        "year": "1880",
+        "info": "In the early 1880s, after the death of his wife, left with three young children, thirty-year-old Benedict returned to his native land and settled in a hunting estate on the edge of the Nalibokskaya Pushcha. The count was actively carried away by photography, mastered the technique in detail, arranged a darkroom in his estate and captured the life around him on camera."
+      },
+      {
+        "year": "1890",
+        "info": "Tyszkiewicz became a real reporter, taking pictures of rural residents, aristocrats, the whole life of Belarus at the turn of the century."
+      },
+      {
+        "year": "1900",
+        "info": "Already at the time of Tyszkiewicz it was not enough just to master the technique of photography, it was necessary to masterfully capture the moment, catch the mood and convey the idea using the picture."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1878",
+        "work": "Afternoon tea"
+      },
+      {
+        "year": "1880",
+        "work": "Hold me the straw"
+      }
+    ],
+    "placeOfLiving": "Nalibokskaya Pushcha"
+  },
+  "by": {
+    "fullName": "by",
+    "description": "by",
+    "gallery": [
+      {
+        "year": "1856",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      },
+      {
+        "year": "1860",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1826",
+        "info": "by"
+      },
+      {
+        "year": "1850",
+        "info": "by"
+      },
+      {
+        "year": "1856",
+        "info": "by"
+      },
+      {
+        "year": "1863",
+        "info": "by"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1856",
+        "work": "by"
+      },
+      {
+        "year": "1860",
+        "work": "by"
+      }
+    ],
+    "placeOfLiving": "by"
+  },
+  "ru": {
+    "fullName": "ru",
+    "description": "ru",
+    "gallery": [
+      {
+        "year": "1856",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      },
+      {
+        "year": "1860",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1826",
+        "info": "ru"
+      },
+      {
+        "year": "1848",
+        "info": "ru"
+      },
+      {
+        "year": "1856",
+        "info": "ru"
+      },
+      {
+        "year": "1861",
+        "info": "ru"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1856",
+        "work": "ru"
+      },
+      {
+        "year": "1860",
+        "work": "ru"
+      }
+    ],
+    "placeOfLiving": "ru"
+  }
+}
