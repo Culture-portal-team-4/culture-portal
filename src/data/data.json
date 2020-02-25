@@ -2,10 +2,12 @@
   "mainPage": {
     "id": "1",
     "title": "Information on this portal is dedicated to\n\"Belarusian Photographers\"",
-    "description": "The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
+    "rhyme": "In cold Belarus there once lived a bull \n  Who learned days and nights in Rolling scopes school \n\n React and redux, material and hooks\nOnce made him to think of photographers in Belarus\n\nThe bull used his brain and thoroughly thunk\nSo check out this site. Let’s hope it’s not junk! ",
+    "description": "So... The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
   },
   "photographers": [
     {
+      "id": "1",
       "name": "Anton Prushinsky",
       "yearsOfLife": "1826-1863",
       "img": "https://img.tyt.by/n/fotofact/02/5/istoriya_foto_06.jpg",
@@ -55,6 +57,7 @@
       }
     },
     {
+      "id": "2",
       "name": "Benedict Tyszkiewicz",
       "yearsOfLife": "1852-1935",
       "img": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
@@ -104,6 +107,7 @@
       }
     },
     {
+      "id": "3",
       "name": "Jan Bułhak",
       "yearsOfLife": "1876–1950",
       "img": "https://planetabelarus.by/upload/medialibrary/925/9256e21c77f15c7ae072292cef39d8a4.jpg",
@@ -153,6 +157,7 @@
       }
     },
     {
+      "id": "4",
       "name": "Sergei Brushko",
       "yearsOfLife": "1958–2000",
       "img": "http://arhiv.znyata.com/brushko/brushko_sergej_400.jpg",
@@ -210,6 +215,7 @@
       }
     },
     {
+      "id": "5",
       "name": "Aleh Lukashevich",
       "yearsOfLife": "born March 27, 1972",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Aleh_Lukashevich._Cannes_Film_Festival.jpg/220px-Aleh_Lukashevich._Cannes_Film_Festival.jpg",
@@ -272,13 +278,13 @@
     },
     {
       "name": "Marina",
-      "github": "https://github.com/jetalai3",
-      "userPic": "https://avatars0.githubusercontent.com/u/18378501?s=400&v=4"
+      "github": "https://github.com/slolkunchik",
+      "userPic": "https://avatars2.githubusercontent.com/u/43445836?s=460&v=4"
     },
     {
       "name": "Lena",
-      "github": "https://github.com/slolkunchik",
-      "userPic": "https://avatars3.githubusercontent.com/u/43445836?s=400&v=4"
+      "github": "https://github.com/helly-15",
+      "userPic": "https://avatars3.githubusercontent.com/u/54313382?s=460&v=4"
     },
     {
       "name": "Yulia",
