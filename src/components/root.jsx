@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react'
+import React, { Fragment, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
@@ -13,6 +13,7 @@ import TeamList from './team-page/TeamList'
 import { Grid } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
+import Worklog from './worklog/Worklog'
 
 const style = makeStyles(theme => ({
   main: {
@@ -24,7 +25,7 @@ function Root({ handleOpenMenu }) {
   const classes = style()
 
   const { data } = useSelector(state => ({
-    data: state.localeReducer.data,
+    data: state.localeReducer.data
   }))
   const { photographers } = data
 
@@ -36,11 +37,14 @@ function Root({ handleOpenMenu }) {
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/authors" component={AuthorList} />
-            <Route path="/authors/:id"
-                   render={(props) => <AuthorPage {...props}
-                                                  photographers={photographers}/>}
+            <Route
+              path="/authors/:id"
+              render={props => (
+                <AuthorPage {...props} photographers={photographers} />
+              )}
             />
             <Route path="/team" component={TeamList} />
+            <Route path="/worklog" component={Worklog} />
           </Switch>
         </Grid>
       </main>
@@ -52,9 +56,8 @@ export default withMenu([
   { title: 'Главная', icon: <HomeIcon />, path: '/' },
   { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
   { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }
-])(Root);
+])(Root)
 
 Root.propTypes = {
-  handleOpenMenu: PropTypes.func.isRequired,
+  handleOpenMenu: PropTypes.func.isRequired
 }
-
