@@ -33,7 +33,7 @@ const AuthorsListItem = ({ id, name, img, description }) => {
             <Button
               size="small"
               color="secondary"
-              onClick={() => history.push(`/author/${id}`)}
+              onClick={() => history.push(`/authors/${id}`)}
             >
               Learn More
             </Button>
