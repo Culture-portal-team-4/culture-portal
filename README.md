@@ -32,7 +32,7 @@ npm run build
 | 2h | data JSON creation |
 | 5h | learning project structure and technologies |
 | 2h | author description component |
-
+| 8h | main page |
 
 
 ## Description

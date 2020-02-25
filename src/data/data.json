@@ -47,8 +47,12 @@
           "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
-      "placeOfLiving": "Minsk"
+      "video": "https://www.youtube.com/embed/zOW38EpkgA8",
+      "placeOfLiving": "Minsk",
+      "locationsCoords": {
+        "lat": "53.9000000",
+        "lng": "27.5666700"
+      }
     },
     {
       "name": "Benedict Tyszkiewicz",
@@ -92,8 +96,12 @@
           "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=ZXLNSBkEpyU",
-      "placeOfLiving": " Nalibokskaya Pushcha"
+      "video": "https://www.youtube.com/embed/ZXLNSBkEpyU",
+      "placeOfLiving": " Nalibokskaya Pushcha",
+      "locationsCoords": {
+        "lat": "54.0088871",
+        "lng": "26.2513793"
+      }
     },
     {
       "name": "Jan Bułhak",
@@ -137,8 +145,12 @@
           "link": "https://planetabelarus.by/upload/medialibrary/3c5/3c5d68e488cf77a06c5213d844a0451b.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=MqbNbWbjLS0",
-      "placeOfLiving": "Novogrudok "
+      "video": "https://www.youtube.com/embed/MqbNbWbjLS0",
+      "placeOfLiving": "Novogrudok ",
+      "locationsCoords": {
+        "lat": "53.5942000",
+        "lng": "25.8191000"
+      }
     },
     {
       "name": "Sergei Brushko",
@@ -190,8 +202,12 @@
           "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=wFPNXczkHYg",
-      "placeOfLiving": "Maladziečna "
+      "video": "https://www.youtube.com/embed/wFPNXczkHYg",
+      "placeOfLiving": "Maladziečna",
+      "locationsCoords": {
+        "lat": "54.3167000",
+        "lng": "26.8540000"
+      }
     },
     {
       "name": "Aleh Lukashevich",
@@ -235,8 +251,12 @@
           "link": "https://www.velvet.by/files/userfiles/13522/309255_156487087773168_100002356342611_294692_223942174_n.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=3Hqz7yAsbWI",
-      "placeOfLiving": "Lyachavičy "
+      "video": "https://www.youtube.com/embed/3Hqz7yAsbWI",
+      "placeOfLiving": "Lyachavičy",
+      "locationsCoords": {
+        "lat": "53.0388000",
+        "lng": "26.2656000"
+      }
     }
   ],
   "developers": [
