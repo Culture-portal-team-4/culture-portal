@@ -24,14 +24,13 @@ const style = makeStyles(theme => ({
 function Root({ handleOpenMenu }) {
   const classes = style()
 
-  const [locale, setLocale] = useState( 'En')
   const dispatch = useDispatch()
-  const { data } = useSelector(state => ({
-    data: state.localeReducer,
+  const { data, locale } = useSelector(state => ({
+    data: state.localeReducer.data,
+    locale: state.localeReducer.locale,
   }))
 
   const handleLocaleChange = ({ target: { value } }) => {
-    setLocale(value)
     dispatch(changedLocale(value))
   }
 
