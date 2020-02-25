@@ -4,10 +4,9 @@ import { useHistory } from 'react-router-dom'
 import styles from './style'
 
 import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
-import Button from '@material-ui/core/Button'
+import CardActionArea from '@material-ui/core/CardActionArea'
 import { Grid, Typography } from '@material-ui/core'
 
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
@@ -20,24 +19,20 @@ const AuthorsListItem = ({ id, name, img, description }) => {
     <Grid item md={3} sm={4} xs={12}>
       <AnimationWrapper delay={0.1}>
         <Card>
-          <CardMedia component="img" className={classes.media} image={img} />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {name}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              size="small"
-              color="secondary"
-              onClick={() => history.push(`/authors/${id}`)}
-            >
-              Learn More
-            </Button>
-          </CardActions>
+          <CardActionArea onClick={() => history.push(/authors/${ id })}>
+            <CardMedia component="img" className={classes.media} image={img} />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {name}
+              </Typography>
+              <Typography variant="body2" color="textPrimary" component="p">
+                {description}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Learn More
+              </Typography>
+            </CardContent>
+          </CardActionArea>
         </Card>
       </AnimationWrapper>
     </Grid>

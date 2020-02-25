@@ -14,7 +14,7 @@ export default function AuthorsList({ photographers }) {
     () =>
       doFilter(photographers, search, [
         'name',
-        'yearsOfLife'
+        'placeOfLiving'
       ]).map(photographer => (
         <AuthorsListItem {...photographer} key={photographer.id} />
       )),
