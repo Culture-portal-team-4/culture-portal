@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment} from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
