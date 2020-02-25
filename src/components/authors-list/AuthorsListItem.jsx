@@ -19,7 +19,7 @@ const AuthorsListItem = ({ id, name, img, description }) => {
     <Grid item md={3} sm={4} xs={12}>
       <AnimationWrapper delay={0.1}>
         <Card>
-          <CardActionArea onClick={() => history.push(/authors/${ id })}>
+          <CardActionArea onClick={() => history.push(`/authors/${id}`)}>
             <CardMedia component="img" className={classes.media} image={img} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
