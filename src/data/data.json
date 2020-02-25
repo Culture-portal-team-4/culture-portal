@@ -2,12 +2,10 @@
   "mainPage": {
     "id": "1",
     "title": "Information on this portal is dedicated to\n\"Belarusian Photographers\"",
-    "rhyme": "In cold Belarus there once lived a bull \n  Who learned days and nights in Rolling scopes school \n\n React and redux, material and hooks\nOnce made him to think of photographers in Belarus\n\nThe bull used his brain and thoroughly thunk\nSo check out this site. Let’s hope it’s not junk! ",
-    "description": "So... The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
+    "description": "The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
   },
   "photographers": [
     {
-      "id": "1",
       "name": "Anton Prushinsky",
       "yearsOfLife": "1826-1863",
       "img": "https://img.tyt.by/n/fotofact/02/5/istoriya_foto_06.jpg",
@@ -49,7 +47,7 @@
           "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+      "video": "https://www.youtube.com/embed/zOW38EpkgA8",
       "placeOfLiving": "Minsk",
       "locationsCoords": {
         "lat": "53.9000000",
@@ -57,7 +55,6 @@
       }
     },
     {
-      "id": "2",
       "name": "Benedict Tyszkiewicz",
       "yearsOfLife": "1852-1935",
       "img": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
@@ -99,7 +96,7 @@
           "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=ZXLNSBkEpyU",
+      "video": "https://www.youtube.com/embed/ZXLNSBkEpyU",
       "placeOfLiving": " Nalibokskaya Pushcha",
       "locationsCoords": {
         "lat": "54.0088871",
@@ -107,7 +104,6 @@
       }
     },
     {
-      "id": "3",
       "name": "Jan Bułhak",
       "yearsOfLife": "1876–1950",
       "img": "https://planetabelarus.by/upload/medialibrary/925/9256e21c77f15c7ae072292cef39d8a4.jpg",
@@ -149,7 +145,7 @@
           "link": "https://planetabelarus.by/upload/medialibrary/3c5/3c5d68e488cf77a06c5213d844a0451b.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=MqbNbWbjLS0",
+      "video": "https://www.youtube.com/embed/MqbNbWbjLS0",
       "placeOfLiving": "Novogrudok ",
       "locationsCoords": {
         "lat": "53.5942000",
@@ -157,14 +153,13 @@
       }
     },
     {
-      "id": "4",
       "name": "Sergei Brushko",
       "yearsOfLife": "1958–2000",
       "img": "http://arhiv.znyata.com/brushko/brushko_sergej_400.jpg",
       "biography": [
         {
           "year": "1958",
-          "info": "Siarhei Brushko was born on 28 May 1958 in the town of Haradzieja, near Niasviž, Minsk Region"
+          "info": "Siarhei Brushko, born on 28 May 1958 in the town of Haradzieja, near Niasviž, Minsk Region"
         },
         {
           "year": "1964",
@@ -207,7 +202,7 @@
           "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=wFPNXczkHYg",
+      "video": "https://www.youtube.com/embed/wFPNXczkHYg",
       "placeOfLiving": "Maladziečna",
       "locationsCoords": {
         "lat": "54.3167000",
@@ -215,7 +210,6 @@
       }
     },
     {
-      "id": "5",
       "name": "Aleh Lukashevich",
       "yearsOfLife": "born March 27, 1972",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Aleh_Lukashevich._Cannes_Film_Festival.jpg/220px-Aleh_Lukashevich._Cannes_Film_Festival.jpg",
@@ -257,7 +251,7 @@
           "link": "https://www.velvet.by/files/userfiles/13522/309255_156487087773168_100002356342611_294692_223942174_n.jpg"
         }
       ],
-      "video": "https://www.youtube.com/watch?v=3Hqz7yAsbWI",
+      "video": "https://www.youtube.com/embed/3Hqz7yAsbWI",
       "placeOfLiving": "Lyachavičy",
       "locationsCoords": {
         "lat": "53.0388000",
@@ -278,13 +272,13 @@
     },
     {
       "name": "Marina",
-      "github": "https://github.com/slolkunchik",
-      "userPic": "https://avatars2.githubusercontent.com/u/43445836?s=460&v=4"
+      "github": "https://github.com/jetalai3",
+      "userPic": "https://avatars0.githubusercontent.com/u/18378501?s=400&v=4"
     },
     {
       "name": "Lena",
-      "github": "https://github.com/helly-15",
-      "userPic": "https://avatars3.githubusercontent.com/u/54313382?s=460&v=4"
+      "github": "https://github.com/slolkunchik",
+      "userPic": "https://avatars3.githubusercontent.com/u/43445836?s=400&v=4"
     },
     {
       "name": "Yulia",
