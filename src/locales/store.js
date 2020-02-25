@@ -9,7 +9,10 @@ export const changedLocale = (locale) => ({
   locale,
 });
 
-const initialState = EnData;
+const initialState = {
+  locale: 'En',
+  data: EnData
+}
 
 function defineData(locale) {
   switch (locale) {
@@ -28,7 +31,8 @@ export const localeReducer = (state = initialState, { locale, type }) => {
     case CHANGE_LOCALE:
       return {
         ...state,
-        ...newData,
+        data: newData,
+        locale: locale
       };
     default:
       return state;
