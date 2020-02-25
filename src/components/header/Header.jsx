@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './header-style'
-import { Typography, IconButton } from '@material-ui/core'
-import { Select } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
-import { LANGUAGES } from '../../locales/store'
+import CloseIcon from '@material-ui/icons/Close'
 
-const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
+const Header = ({ handleOpenMenu, open }) => {
   const classes = styles()
 
   return (
@@ -15,20 +13,11 @@ const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
       <div className={classes.headerContainer}>
         <div className={classes.boxLeft}>
           <IconButton onClick={handleOpenMenu}>
-            <MenuIcon />
+            {open ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>
-        <div className={classes.boxCenter}>
-          <div className={classes.logoText}>
-            <Typography variant="h4">Photographers of belarus</Typography>
-          </div>
-        </div>
         <div className={classes.boxRight}>
-          <Select id="select" value={locale} onChange={handleLocaleChange}>
-            {LANGUAGES.map(locale => {
-              return <MenuItem key={`${locale}Key`} value={locale}>{locale}</MenuItem>
-            })}
-          </Select>
+          <div className={classes.logoText}></div>
         </div>
       </div>
     </header>
@@ -36,9 +25,7 @@ const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
 }
 
 Header.propTypes = {
-  handleOpenMenu: PropTypes.func.isRequired,
-  locale: PropTypes.string.isRequired,
-  handleLocaleChange: PropTypes.func.isRequired,
+  select: PropTypes.string
 }
 
 export default Header
