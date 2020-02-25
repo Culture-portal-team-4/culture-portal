@@ -3,7 +3,16 @@
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   background-color: #f4f7f6ad;
+  height: inherit;
+}
+
+#root {
+  height: inherit;
 }
