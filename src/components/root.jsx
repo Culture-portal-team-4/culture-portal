@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
-import AuthorList from '../components/AuthorsList'
+import AuthorList from '../components/authors-list/AuthorsList'
 import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
 import withMenu from './HOC/withMenu'

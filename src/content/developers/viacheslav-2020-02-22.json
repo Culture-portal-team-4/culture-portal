@@ -1,0 +1,17 @@
+{
+  "title": "Viacheslav",
+  "github": "https://github.com/Viacheslav-ed",
+  "image": "/img/react.png",
+  "tasks": [
+    {
+      "task": "Create an organization on github.",
+      "description": "Create an organization on github and invait all members.",
+      "spent-time": "1"
+    }
+  ],
+  "fullName": {
+    "en": "Viacheslav Vozniuk",
+    "bu": "Вячаслаў Вознюк",
+    "ru": "Вячеслав Вознюк"
+  }
+}
