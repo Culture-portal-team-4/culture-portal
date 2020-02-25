@@ -84,11 +84,11 @@
     "masterpiece": [
       {
         "year": "1856",
-        "work": "My mother.Rosa."
+        "work": "by"
       },
       {
         "year": "1860",
-        "work": "Portrait of Vincent-Dunin Marcinkevich"
+        "work": "by"
       }
     ],
     "placeOfLiving": "Мінск"
@@ -127,11 +127,11 @@
     "masterpiece": [
       {
         "year": "1856",
-        "work": "My mother.Rosa."
+        "work": "ru"
       },
       {
         "year": "1860",
-        "work": "Portrait of Vincent-Dunin Marcinkevich"
+        "work": "ru"
       }
     ],
     "placeOfLiving": "Минск"
