@@ -1,15 +1,14 @@
 import React, {Fragment, useState} from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Header from './header/Header'
+import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/AuthorsList'
 import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
 import withMenu from './HOC/withMenu'
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
-import { changedLocale } from '../locales/store'
 import TeamList from './team-page/TeamList'
 import { Grid } from '@material-ui/core'
 
@@ -24,24 +23,14 @@ const style = makeStyles(theme => ({
 function Root({ handleOpenMenu }) {
   const classes = style()
 
-  const dispatch = useDispatch()
-  const { data, locale } = useSelector(state => ({
+  const { data } = useSelector(state => ({
     data: state.localeReducer.data,
-    locale: state.localeReducer.locale,
   }))
-
-  const handleLocaleChange = ({ target: { value } }) => {
-    dispatch(changedLocale(value))
-  }
-
   const { photographers } = data
 
   return (
     <Fragment>
-      <Header handleOpenMenu={handleOpenMenu}
-              locale={locale}
-              handleLocaleChange={handleLocaleChange}
-      />
+      <HeaderContainer handleOpenMenu={handleOpenMenu} />
       <main className={classes.main}>
         <Grid container spacing={2}>
           <Switch>
