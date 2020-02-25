@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react'
+import React, { Fragment, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
@@ -37,8 +37,8 @@ function Root({ handleOpenMenu }) {
             <Route exact path="/" component={Main} />
             <Route exact path="/authors" component={AuthorList} />
             <Route path="/authors/:id"
-                   render={(props) => <AuthorPage {...props}
-                                                  photographers={photographers}/>}
+              render={(props) => <AuthorPage {...props}
+                photographers={photographers} />}
             />
             <Route path="/team" component={TeamList} />
           </Switch>
