@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 import AuthorInformation from './author-information/AuthorInformation'
 import {useParams} from "react-router-dom";
@@ -16,7 +16,7 @@ const Author = ({ photographers }) => {
   const {biography, masterpiece, video, locationsCoords } = author
 
   return (
-      <Fragment>
+      <>
         <AuthorInformation author={ author }/>
 
         <ScrollableTabs
@@ -29,7 +29,7 @@ const Author = ({ photographers }) => {
               ]
             }
         />
-      </Fragment>
+      </>
   );
 };
 
