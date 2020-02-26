@@ -7,8 +7,9 @@ import AuthorsTimeline from "./timeline/AuthorsTimeline"
 import ArtistSWorks from "./artist's-works/ArtistSWorks"
 import Video from "./video/Video"
 import YandexMap from './YandexMap/YandexMap'
+import PhotoGallery from "./author-information/image-gallery/PhotoGallery";
 
-const TITLES = ['biography', 'works', 'video', 'places']
+const TITLES = ['biography', 'works', 'photo gallery', 'video', 'places']
 
 const Author = ({ photographers }) => {
   const {id} = useParams()
@@ -24,6 +25,7 @@ const Author = ({ photographers }) => {
             componentsList={[
               <AuthorsTimeline timeLineItems={ biography } />,
               <ArtistSWorks masterpiece={ masterpiece } />,
+              <PhotoGallery/>,
               <Video youTubeVideoUrl={video} id={id} />,
               <YandexMap locationsCoords={locationsCoords} />
               ]
