@@ -6,12 +6,12 @@
     {
       "task": "Create an organization on github.",
       "description": "Create an organization on github and invait all members.",
-      "spent-time": "1"
+      "spentTime": "1"
     }
   ],
   "fullName": {
     "en": "Viacheslav Vozniuk",
-    "bu": "Вячаслаў Вознюк",
+    "by": "Вячаслаў Вознюк",
     "ru": "Вячеслав Вознюк"
   }
 }
