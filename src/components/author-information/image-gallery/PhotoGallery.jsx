@@ -6,37 +6,28 @@ import Typography from "@material-ui/core/Typography";
 import {Grid} from "@material-ui/core";
 import {useParams} from "react-router-dom";
 import PropTypes from "prop-types";
-const imageSet = (id=0)=>{
-    let images= data.photographers[id].gallery.map((work)=>{
-        let imageObject = {};
-        imageObject.original = work.link;
-        imageObject.thumbnail = work.link;
-        return imageObject
-    });
-   return images;
 
-};
 
 PhotoGallery.propTypes = {
-    id: PropTypes.number
+    id: PropTypes.number,
+    photographers: PropTypes.array
 };
 PhotoGallery.defaultProps = {
     id: 0,
-
+    photographers: data.photographers
 };
 export default function PhotoGallery(props) {
     const {id} = useParams();
+    const {photographers} = props;
+        const getImageSet = () => photographers[id].gallery.map(({ link }) => ({ original: link, thumbnail: link }));
         return (
                 <Fragment>
                     <Grid item container direction="column" alignItems="center" sm={12}>
                         <Typography variant="h4" component="h1">
                             {'Gallery of works'}
                         </Typography>
-                    <ImageGallery items={imageSet(id)} description = {'Lolita'}/>
+                    <ImageGallery items={getImageSet()} />
                     </Grid>
                 </Fragment>
             )
-
-
-
 }

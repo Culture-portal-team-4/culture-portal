@@ -1,14 +1,14 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import AuthorInformation from "./author-information/AuthorInformation";
-import PhotoGallery from "./author-information/image-gallery/ImageGallery";
+import PhotoGallery from "./author-information/image-gallery/PhotoGallery";
 
 const Author = () => {
 
   return (
-      <Fragment>
+      <>
         <AuthorInformation />
         <PhotoGallery/>
-      </Fragment>
+      </>
 
   );
 };
