@@ -40,7 +40,7 @@ const headerStyle = makeStyles(theme => ({
     background: `linear-gradient(135deg, ${theme.palette.secondary.gradientStart} 20%, ${theme.palette.secondary.gradientEnd} 70%)`,
     textFillColor: 'transparent',
     WebkitBackgroundClip: 'text',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
   }
 }))
 

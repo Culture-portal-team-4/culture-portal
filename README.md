@@ -18,6 +18,12 @@ npm run build
 | 6h | add tabs element for styleguide |
 | 12h | setup Redux for changing language, apply redux hooks |
 | 0.5h | add thunk |
+| 2.5h | fix and refactor code for locale changes|
+| 0.5h | add list of artist's works with the date of creation  |
+| 0.75h | merge with develop branch  |
+| 2.5h | style artist's page, add tabs menu on this page |
+| 1h | add tabs menu on mane page |
+| 1.5h | style mane page |
 
 *Viacheslav*
 

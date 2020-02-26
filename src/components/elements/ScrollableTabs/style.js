@@ -7,6 +7,8 @@ const style = makeStyles(theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    backgroundColor: theme.palette.secondary.tabBackground,
+    marginTop: 10,
   },
 }))
 
