@@ -1,11 +1,32 @@
 {
   "title": "Lena",
   "github": "https://github.com/helly-15",
-  "image": "/img/react.png",
-  "tasks": [],
+  "image": "/img/img_20180421_110810.jpg",
+  "tasks": [
+    {
+      "task": "Add main page",
+      "description": "Added main page with description, TabPanel and component of the day",
+      "spentTime": "8h"
+    },
+    {
+      "task": "Photo gallery component",
+      "description": "Added photo gallery component to author description page",
+      "spentTime": "4h"
+    },
+    {
+      "task": "Author description with routing",
+      "description": "Added pages of author description and set routing to these pages",
+      "spentTime": "2h"
+    },
+    {
+      "task": "Data.json creation",
+      "description": "Made starting data.json  ",
+      "spentTime": "2h"
+    }
+  ],
   "fullName": {
-    "en": "en",
-    "by": "by",
-    "ru": "ru"
+    "en": "Elena Kytina",
+    "by": "Елена Кытина",
+    "ru": "Елена Кытина"
   }
 }
