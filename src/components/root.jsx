@@ -54,7 +54,7 @@ function Root({ handleOpenMenu, navigations, open }) {
         <Menu navigations={navigations} open={open} />
       </AnimationWrapper>
       <Box width="100%" height="100%">
-        <HeaderContainer handleOpenMenu={handleOpenMenu} />
+        <HeaderContainer handleOpenMenu={handleOpenMenu} open={open} />
         <Grid container spacing={2} className={classes.container}>
           <Switch>
             <Route exact path="/" component={Main} />

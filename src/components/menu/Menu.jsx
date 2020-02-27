@@ -16,7 +16,7 @@ const variants = {
   }
 }
 
-export default function Menu({ navigations, open, onClose }) {
+export default function Menu({ navigations, open }) {
   const classes = styles()
 
   return (
