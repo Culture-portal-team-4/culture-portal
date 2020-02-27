@@ -4,7 +4,7 @@ import data from '../../../data/data.json';
 import './image-gallery.css';
 import Typography from "@material-ui/core/Typography";
 import {Grid} from "@material-ui/core";
-import {useParams} from "react-router-dom";
+
 import PropTypes from "prop-types";
 
 
@@ -17,9 +17,9 @@ PhotoGallery.defaultProps = {
     photographers: data.photographers
 };
 export default function PhotoGallery(props) {
-    const {id} = useParams();
-    const {photographers} = props;
-        const getImageSet = () => photographers[id].gallery.map(({ link }) => ({ original: link, thumbnail: link }));
+
+    const {author} = props;
+        const getImageSet = () => author.gallery.map(({ link }) => ({ original: link, thumbnail: link }));
         return (
                 <Fragment>
                     <Grid item container direction="column" alignItems="center" sm={12}>
