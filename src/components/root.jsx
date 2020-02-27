@@ -35,7 +35,8 @@ function Root({ handleOpenMenu }) {
         <Grid container spacing={2}>
           <Switch>
             <Route exact path="/" component={Main} />
-            <Route exact path="/authors" component={AuthorList} />
+            <Route exact path="/authors" render={() => <AuthorList photographers={photographers}/>}
+                   />
             <Route path="/authors/:id"
                    render={(props) => <AuthorPage {...props}
                                                   photographers={photographers}/>}
