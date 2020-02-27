@@ -20,11 +20,11 @@ export default function AuthorInformation({ author }) {
     <Container>
       <Grid item container direction="column" alignItems="center" sm={12}>
         <Box mb={5} mt={5} >
-          <Avatar alt="Author Photo" src={author.img} variant="rounded" className={classes.large} />
+          <Avatar alt="Author Photo" src={author.image} variant="rounded" className={classes.large} />
         </Box>
         <Box  color="text.title" mb={2} >
           <Typography variant="h4" component="h1">
-            {author.name}
+            {author.title}
           </Typography>
         </Box>
 
