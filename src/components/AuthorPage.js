@@ -25,7 +25,7 @@ const Author = ({ photographers }) => {
             componentsList={[
               <AuthorsTimeline timeLineItems={ biography } />,
               <ArtistSWorks masterpiece={ masterpiece } />,
-              <PhotoGallery/>,
+              <PhotoGallery author={ author }/>,
               <Video youTubeVideoUrl={video} id={id} />,
               <YandexMap locationsCoords={locationsCoords} />
               ]

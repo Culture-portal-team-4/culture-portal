@@ -42,6 +42,7 @@ npm run build
 | 2h | author description component |
 | 8h | main page |
 | 4h | photo gallery |
+| 3h | bug fixing,connecting my components to redux,data editing|
 
 
 ## Description
