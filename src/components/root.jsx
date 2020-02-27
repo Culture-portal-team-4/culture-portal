@@ -1,9 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
-import AuthorList from '../components/authors-list/AuthorsList'
-import Main from '../components/Main'
-import AuthorPage from '../components/AuthorPage'
+import AuthorList from './authors-list/AuthorsList'
+import MainPage from './main-page/MainPage'
+import AuthorPage from './authorPage/AuthorPage'
 import withMenu from './HOC/withMenu'
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
@@ -34,7 +34,7 @@ function Root({ handleOpenMenu }) {
       <main className={classes.main}>
         <Grid container spacing={2}>
           <Switch>
-            <Route exact path="/" component={Main} />
+            <Route exact path="/" component={MainPage} />
             <Route exact path="/authors" component={AuthorList} />
             <Route path="/authors/:id"
                    render={(props) => <AuthorPage {...props}

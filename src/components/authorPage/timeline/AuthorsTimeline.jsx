@@ -2,7 +2,7 @@ import React from "react";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
-import theme from "../../config/material.theme";
+import theme from "../../../config/material.theme";
 
 AuthorsTimeline.propTypes = {
   timeLineItems: PropTypes.array.isRequired
