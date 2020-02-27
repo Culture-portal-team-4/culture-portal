@@ -1,19 +1,118 @@
 {
-  "team": [
+  "Denis": [
     {
-      "name": "Denis",
-      "work": [
-        {
-          "title": "Test",
-          "description": "Вчера заголовки релиза, анонсирующие открытие «Грошыка», были дерзкими. Обещали выпустить на волю «убийцу» российских «Светофора» и «Доброцена».",
-          "time": 1
-        },
-        {
-          "title": "Test2",
-          "description": "Вчера заголовки релиза, анонсирующие открытие «Грошыка», были дерзкими. Обещали выпустить на волю «убийцу» российских «Светофора» и «Доброцена».",
-          "time": 13
-        }
-      ]
+      "title": "Design and markup for main page",
+      "time": 14
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 5
+    },
+    {
+      "title": "Markup for author page",
+      "time": 2
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 11
+    },
+    {
+      "title": "Markup for author page",
+      "time": 9
+    }
+  ],
+  "Viktar": [
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    }
+  ],
+  "Marina": [
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    }
+  ],
+  "Lena": [
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    }
+  ],
+  "Yulia": [
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    }
+  ],
+  "Viacheslav": [
+    {
+      "title": "Design and markup for main page",
+      "time": 1
+    },
+    {
+      "title": "Markup for author page",
+      "time": 13
+    },
+    {
+      "title": "Design and markup for main page",
+      "time": 1
     }
   ]
 }

@@ -27,7 +27,7 @@ function Root({ handleOpenMenu }) {
   const { data } = useSelector(state => ({
     data: state.localeReducer.data
   }))
-  const { photographers } = data
+  const { photographers, developers } = data
 
   return (
     <Fragment>
@@ -44,7 +44,10 @@ function Root({ handleOpenMenu }) {
               )}
             />
             <Route path="/team" component={TeamList} />
-            <Route path="/worklog" component={Worklog} />
+            <Route
+              path="/worklog"
+              render={props => <Worklog {...props} developers={developers} />}
+            />
           </Switch>
         </Grid>
       </main>
