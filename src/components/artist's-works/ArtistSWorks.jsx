@@ -6,12 +6,14 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import StyledTableCell from './StyledTableCell/StyledTableCell'
+import styles from './artistSWorksStyles'
 
 export default function ArtistSWorks({ masterpiece }) {
+  const classes = styles()
 
   return (
     <TableContainer component={Paper}>
-      <Table aria-label="customized table">
+      <Table className={classes.root} aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>Works</StyledTableCell>

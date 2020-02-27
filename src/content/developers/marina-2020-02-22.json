@@ -31,7 +31,12 @@
     {
       "task": "styling mane page",
       "description": "fixed styles of the mane page for mobiles, added the tab menu",
-      "spentTime": "1.5h"
+      "spentTime": "2.5h"
+    },
+    {
+      "task": "fixed lang of the text",
+      "description": "fix - all text in English at first",
+      "spentTime": "1h"
     }
   ],
   "fullName": {

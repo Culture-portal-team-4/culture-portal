@@ -3,7 +3,8 @@ import {red} from "@material-ui/core/colors";
 
 const styles = makeStyles(theme => ({
     root: {
-        maxWidth: 1000,
+        maxWidth: 400,
+        margin: '0 auto',
     },
     media: {
         height: 0,
