@@ -6,8 +6,8 @@ backend:
     create: 'Netlify-cms: Create {{collection}} “{{slug}}”'
     update: 'Netlify-cms: Update {{collection}} “{{slug}}”'
     delete: 'Netlify-cms: Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    uploadMedia: 'Netlify-cms: Upload “{{path}}”'
+    deleteMedia: 'Netlify-cms: Delete “{{path}}”'
 
 media_folder: public/img
 public_folder: /img
