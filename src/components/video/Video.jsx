@@ -40,8 +40,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
       >
         <iframe
           onLoad={() => {
-            console.log("Video loaded");
-            setState({
+              setState({
               modalVisible: true,
               videoLoaded: true
             });
@@ -59,7 +58,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
 
 Video.propTypes = {
   youTubeVideoUrl: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   width: PropTypes.number,
   height: PropTypes.number
 };
