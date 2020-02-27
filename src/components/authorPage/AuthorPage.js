@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import AuthorInformation from './author-information/AuthorInformation'
-import {useParams} from "react-router-dom";
-import ScrollableTabs from './elements/ScrollableTabs/ScrollableTabs'
+import { useParams } from "react-router-dom";
+import ScrollableTabs from '../elements/ScrollableTabs/ScrollableTabs'
 import AuthorsTimeline from "./timeline/AuthorsTimeline"
 import ArtistSWorks from "./artist's-works/ArtistSWorks"
 import Video from "./video/Video"
 import YandexMap from './YandexMap/YandexMap'
-import PhotoGallery from "./author-information/image-gallery/PhotoGallery";
+import PhotoGallery from "./image-gallery/PhotoGallery";
 
 const TITLES = ['biography', 'works', 'photo gallery', 'video', 'places']
 

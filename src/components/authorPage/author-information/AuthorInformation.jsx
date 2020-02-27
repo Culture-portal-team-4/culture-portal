@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../data/data.json';
+import data from '../../../data/data.json';
 import styles from './author-information-style';
 import { Grid, Typography, Box } from '@material-ui/core';
 import Container from "@material-ui/core/Container";
