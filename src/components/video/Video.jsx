@@ -4,8 +4,10 @@ import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import Typography from "@material-ui/core/Typography";
+import styles from './videoStyles'
 
 function Video({ youTubeVideoUrl, id, width, height }) {
+  const classes = styles()
   const [state, setState] = useState({
     modalVisible: false,
     videoLoaded: false
@@ -19,8 +21,9 @@ function Video({ youTubeVideoUrl, id, width, height }) {
   const { modalVisible, videoLoaded } = state;
 
   return (
-    <>
+    <div className={classes.root}>
       <Button
+        className={classes.videoButton}
         size="small"
         color="secondary"
         variant="contained"
@@ -28,7 +31,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
       >
         <YouTubeIcon />{" "}
         <Typography variant="body2" color="textSecondary" component="p">
-          Смотреть видео
+          Watch the video
         </Typography>
       </Button>
       <Modal
@@ -39,6 +42,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
         }}
       >
         <iframe
+          className={classes.frame}
           onLoad={() => {
               setState({
               modalVisible: true,
@@ -52,7 +56,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
           height={height}
         />
       </Modal>
-    </>
+    </div>
   );
 }
 

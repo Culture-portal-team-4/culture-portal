@@ -49,9 +49,9 @@ function Root({ handleOpenMenu }) {
 }
 
 export default withMenu([
-  { title: 'Главная', icon: <HomeIcon />, path: '/' },
-  { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
-  { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }
+  { title: 'Main page', icon: <HomeIcon />, path: '/' },
+  { title: 'List of photographers', icon: <ListIcon />, path: '/authors' },
+  { title: 'Development team', icon: <ListIcon />, path: '/team' }
 ])(Root);
 
 Root.propTypes = {

@@ -26,7 +26,7 @@ export default function AuthorsList({ photographers }) {
       <Grid item sm={12}>
         <Box mb={2} color="text.title">
           <Typography variant="h4" component="h1">
-            Список фотографов
+            List of Belarusian photographers
           </Typography>
         </Box>
       </Grid>

@@ -1,6 +1,6 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import styles from './style'
+import styles from './scrollableTabsStyle'
 import StyledTab from './StyledTab/StyledTab'
 import StyledTabs from './StyledTabs/StyledTabs'
 import TabPanel from './TabPanel/TabPanel'
