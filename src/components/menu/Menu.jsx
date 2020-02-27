@@ -5,6 +5,17 @@ import { NavLink } from 'react-router-dom'
 import styles from './menu-style'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
+const variants = {
+  on: {
+    opacity: 1,
+    x: '0%'
+  },
+  off: {
+    opacity: 0,
+    x: '-100%'
+  }
+}
+
 export default function Menu({ navigations, open, onClose }) {
   const classes = styles()
 
@@ -17,6 +28,7 @@ export default function Menu({ navigations, open, onClose }) {
           index={index}
           key={navigation.title}
           show={open}
+          variants={variants}
         >
           <li>
             <NavLink

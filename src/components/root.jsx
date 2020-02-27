@@ -1,13 +1,14 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Header from './header/Header'
+import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
 import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
 import withMenu from './HOC/withMenu'
-
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
+import { useSelector } from 'react-redux'
+import PropTypes from 'prop-types'
 import TeamList from './team-page/TeamList'
 import { Grid, Box } from '@material-ui/core'
 
@@ -42,22 +43,28 @@ const variants = {
 function Root({ handleOpenMenu, navigations, open }) {
   const classes = style()
 
+  const { data } = useSelector(state => ({
+    data: state.localeReducer.data
+  }))
+  const { photographers } = data
+
   return (
     <main className={classes.main}>
       <AnimationWrapper show={open} variants={variants} delay={0}>
         <Menu navigations={navigations} open={open} />
       </AnimationWrapper>
       <Box width="100%" height="100%">
-        <Header
-          select="select lang"
-          handleOpenMenu={handleOpenMenu}
-          open={open}
-        />
+        <HeaderContainer handleOpenMenu={handleOpenMenu} />
         <Grid container spacing={2} className={classes.container}>
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/authors" component={AuthorList} />
-            <Route path="/authors/:id" component={AuthorPage} />
+            <Route
+              path="/authors/:id"
+              render={props => (
+                <AuthorPage {...props} photographers={photographers} />
+              )}
+            />
             <Route path="/team" component={TeamList} />
           </Switch>
         </Grid>
@@ -71,3 +78,7 @@ export default withMenu([
   { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
   { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }
 ])(Root)
+
+Root.propTypes = {
+  handleOpenMenu: PropTypes.func.isRequired
+}
