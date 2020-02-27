@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 import theme from "../../config/material.theme";
 
 AuthorsTimeline.propTypes = {
-  timeLineItems: PropTypes.object
+  timeLineItems: PropTypes.array.isRequired
 };
 
-function AuthorsTimeline(props) {
-  const { timeLineItems } = props;
+function AuthorsTimeline({ timeLineItems }) {
   const { palette } = theme;
+
   return (
     <Timeline lineColor={palette.secondary.lightBlue}>
       {timeLineItems.map((item, index) => {

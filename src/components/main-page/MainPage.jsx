@@ -26,8 +26,8 @@ export default function MainPage(props) {
                 <Box mb={5} mt={5} boxShadow={3}>
                     <Avatar alt="RS bull" src={logo} variant="rounded" className={classes.large} />
                 </Box>
-                <Box  color="text.title" mb={2} width={1/2}>
-                    <Typography variant="h5" component="h1" align = "center" paragraph={true}>
+                <Box  color="text.title" mb={2} width={2/3}>
+                    <Typography variant="h5" component="h5" align = "center" paragraph={true}>
                         {rhyme.split('\n').map((i,index) => {
                         return <p key ={index}>{i}</p>
                     })}
