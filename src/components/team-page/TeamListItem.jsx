@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia'
@@ -10,10 +10,7 @@ import ShareIcon from '@material-ui/icons/Share'
 import { Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
-
-const openUrl = url => {
-  window.open(url, '_blank')
-}
+import { openUrl } from '../../utils'
 
 export default function TeamListItem({ index, name, userPic, github }) {
   return (

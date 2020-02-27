@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
@@ -6,14 +6,16 @@ import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
 import withMenu from './HOC/withMenu'
 import HomeIcon from '@material-ui/icons/Home'
-import ListIcon from '@material-ui/icons/List'
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd'
+import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
+import AssignmentIcon from '@material-ui/icons/Assignment'
 import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import TeamList from './team-page/TeamList'
 import { Grid } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
-import Worklog from './worklog/Worklog'
+import Worklog from './worklog/WorkLog'
 
 const style = makeStyles(theme => ({
   main: {
@@ -27,7 +29,7 @@ function Root({ handleOpenMenu }) {
   const { data } = useSelector(state => ({
     data: state.localeReducer.data
   }))
-  const { photographers, developers } = data
+  const { photographers, developers, difficulties, evaluations } = data
 
   return (
     <Fragment>
@@ -46,7 +48,14 @@ function Root({ handleOpenMenu }) {
             <Route path="/team" component={TeamList} />
             <Route
               path="/worklog"
-              render={props => <Worklog {...props} developers={developers} />}
+              render={props => (
+                <Worklog
+                  {...props}
+                  developers={developers}
+                  difficulties={difficulties}
+                  evaluations={evaluations}
+                />
+              )}
             />
           </Switch>
         </Grid>
@@ -57,8 +66,13 @@ function Root({ handleOpenMenu }) {
 
 export default withMenu([
   { title: 'Главная', icon: <HomeIcon />, path: '/' },
-  { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
-  { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }
+  { title: 'Список фотографов', icon: <PhotoCameraIcon />, path: '/authors' },
+  {
+    title: 'Команда разработчиков',
+    icon: <AssignmentIndIcon />,
+    path: '/team'
+  },
+  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog' }
 ])(Root)
 
 Root.propTypes = {
