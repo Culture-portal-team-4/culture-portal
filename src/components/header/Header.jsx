@@ -19,9 +19,7 @@ const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
           </IconButton>
         </div>
         <div className={classes.boxCenter}>
-          <div className={classes.logoText}>
-            <Typography variant="h4">Photographers of belarus</Typography>
-          </div>
+          <Typography className={classes.logoText} variant="h4">Photographers of belarus</Typography>
         </div>
         <div className={classes.boxRight}>
           <Select id="select" value={locale} onChange={handleLocaleChange}>

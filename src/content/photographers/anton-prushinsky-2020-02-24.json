@@ -1,107 +1,139 @@
 {
   "title": "Anton Prushinsky",
-  "image": "/img/Anton Prushinsky.jpg",
+  "image": "https://img.tyt.by/n/fotofact/02/5/istoriya_foto_06.jpg",
   "yearsOfLife": "1826-1863",
+  "locationsCoords": {
+    "lat": "53.9000000",
+    "lng": "27.5666700"
+  },
+  "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
   "en": {
     "fullName": "Anton Prushinsky",
+    "description": "description",
     "gallery": [
       {
-        "title": "My mother.Rosa.",
-        "year": 1856,
+        "year": "1856",
         "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
       },
       {
-        "title": "Portrait of Vincent-Dunin Marcinkevich",
-        "year": 1860,
-        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+        "year": "1860",
+        "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
       }
     ],
     "biography": [
       {
-        "year": 1826,
+        "year": "1826",
         "info": "He was born in 1826, in the same year, when Joseph Nieps made the first photograph in the world in the French city of Le Gras, or rather heliogravure with a view from his window"
       },
       {
-        "year": 1850,
+        "year": "1850",
         "info": "When Prushinsky was 24 years old, he opened the first photo workshop in Belarus. It was located on the current Lenin Street in Minsk."
       },
       {
-        "year": 1856,
+        "year": "1856",
         "info": "The earliest photo of Prushinsky, which has been preserved, is considered the first Belarusian photograph. It depicts Prushinsky's mother - Rose. True, when looking at the photograph, it is not clear whether she considered the moment historical or, with censure, watched her son’s obscure hobby, when in 1858 Anton stood in front of her with an expensive apparatus discharged from abroad."
       },
       {
-        "year": 1863,
+        "year": "1863",
         "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
       }
     ],
     "masterpiece": [
       {
-        "year": 1859,
+        "year": "1859",
         "work": "My mother.Rosa."
       },
       {
-        "year": 1860,
+        "year": "1860",
         "work": "Portrait of Vincent-Dunin Marcinkevich"
       }
     ],
-    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
     "placeOfLiving": "Minsk"
   },
-  "bu": {
-    "fullName": " Антон Прушынскі",
-    "gallery": [],
+  "ru": {
+    "fullName": "Антон Прушинский",
+    "description": "description-ru",
+    "gallery": [
+      {
+        "year": "1856",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      },
+      {
+        "year": "1860",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      }
+    ],
     "biography": [
       {
-        "year": 1826,
-        "info": "be"
+        "year": "1826",
+        "info": "Он родился в 1826 году, в том же году, когда Джозеф Нипс сделал первую в мире фотографию во французском городе Ле-Гра, точнее гелиогравюру с видом из своего окна."
       },
       {
-        "year": 1850,
-        "info": "be"
+        "year": "1850",
+        "info": "Когда Прушинскому исполнилось 24 года, он открыл первое в Беларусии фотоателье. Оно было расположено на нынешней улице Ленина в Минске."
       },
       {
-        "year": 1856,
-        "info": "be"
+        "year": "1856",
+        "info": "Самая ранняя фотография Прушинского, которая сохранилась, считается первой белорусской фотографией. На ней изображена мать Прушинского - Роза. Правда, глядя на фотографию, неясно, считала ли она момент историческим или с осуждением смотрела на неясное увлечение сына, когда в 1858 году Антон стоял перед ней с дорогим аппаратом, выписанным из-за границы."
       },
       {
-        "year": 1863,
-        "info": "be"
+        "year": "1863",
+        "info": "После восстания фотограф был арестован и сослан в Томск."
       }
     ],
     "masterpiece": [
       {
-        "year": 1856,
-        "work": "My mother.Rosa."
+        "year": "1856",
+        "work": "Моя мама. Роза."
       },
       {
-        "year": 1860,
-        "work": "Portrait of Vincent-Dunin Marcinkevich"
+        "year": "1860",
+        "work": "Портрет Винсента-Дунина Марцинкевича"
       }
     ],
-    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
-    "placeOfLiving": "Мінск"
+    "placeOfLiving": "Минск"
   },
-  "ru": {
-    "fullName": " Антон Прушинский",
+  "by": {
+    "fullName": "Антон Прушынскі",
+    "description": "description-by",
+    "gallery": [
+      {
+        "year": "1856",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      },
+      {
+        "year": "1860",
+        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+      }
+    ],
     "biography": [
       {
-        "year": 1826,
-        "info": "ru"
+        "year": "1826",
+        "info": "Ён нарадзіўся ў 1826 годзе, у тым жа годзе, калі Джозэф Ніпс зрабіў першую ў свеце фатаграфію ў французскім горадзе Ле-Гра, а дакладней геліягравуру з выглядам са свайго акна."
       },
       {
-        "year": 1848,
-        "info": "ru"
+        "year": "1848",
+        "info": "Калі Прушынскаму было 24 гады, ён адкрыў першую ў Беларусі фотамайстэрню. Ён знаходзіўся на цяперашняй вуліцы Леніна ў Мінску."
       },
       {
-        "year": 1856,
-        "info": "ru"
+        "year": "1856",
+        "info": "Самая ранняя фатаграфія Прушынскага, якая захавалася, лічыцца першай беларускай фатаграфіяй. На ім намалявана маці Прушынскага - Ружа. Праўда, калі глядзець на фотаздымак, не зразумела, ці ўважае яна момант гістарычным, альбо з пагардай глядзела на незразумелае захапленне сына, калі ў 1858 г. Антон стаяў перад ёй з дарагім апаратам, выпісаным з-за мяжы."
       },
       {
-        "year": 1861,
-        "info": "ru"
+        "year": "1861",
+        "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
       }
     ],
-    "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
-    "placeOfLiving": "Минск"
+    "masterpiece": [
+      {
+        "year": "1856",
+        "work": "Мая мама.Роса."
+      },
+      {
+        "year": "1860",
+        "work": "Партрэт Вінцэнта-Дуніна Марцінкевіча."
+      }
+    ],
+    "placeOfLiving": "Мінск"
   }
 }

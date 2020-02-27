@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
 import AuthorList from '../components/authors-list/AuthorsList'
@@ -32,7 +32,7 @@ function Root({ handleOpenMenu }) {
   const { photographers, developers, difficulties, evaluations } = data
 
   return (
-    <Fragment>
+    <>
       <HeaderContainer handleOpenMenu={handleOpenMenu} />
       <main className={classes.main}>
         <Grid container spacing={2}>
@@ -60,7 +60,7 @@ function Root({ handleOpenMenu }) {
           </Switch>
         </Grid>
       </main>
-    </Fragment>
+    </>
   )
 }
 

@@ -7,7 +7,7 @@
   },
   "photographers": [
     {
-      "id": "1",
+      "id": "0",
       "name": "Anton Prushinsky",
       "yearsOfLife": "1826-1863",
       "img": "https://img.tyt.by/n/fotofact/02/5/istoriya_foto_06.jpg",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "2",
+      "id": "1",
       "name": "Benedict Tyszkiewicz",
       "yearsOfLife": "1852-1935",
       "img": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
@@ -107,7 +107,7 @@
       }
     },
     {
-      "id": "3",
+      "id": "2",
       "name": "Jan Bułhak",
       "yearsOfLife": "1876–1950",
       "img": "https://planetabelarus.by/upload/medialibrary/925/9256e21c77f15c7ae072292cef39d8a4.jpg",
@@ -157,7 +157,7 @@
       }
     },
     {
-      "id": "4",
+      "id": "3",
       "name": "Sergei Brushko",
       "yearsOfLife": "1958–2000",
       "img": "http://arhiv.znyata.com/brushko/brushko_sergej_400.jpg",
@@ -215,7 +215,7 @@
       }
     },
     {
-      "id": "5",
+      "id": "4",
       "name": "Aleh Lukashevich",
       "yearsOfLife": "born March 27, 1972",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Aleh_Lukashevich._Cannes_Film_Festival.jpg/220px-Aleh_Lukashevich._Cannes_Film_Festival.jpg",

@@ -47,6 +47,6 @@ export default function ScrollableTabs(props) {
 
 ScrollableTabs.propTypes = {
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
-  componentsList: PropTypes.arrayOf(PropTypes.elementType).isRequired,
+  componentsList: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
 

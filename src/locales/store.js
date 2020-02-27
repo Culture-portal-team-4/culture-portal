@@ -1,38 +1,27 @@
-import RuData from '../data/dataRU-test'
-import EnData from '../data/data'
+import { getDevelopers, getPhotographers } from "../services/data";
 
 const CHANGE_LOCALE = 'CHANGE_LOCALE'
-export const LANGUAGES = ['En', 'Ru']
+export const LANGUAGES = ['en', 'by', 'ru']
+
+const getData = locale => ({developers: getDevelopers(locale), photographers: getPhotographers(locale)});
 
 export const changedLocale = (locale) => ({
   type: CHANGE_LOCALE,
   locale,
+  data: getData(locale),
 });
 
 const initialState = {
-  locale: 'En',
-  data: EnData
+  locale: LANGUAGES[0],
+  data: getData(LANGUAGES[0]),
 }
 
-function defineData(locale) {
-  switch (locale) {
-    case 'Ru':
-      return RuData;
-    case 'En':
-      return EnData;
-    default:
-      return EnData;
-  }
-}
-
-export const localeReducer = (state = initialState, { locale, type }) => {
-  const newData = defineData(locale);
+export const localeReducer = (state = initialState, { type, locale, data }) => {
   switch (type) {
     case CHANGE_LOCALE:
       return {
-        ...state,
-        data: newData,
-        locale: locale
+        data,
+        locale,
       };
     default:
       return state;
