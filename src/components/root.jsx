@@ -4,7 +4,7 @@ import Header from './header/Header'
 import AuthorList from '../components/authors-list/AuthorsList'
 import Main from '../components/Main'
 import AuthorPage from '../components/AuthorPage'
-import MenuHOC from './HOC/withMenu'
+import withMenu from './HOC/withMenu'
 
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
@@ -66,7 +66,7 @@ function Root({ handleOpenMenu, navigations, open }) {
   )
 }
 
-export default MenuHOC([
+export default withMenu([
   { title: 'Главная', icon: <HomeIcon />, path: '/' },
   { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
   { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }

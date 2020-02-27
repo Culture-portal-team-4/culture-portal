@@ -25,7 +25,8 @@ const Header = ({ handleOpenMenu, open }) => {
 }
 
 Header.propTypes = {
-  select: PropTypes.string
+  handleOpenMenu: PropTypes.func,
+  open: PropTypes.bool
 }
 
 export default Header
