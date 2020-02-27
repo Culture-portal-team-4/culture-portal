@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
 import { Grid, Box } from '@material-ui/core'
 import Paper from '@material-ui/core/Paper'
@@ -41,4 +42,10 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       </Grid>
     </Grid>
   )
+}
+
+Worklog.propTypes = {
+  developers: PropTypes.array,
+  difficulties: PropTypes.array,
+  evaluations: PropTypes.array
 }
