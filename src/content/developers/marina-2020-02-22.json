@@ -1,11 +1,42 @@
 {
   "title": "Marina",
   "github": "https://github.com/slolkunchik",
-  "image": "/img/react.png",
-  "tasks": [],
+  "image": "/img/photo_2020-02-27_15-27-03-croped.jpg",
+  "tasks": [
+    {
+      "task": "Initial commit of the project",
+      "description": "Added base structure of the project with CRA",
+      "spentTime": "4h"
+    },
+    {
+      "task": "created styleguide ",
+      "description": "added tabs element for styleguide",
+      "spentTime": "6h"
+    },
+    {
+      "task": "added Redux, thunk",
+      "description": "setup Redux for changing language, applying Redux hooks",
+      "spentTime": "15h"
+    },
+    {
+      "task": "added mastrepieces component",
+      "description": "added list of artist's works with the date of creation",
+      "spentTime": "0.5h"
+    },
+    {
+      "task": "styling artist's page",
+      "description": "styling artist's page, add tabs menu on this page",
+      "spentTime": "2.5h"
+    },
+    {
+      "task": "styling mane page",
+      "description": "fixed styles of the mane page for mobiles, added the tab menu",
+      "spentTime": "1.5h"
+    }
+  ],
   "fullName": {
-    "en": "en",
-    "by": "by",
-    "ru": "ru"
+    "en": "Marina Sevkovich",
+    "by": "Марына Сяўковiч",
+    "ru": "Марина Севкович"
   }
 }
