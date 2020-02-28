@@ -37,6 +37,11 @@
       "task": "fixed lang of the text",
       "description": "fix - all text in English at first",
       "spentTime": "1h"
+    },
+    {
+      "task": "add new photographers",
+      "description": "add new photographers",
+      "spentTime": "2h"
     }
   ],
   "fullName": {

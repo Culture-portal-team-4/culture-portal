@@ -21,6 +21,9 @@ const useStyles = makeStyles({
     color: theme.palette.secondary.main,
     fontWeight: 500,
     marginLeft: theme.spacing(1)
+  },
+  root: {
+    height: '100%',
   }
 })
 

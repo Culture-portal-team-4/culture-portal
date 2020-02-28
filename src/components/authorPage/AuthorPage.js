@@ -7,7 +7,7 @@ import AuthorsTimeline from "./timeline/AuthorsTimeline"
 import ArtistSWorks from "./artist's-works/ArtistSWorks"
 import Video from "./video/Video"
 import YandexMap from './YandexMap/YandexMap'
-import PhotoGallery from "./image-gallery/PhotoGallery";
+import PhotoGallery from "./photo-gallery/PhotoGallery";
 
 const TITLES = ['biography', 'works', 'photo gallery', 'video', 'places']
 

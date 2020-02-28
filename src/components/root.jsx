@@ -46,7 +46,7 @@ function Root({ handleOpenMenu, navigations, open }) {
   const classes = style()
 
   const { data } = useSelector(state => ({
-    data: state.localeReducer.data
+    data: state.localeReducer.data,
   }))
   const { photographers, developers } = data
 
@@ -62,7 +62,7 @@ function Root({ handleOpenMenu, navigations, open }) {
             <Route
               exact
               path="/"
-              render={props => <MainPage photographers={photographers} />}
+              render={()=> <MainPage photographers={photographers}  developers={developers} />}
             />
             <Route
               exact
@@ -75,7 +75,11 @@ function Root({ handleOpenMenu, navigations, open }) {
                 <AuthorPage {...props} photographers={photographers} />
               )}
             />
-            <Route path="/team" component={TeamList} />
+            <Route path="/team"
+                   render={props => (
+                       <TeamList {...props} developers={developers} />
+                   )}
+            />
             <Route
               path="/worklog"
               render={props => <Worklog {...props} developers={developers} />}

@@ -1,12 +1,10 @@
-import React from "react";
-import data from "../../data/data.json";
-import TeamListItem from "./TeamListItem";
-import { Grid, Typography, Box } from "@material-ui/core";
-import { withTranslation } from "react-i18next";
+import React from 'react'
+import TeamListItem from './TeamListItem'
+import { Grid, Typography, Box } from '@material-ui/core'
+import PropTypes from "prop-types"
+import { withTranslation } from "react-i18next"
 
-function TeamList(props) {
-  const { developers } = data;
-  const { i18n } = props;
+function TeamList( { developers, i18n } ) {
   return (
     <Grid item container sm={12}>
       <Grid item sm={12}>
@@ -18,11 +16,17 @@ function TeamList(props) {
       </Grid>
       <Grid item container spacing={2} sm={12}>
         {developers.map((developer, index) => (
-          <TeamListItem {...developer} index={index} key={developer.name} />
+          <TeamListItem {...developer} index={index} key={developer.title} />
         ))}
       </Grid>
     </Grid>
-  );
+  )
+}
+
+TeamList.propTypes = {
+    developers: PropTypes.array.isRequired,
 }
 
 export default withTranslation()(TeamList);
+
+

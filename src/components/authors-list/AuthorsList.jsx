@@ -1,11 +1,10 @@
-import React, { useState, useMemo } from "react";
-import PropTypes from "prop-types";
-import data from "../../data/data.json";
-import { Grid, Typography } from "@material-ui/core";
-import SearchField from "../elements/TextField/SearchField";
-import AuthorsListItem from "./AuthorsListItem";
-import { doFilter } from "../../utils";
-import { withTranslation } from "react-i18next";
+import React, { useState, useMemo } from 'react'
+import PropTypes from 'prop-types'
+import { Grid, Typography } from '@material-ui/core'
+import SearchField from '../elements/TextField/SearchField'
+import AuthorsListItem from './AuthorsListItem'
+import { doFilter } from '../../utils'
+import { withTranslation } from "react-i18next"
 
 function AuthorsList({ photographers, i18n }) {
   const [search, setSearch] = useState(null);
@@ -53,10 +52,6 @@ AuthorsList.propTypes = {
       description: PropTypes.string
     })
   )
-};
-
-AuthorsList.defaultProps = {
-  photographers: data.photographers
 };
 
 export default withTranslation()(AuthorsList);

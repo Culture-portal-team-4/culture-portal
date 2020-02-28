@@ -9,7 +9,6 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import styles from './AuthorOfDayStyles';
-import data from '../../../data/data.json';
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
@@ -18,15 +17,12 @@ const getRandomArbitrary=() =>{
 };
 
 AuthorOfDay.propTypes = {
-    randomAuthorData: PropTypes.array
-};
-AuthorOfDay.defaultProps = {
-    randomAuthorData: data.photographers,
+    photographers: PropTypes.array.isRequired,
 };
 
-export default function AuthorOfDay(props) {
+export default function AuthorOfDay({photographers}) {
     const classes = styles();
-    const randomAuthorDetails = props.randomAuthorData[getRandomArbitrary()];
+    const randomAuthorDetails = photographers[getRandomArbitrary()];
     return (
         <Card className={classes.root}>
             <CardHeader

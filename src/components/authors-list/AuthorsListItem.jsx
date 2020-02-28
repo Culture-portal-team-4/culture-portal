@@ -1,17 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useHistory } from "react-router-dom";
-import styles from "./style";
-
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import { Grid, Typography } from "@material-ui/core";
-import { withTranslation } from "react-i18next";
-
-import AnimationWrapper from "../animation-wrapper/AnimationWrapper";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useHistory } from 'react-router-dom'
+import styles from './style'
+import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import { Grid, Typography } from '@material-ui/core'
+import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
+import { withTranslation } from "react-i18next"
 
 const AuthorsListItem = ({
   id,
@@ -21,13 +19,13 @@ const AuthorsListItem = ({
   placeOfLiving,
   i18n
 }) => {
-  const classes = styles();
-  const history = useHistory();
+  const classes = styles()
+  const history = useHistory()
 
   return (
     <Grid item md={3} sm={4} xs={12}>
-      <AnimationWrapper delay={0.1} style={{ height: "100%" }}>
-        <Card style={{ height: "100%" }}>
+      <AnimationWrapper delay={0.1} className={classes.root}>
+        <Card style={{ height: '100%' }}>
           <CardActionArea
             onClick={() => history.push(`/authors/${id}`)}
             className={classes.card}
@@ -62,14 +60,14 @@ const AuthorsListItem = ({
         </Card>
       </AnimationWrapper>
     </Grid>
-  );
-};
+  )
+}
 
 AuthorsListItem.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,
   img: PropTypes.string,
   description: PropTypes.string
-};
+}
 
 export default React.memo(withTranslation()(AuthorsListItem));

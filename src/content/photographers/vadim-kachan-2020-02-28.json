@@ -1,15 +1,15 @@
 {
   "title": "Vadim Kachan",
-  "image": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%87%D0%B0%D0%BD,_%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87#/media/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87_%D0%9A%D0%B0%D1%87%D0%B0%D0%BD.jpeg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87_%D0%9A%D0%B0%D1%87%D0%B0%D0%BD.jpeg",
   "yearsOfLife": "1958 ",
-  "video": "https://www.youtube.com/watch?v=KfV1F1qSu_k",
+  "video": "https://www.youtube.com/embed/iVRBdOqvo00",
   "locationsCoords": {
     "lat": "52.1558",
     "lng": "25.5157"
   },
   "en": {
     "fullName": "Vadim Kachan",
-    "description": "He is one of the organizers and the first chairman of the Belarusian Public Association \"Photography\" in 2003. Actively participates in collective exhibitions in different countries, a number of his personal exhibitions are held. Since 2007 she has been teaching photography.",
+    "description": "He is one of the organizers and the first chairman of the Belarusian Public Association \"Photography\" in 2003. Actively participates in collective exhibitions in different countries. Since 2007 she has been teaching photography.",
     "gallery": [
       {
         "year": "2010",
@@ -76,7 +76,7 @@
   },
   "by": {
     "fullName": "Вадзім Качан",
-    "description": "Ён з'яўляецца адным з арганізатараў і першым старшынёй Беларускага грамадскага аб'яднання \"Фатаграфія\" ў 2003 годзе. Актыўна ўдзельнічае ў калектыўных выставах у розных краінах, праводзіцца шэраг яго персанальных выставак. З 2007 года яна выкладае фатаграфію.",
+    "description": "Ён з'яўляецца адным з арганізатараў і першым старшынёй Беларускага грамадскага аб'яднання \"Фатаграфія\" ў 2003 годзе. Актыўна ўдзельнічае ў калектыўных выставах у розных краінах. З 2007 года яна выкладае фатаграфію.",
     "gallery": [
       {
         "year": "2010",
@@ -143,7 +143,7 @@
   },
   "ru": {
     "fullName": "Вадим Качан",
-    "description": "Он является одним из организаторов и первым председателем Белорусского общественного объединения «Фотография» в 2003 году. Активно участвует в коллективных выставках в разных странах, проводится ряд его персональных выставок. С 2007 года она преподает фотографию.",
+    "description": "Он является одним из организаторов и первым председателем Белорусского общественного объединения «Фотография» в 2003 году. Активно участвует в коллективных выставках в разных странах. С 2007 года она преподает фотографию.",
     "gallery": [
       {
         "year": "2010",
