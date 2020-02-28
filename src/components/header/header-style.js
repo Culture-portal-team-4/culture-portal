@@ -38,6 +38,14 @@ const headerStyle = makeStyles(theme => ({
   },
   logoText: {
     color: 'white'
+  },
+  select: {
+    '& div': {
+      color: '#fff'
+    },
+    '& svg': {
+      color: '#fff'
+    }
   }
 }))
 

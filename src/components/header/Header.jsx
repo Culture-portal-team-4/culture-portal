@@ -37,7 +37,12 @@ const Header = ({ handleOpenMenu, handleLocaleChange, locale, open }) => {
           </Typography>
         </div>
         <div className={classes.boxRight}>
-          <Select id="select" value={locale} onChange={handleLocaleChange}>
+          <Select
+            id="select"
+            value={locale}
+            onChange={handleLocaleChange}
+            className={classes.select}
+          >
             {LANGUAGES.map(locale => {
               return (
                 <MenuItem key={`${locale}Key`} value={locale}>

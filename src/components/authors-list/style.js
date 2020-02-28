@@ -3,6 +3,7 @@ import theme from '../../config/material.theme'
 
 const useStyles = makeStyles({
   media: {
+    minHeight: 240,
     maxHeight: 240,
     objectFit: 'contain',
     display: 'block',

@@ -18,6 +18,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import Worklog from './worklog/WorkLog'
 import Menu from './menu/Menu'
 import AnimationWrapper from './animation-wrapper/AnimationWrapper'
+import FullScreenDialog from './menu/MobileMenu'
+import { useMediaQuery } from 'react-responsive'
 
 const style = makeStyles(theme => ({
   main: {
@@ -26,7 +28,8 @@ const style = makeStyles(theme => ({
   },
   container: {
     padding: theme.spacing(4, 2, 2, 2),
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    height: 'calc(100% - 80px)'
   }
 }))
 
@@ -44,6 +47,7 @@ const variants = {
 }
 function Root({ handleOpenMenu, navigations, open }) {
   const classes = style()
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
   const { data } = useSelector(state => ({
     data: state.localeReducer.data
@@ -52,12 +56,21 @@ function Root({ handleOpenMenu, navigations, open }) {
 
   return (
     <main className={classes.main}>
-      <AnimationWrapper show={open} variants={variants} delay={0}>
-        <Menu navigations={navigations} open={open} />
-      </AnimationWrapper>
+      {isTabletOrMobile ? (
+        <FullScreenDialog
+          navigations={navigations}
+          open={open}
+          handleOpenMenu={handleOpenMenu}
+        />
+      ) : (
+        <AnimationWrapper show={open} variants={variants} delay={0}>
+          <Menu navigations={navigations} open={open} />
+        </AnimationWrapper>
+      )}
+
       <Box width="100%" height="100%">
         <HeaderContainer handleOpenMenu={handleOpenMenu} open={open} />
-        <Grid container spacing={2} className={classes.container}>
+        <Grid container className={classes.container}>
           <Switch>
             <Route
               exact
@@ -88,18 +101,20 @@ function Root({ handleOpenMenu, navigations, open }) {
 }
 
 export default withMenu([
-  { title: 'Main page', icon: <HomeIcon />, path: '/' },
+  { title: 'Main page', icon: <HomeIcon />, path: '/', exact: true },
   {
     title: 'List of photographers',
     icon: <PhotoCameraIcon />,
-    path: '/authors'
+    path: '/authors',
+    exact: false
   },
   {
     title: 'Development team',
     icon: <AssignmentIndIcon />,
-    path: '/team'
+    path: '/team',
+    exact: true
   },
-  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog' }
+  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog', exact: true }
 ])(Root)
 
 Root.propTypes = {

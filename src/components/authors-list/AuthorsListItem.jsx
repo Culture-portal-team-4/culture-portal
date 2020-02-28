@@ -8,8 +8,7 @@ import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardActionArea from '@material-ui/core/CardActionArea'
-import { Grid, Typography } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
+import { Grid, Typography, Box } from '@material-ui/core'
 
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
@@ -36,27 +35,34 @@ const AuthorsListItem = ({
               className={classes.media}
               image={image}
             />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {fullName}
-              </Typography>
-              <Typography
-                variant="inherit"
-                component="h5"
-                gutterBottom={true}
-                paragraph={true}
-              >
-                {placeOfLiving}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {description}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Typography variant="button" className={classes.cardMore}>
-                Learn More
-              </Typography>
-            </CardActions>
+            <Box
+              height="100%"
+              display="flex"
+              flexDirection="column"
+              justifyContent="space-between"
+            >
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {fullName}
+                </Typography>
+                <Typography
+                  variant="inherit"
+                  component="h5"
+                  gutterBottom={true}
+                  paragraph={true}
+                >
+                  {placeOfLiving}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Typography variant="button" className={classes.cardMore}>
+                  Learn More
+                </Typography>
+              </CardActions>
+            </Box>
           </CardActionArea>
         </Card>
       </AnimationWrapper>

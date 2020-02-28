@@ -23,17 +23,14 @@ const COLORS = [
   '#9ff100'
 ]
 
-const variants = {
-  on: {
-    opacity: 1,
-    y: '0%'
-  },
-  off: {
-    opacity: 0,
-    y: '100%'
-  }
-}
-export default function WorkLogTime({ index, title, image, github, tasks }) {
+export default function WorkLogTime({
+  index,
+  title,
+  image,
+  github,
+  tasks,
+  variants
+}) {
   const classes = style()
 
   const works = tasks.sort((a, b) => doSort(a, b, 'spentTime'))
@@ -63,7 +60,7 @@ export default function WorkLogTime({ index, title, image, github, tasks }) {
   }
 
   return (
-    <Grid item md={4} sm={6} xs={12}>
+    <Grid item lg={3} md={4} sm={6} xs={12}>
       <AnimationWrapper
         index={index}
         variants={variants}
