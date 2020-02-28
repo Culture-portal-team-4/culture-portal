@@ -27,9 +27,9 @@ const Header = ({ handleOpenMenu, handleLocaleChange, locale, open }) => {
                 case 'en':
                   return 'Photographers of Belarus'
                 case 'ru':
-                  return 'Фотографы Белоруссии'
+                  return 'Фотографы Беларуси'
                 case 'by':
-                  return 'фатографы БЕЛАРУСІ'
+                  return 'Фатографы Беларусі'
                 default:
                   return 'Photographers of Belarus'
               }

@@ -1,11 +1,32 @@
 {
   "title": "Viktar",
   "github": "https://github.com/jetalai3",
-  "image": "/img/react.png",
-  "tasks": [],
+  "image": "/img/ViktarSvintsitski.png",
+  "tasks": [
+    {
+      "task": "Add timeline component",
+      "description": "Add vertical-timeline-component-for-react",
+      "spentTime": "2h"
+    },
+    {
+      "task": "Add map component",
+      "description": "Add YandexMap component",
+      "spentTime": "2h"
+    },
+    {
+      "task": "Add video component",
+      "description": "Add video component with modal overlay",
+      "spentTime": "2h"
+    },
+    {
+      "task": "Add 3-language interface localization",
+      "description": "Add localization using i18next library for react",
+      "spentTime": "5h"
+    }
+  ],
   "fullName": {
-    "en": "en",
-    "by": "by",
-    "ru": "ru"
+    "en": "Viktar Svintsitski",
+    "by": "Вiктар Свiнцiцкi",
+    "ru": "Виктор Свинцицкий"
   }
 }
