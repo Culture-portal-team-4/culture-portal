@@ -22,6 +22,11 @@
       "task": "Data.json creation",
       "description": "Made starting data.json  ",
       "spentTime": "2h"
+    },
+    {
+      "task": "bug fixing",
+      "description": "fixing bugs",
+      "spentTime": "8h"
     }
   ],
   "fullName": {
