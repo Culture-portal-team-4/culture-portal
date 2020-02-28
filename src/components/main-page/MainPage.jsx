@@ -6,8 +6,9 @@ import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
 import logo from "./logo.png";
 import Button from "@material-ui/core/Button";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import TabPanelDescription from "./tab-panel/TabPanelDescription";
+import { withTranslation } from "react-i18next";
 
 const  mainPageData = {
     "title": "Information on this portal is dedicated to\n\"Belarusian Photographers\"",
@@ -20,7 +21,7 @@ MainPage.propTypes = {
    developers:PropTypes.array.isRequired,
 };
 
-export default function MainPage({developers, photographers }) {
+function MainPage({developers, photographers, i18n }) {
     const classes = styles();
     const  rhyme = mainPageData.rhyme;
     return (
@@ -38,9 +39,7 @@ export default function MainPage({developers, photographers }) {
                 </Box>
 
                 <Button>
-                   <Link to={"/authors"}>
-                       Want to know more?
-                   </Link>
+                    <Link to={"/authors"}>{i18n.t("wantToLearnMore")}</Link>
                 </Button>
                 <TabPanelDescription
                     mainPageData={mainPageData}
@@ -48,6 +47,7 @@ export default function MainPage({developers, photographers }) {
                     developers={ developers }/>
             </Grid>
         </Container>
-
     )
 }
+
+export default withTranslation()(MainPage);

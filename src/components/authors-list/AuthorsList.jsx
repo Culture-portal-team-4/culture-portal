@@ -4,33 +4,34 @@ import { Grid, Typography } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
 import AuthorsListItem from './AuthorsListItem'
 import { doFilter } from '../../utils'
+import { withTranslation } from "react-i18next"
 
-export default function AuthorsList({ photographers }) {
-  const [search, setSearch] = useState(null)
+function AuthorsList({ photographers, i18n }) {
+  const [search, setSearch] = useState(null);
 
   const filterAuthors = useMemo(
     () =>
       doFilter(photographers, search, [
-        'fullName',
-        'yearsOfLife',
-        'placeOfLiving'
+        "fullName",
+        "yearsOfLife",
+        "placeOfLiving"
       ]).map(photographer => (
         <AuthorsListItem {...photographer} key={photographer.id} />
       )),
     [photographers, search]
-  )
+  );
 
   return (
     <>
       <Grid item container justify="space-between" alignItems="center" sm={12}>
         <Typography variant="h4" component="h1">
-          List of Belarusian photographers
+          {i18n.t("photographersList")}
         </Typography>
         <Grid item md={3} sm={3} xs={3}>
           <SearchField
-            placeholder="Search photographers"
+            placeholder={i18n.t("search")}
             onChange={event => {
-              setSearch(event.target.value)
+              setSearch(event.target.value);
             }}
           />
         </Grid>
@@ -39,7 +40,7 @@ export default function AuthorsList({ photographers }) {
         {filterAuthors}
       </Grid>
     </>
-  )
+  );
 }
 
 AuthorsList.propTypes = {
@@ -49,7 +50,8 @@ AuthorsList.propTypes = {
       name: PropTypes.string,
       img: PropTypes.string,
       description: PropTypes.string
-    }).isRequired
+    })
   )
-}
+};
 
+export default withTranslation()(AuthorsList);

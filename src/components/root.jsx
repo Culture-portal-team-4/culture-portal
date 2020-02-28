@@ -92,18 +92,18 @@ function Root({ handleOpenMenu, navigations, open }) {
 }
 
 export default withMenu([
-  { title: 'Main page', icon: <HomeIcon />, path: '/' },
+  { title: 'mainPage', icon: <HomeIcon />, path: '/' },
   {
-    title: 'List of photographers',
+    title: 'photographers',
     icon: <PhotoCameraIcon />,
     path: '/authors'
   },
   {
-    title: 'Development team',
+    title: 'developerTeam',
     icon: <AssignmentIndIcon />,
     path: '/team'
   },
-  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog' }
+  { title: 'worklog', icon: <AssignmentIcon />, path: '/worklog' }
 ])(Root)
 
 Root.propTypes = {

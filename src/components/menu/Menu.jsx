@@ -4,6 +4,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { NavLink } from 'react-router-dom'
 import styles from './menu-style'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
+import { withTranslation } from 'react-i18next';
 
 const variants = {
   on: {
@@ -16,7 +17,7 @@ const variants = {
   }
 }
 
-export default function Menu({ navigations, open }) {
+function Menu({ navigations, open, i18n }) {
   const classes = styles()
 
   return (
@@ -40,7 +41,7 @@ export default function Menu({ navigations, open }) {
               <ListItemIcon className={classes.listItemIcon}>
                 {navigation.icon}
               </ListItemIcon>
-              <Typography>{navigation.title}</Typography>
+              <Typography>{i18n.t(navigation.title)}</Typography>
             </NavLink>
           </li>
         </AnimationWrapper>
@@ -48,3 +49,5 @@ export default function Menu({ navigations, open }) {
     </ul>
   )
 }
+
+export default withTranslation()(Menu);

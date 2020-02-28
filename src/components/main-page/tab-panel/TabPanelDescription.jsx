@@ -4,6 +4,7 @@ import AuthorOfDay from "../author-of-day/AuthorOfDay"
 import TeamList from "../../team-page/TeamList"
 import ScrollableTabs from "../../elements/ScrollableTabs/ScrollableTabs"
 import Description from '../description/Description'
+import { withTranslation } from 'react-i18next';
 
 TabPanelDescription.propTypes = {
   mainPageData: PropTypes.object.isRequired,
@@ -11,9 +12,9 @@ TabPanelDescription.propTypes = {
   photographers: PropTypes.array.isRequired
 };
 
-export default function TabPanelDescription({developers, mainPageData, photographers}) {
+function TabPanelDescription({developers, mainPageData, photographers, i18n}) {
   const description = mainPageData.description;
-  const TITLES = ['Intro', 'Author of the day', 'Developer team'];
+  const TITLES = [i18n.t("intro"), i18n.t("authorOfTheDay"), i18n.t("developerTeam")]
 
   return (
     <ScrollableTabs
@@ -26,3 +27,5 @@ export default function TabPanelDescription({developers, mainPageData, photograp
     />
   );
 }
+
+export default withTranslation()(TabPanelDescription);

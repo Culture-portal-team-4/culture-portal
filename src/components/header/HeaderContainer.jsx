@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
 import { changedLocale } from '../../locales/store'
 import Header from './Header'
+import i18n from "../../i18n"
 
 const HeaderContainer = ({ handleOpenMenu, open }) => {
   const dispatch = useDispatch()
@@ -12,6 +13,7 @@ const HeaderContainer = ({ handleOpenMenu, open }) => {
 
   const handleLocaleChange = ({ target: { value } }) => {
     dispatch(changedLocale(value))
+    i18n.changeLanguage(value);
   }
 
   return (
