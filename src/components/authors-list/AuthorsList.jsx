@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import data from '../../data/data.json'
-
 import { Grid, Typography, Box } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
 import AuthorsListItem from './AuthorsListItem'
@@ -13,8 +12,9 @@ export default function AuthorsList({ photographers }) {
   const filterAuthors = useMemo(
     () =>
       doFilter(photographers, search, [
-        'name',
-        'yearsOfLife'
+        'fullName',
+        'yearsOfLife',
+         'placeOfLiving'
       ]).map(photographer => (
         <AuthorsListItem {...photographer} key={photographer.id} />
       )),
@@ -23,9 +23,9 @@ export default function AuthorsList({ photographers }) {
 
   return (
     <>
-      <Grid item sm={12}>
-        <Box mb={2} color="text.title">
-          <Typography variant="h4" component="h1">
+      <Grid item container justify="center" alignItems="center" sm={12}>
+        <Box mb={2} color="text.title" >
+          <Typography variant="h4" component="h1" >
             List of Belarusian photographers
           </Typography>
         </Box>

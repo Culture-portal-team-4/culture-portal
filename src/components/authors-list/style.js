@@ -2,7 +2,12 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
   media: {
-    height: 240
+    maxHeight: 240,
+    objectFit:'contain',
+    display: 'block',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center'
   }
 })
 

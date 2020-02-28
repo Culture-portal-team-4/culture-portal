@@ -12,7 +12,7 @@ import { Grid, Typography } from '@material-ui/core'
 
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
-const AuthorsListItem = ({ id, title, image, description }) => {
+const AuthorsListItem = ({ id, fullName, image, description, placeOfLiving }) => {
   const classes = styles()
   const history = useHistory()
 
@@ -23,11 +23,15 @@ const AuthorsListItem = ({ id, title, image, description }) => {
           <CardMedia component="img" className={classes.media} image={image} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {title}
+              {fullName}
+            </Typography>
+            <Typography variant="inherit" component="h5" gutterBottom={true} paragraph={true}>
+            {placeOfLiving}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {description}
             </Typography>
+
           </CardContent>
           <CardActions>
             <Button
