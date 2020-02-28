@@ -11,14 +11,15 @@ import {Link} from "react-router-dom";
 import TabPanelDescription from "./tab-panel/TabPanelDescription";
 
 MainPage.propTypes = {
-    mainPageData: PropTypes.object
+    mainPageData: PropTypes.object,
+    photographers:PropTypes.array
 };
 MainPage.defaultProps = {
     mainPageData: data.mainPage,
+    photographers:data.photographers
 };
 export default function MainPage(props) {
     const classes = styles();
-
     const  rhyme = props.mainPageData.rhyme;
     return (
         <Container>
@@ -39,7 +40,7 @@ export default function MainPage(props) {
                        Want to know more?
                    </Link>
                 </Button>
-                <TabPanelDescription/>
+                <TabPanelDescription mainPageData={props.mainPageData} randomAuthorData={props.photographers}/>
             </Grid>
         </Container>
 

@@ -22,7 +22,18 @@ const Header = ({ handleOpenMenu, handleLocaleChange, locale, open }) => {
         </div>
         <div className={classes.boxCenter}>
           <Typography className={classes.logoText} variant="h4">
-            Photographers of belarus
+            {(() => {
+              switch (locale) {
+                case 'en':
+                  return 'Photographers of Belarus'
+                case 'ru':
+                  return 'Фотографы Белоруссии'
+                case 'by':
+                  return 'фатографы БЕЛАРУСІ'
+                default:
+                  return 'Photographers of Belarus'
+              }
+            })()}
           </Typography>
         </div>
         <div className={classes.boxRight}>

@@ -32,19 +32,19 @@ export default function AuthorOfDay(props) {
             <CardHeader
                 avatar={
                     <Avatar aria-label="recipe" className={classes.avatar}>
-                        {randomAuthorDetails.name[0]}
+                        {randomAuthorDetails.fullName[0]}
                     </Avatar>
                 }
-                title={randomAuthorDetails.name}
+                title={randomAuthorDetails.fullName}
                 subheader={randomAuthorDetails.yearsOfLife}
             />
             <CardMedia
                 className={classes.media}
-                image={randomAuthorDetails.img}
+                image={randomAuthorDetails.image}
             />
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {randomAuthorDetails.biography[0].info}
+                    {randomAuthorDetails.description}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
@@ -56,7 +56,6 @@ export default function AuthorOfDay(props) {
                     </Link>
                 </IconButton>
             </CardActions>
-
         </Card>
     );
 }

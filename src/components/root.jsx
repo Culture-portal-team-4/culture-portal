@@ -1,9 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import HeaderContainer from './header/HeaderContainer'
-import AuthorList from '../components/authors-list/AuthorsList'
-import Main from '../components/Main'
-import AuthorPage from '../components/AuthorPage'
+import AuthorList from './authors-list/AuthorsList'
+import MainPage from './main-page/MainPage'
+import AuthorPage from './authorPage/AuthorPage'
 import withMenu from './HOC/withMenu'
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List'
@@ -39,7 +39,6 @@ const variants = {
     marginLeft: '-300px'
   }
 }
-
 function Root({ handleOpenMenu, navigations, open }) {
   const classes = style()
 
@@ -57,8 +56,16 @@ function Root({ handleOpenMenu, navigations, open }) {
         <HeaderContainer handleOpenMenu={handleOpenMenu} open={open} />
         <Grid container spacing={2} className={classes.container}>
           <Switch>
-            <Route exact path="/" component={Main} />
-            <Route exact path="/authors" component={AuthorList} />
+            <Route
+              exact
+              path="/"
+              render={props => <MainPage photographers={photographers} />}
+            />
+            <Route
+              exact
+              path="/authors"
+              render={() => <AuthorList photographers={photographers} />}
+            />
             <Route
               path="/authors/:id"
               render={props => (
@@ -74,9 +81,9 @@ function Root({ handleOpenMenu, navigations, open }) {
 }
 
 export default withMenu([
-  { title: 'Главная', icon: <HomeIcon />, path: '/' },
-  { title: 'Список фотографов', icon: <ListIcon />, path: '/authors' },
-  { title: 'Команда разработчиков', icon: <ListIcon />, path: '/team' }
+  { title: 'Main page', icon: <HomeIcon />, path: '/' },
+  { title: 'List of photographers', icon: <ListIcon />, path: '/authors' },
+  { title: 'Development team', icon: <ListIcon />, path: '/team' }
 ])(Root)
 
 Root.propTypes = {

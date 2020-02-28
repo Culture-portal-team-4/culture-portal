@@ -7,6 +7,9 @@ const style = makeStyles(theme => ({
     flexDirection: "column",
     padding: "10px",
     alignItems: "center"
+  },
+  title: {
+    marginBottom: 10,
   }
 }));
 
