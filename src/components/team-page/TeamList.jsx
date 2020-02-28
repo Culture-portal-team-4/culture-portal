@@ -1,16 +1,18 @@
-import React from 'react'
-import data from '../../data/data.json'
-import TeamListItem from './TeamListItem'
-import { Grid, Typography, Box } from '@material-ui/core'
+import React from "react";
+import data from "../../data/data.json";
+import TeamListItem from "./TeamListItem";
+import { Grid, Typography, Box } from "@material-ui/core";
+import { withTranslation } from "react-i18next";
 
-export default function TeamList() {
-  const { developers } = data
+function TeamList(props) {
+  const { developers } = data;
+  const { i18n } = props;
   return (
     <Grid item container sm={12}>
       <Grid item sm={12}>
         <Box mb={2} color="text.title">
           <Typography variant="h4" component="h1">
-            Development team
+            {i18n.t("developerTeam")}
           </Typography>
         </Box>
       </Grid>
@@ -20,5 +22,7 @@ export default function TeamList() {
         ))}
       </Grid>
     </Grid>
-  )
+  );
 }
+
+export default withTranslation()(TeamList);

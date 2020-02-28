@@ -7,8 +7,9 @@ import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import StyledTableCell from './StyledTableCell/StyledTableCell'
 import styles from './artistSWorksStyles'
+import { withTranslation } from 'react-i18next';
 
-export default function ArtistSWorks({ masterpiece }) {
+function ArtistSWorks({ masterpiece, i18n  }) {
   const classes = styles()
 
   return (
@@ -16,8 +17,8 @@ export default function ArtistSWorks({ masterpiece }) {
       <Table className={classes.root} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Works</StyledTableCell>
-            <StyledTableCell align="right">Year of creation</StyledTableCell>
+            <StyledTableCell>{i18n.t("workList")}</StyledTableCell>
+            <StyledTableCell align="right">{i18n.t("yearOfCreation")}</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -34,3 +35,5 @@ export default function ArtistSWorks({ masterpiece }) {
     </TableContainer>
   )
 }
+
+export default withTranslation()(ArtistSWorks);

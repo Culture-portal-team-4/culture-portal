@@ -4,10 +4,11 @@ import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import Typography from "@material-ui/core/Typography";
-import styles from './videoStyles'
+import styles from "./videoStyles";
+import { withTranslation } from 'react-i18next';
 
-function Video({ youTubeVideoUrl, id, width, height }) {
-  const classes = styles()
+function Video({ youTubeVideoUrl, id, width, height, i18n }) {
+  const classes = styles();
   const [state, setState] = useState({
     modalVisible: false,
     videoLoaded: false
@@ -31,7 +32,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
       >
         <YouTubeIcon />{" "}
         <Typography variant="body2" color="textSecondary" component="p">
-          Watch the video
+          {i18n.t("watchVideo")}
         </Typography>
       </Button>
       <Modal
@@ -44,7 +45,7 @@ function Video({ youTubeVideoUrl, id, width, height }) {
         <iframe
           className={classes.frame}
           onLoad={() => {
-              setState({
+            setState({
               modalVisible: true,
               videoLoaded: true
             });
@@ -72,4 +73,4 @@ Video.defaultProps = {
   height: 315
 };
 
-export default Video;
+export default withTranslation()(Video);

@@ -6,14 +6,15 @@ import Paper from '@material-ui/core/Paper'
 import WorkLogTime from './WorkLogTime'
 import WorkLogDifficulties from './WorkLogDifficulties'
 import WorkLogEvaluation from './WorkLogEvaluation'
+import { withTranslation } from 'react-i18next';
 
 import worklog from '../../data/worklog.json'
 
-export default function Worklog({ developers, difficulties, evaluations }) {
+function Worklog({ developers, difficulties, evaluations, i18n }) {
   return (
     <Grid item container sm={12} xs={12} spacing={2}>
       <Grid item sm={12} xs={12}>
-        <Typography variant="h4">Worklog</Typography>
+        <Typography variant="h4">{i18n.t("worklog")}</Typography>
       </Grid>
       {developers.map((developer, index) => (
         <WorkLogTime {...developer} key={developer.title} index={index} />
@@ -21,7 +22,7 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
-            <Typography variant="h5">Difficulties</Typography>
+            <Typography variant="h5">{i18n.t("difficulties")}</Typography>
           </Box>
           <Box px={1} pb={1}>
             <WorkLogDifficulties difficulties={difficulties} />
@@ -31,7 +32,7 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
-            <Typography variant="h5">Self-evaluation (270/280)</Typography>
+            <Typography variant="h5">{i18n.t("selfEvaluation")}</Typography>
           </Box>
           {evaluations.map((evaluation, index) => (
             <WorkLogEvaluation evaluation={evaluation} key={index} />
@@ -52,3 +53,5 @@ Worklog.defaultProps = {
   difficulties: worklog.difficulties,
   evaluations: worklog.evaluations
 }
+
+export default withTranslation()(Worklog);
