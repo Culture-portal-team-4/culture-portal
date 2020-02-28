@@ -1,10 +1,9 @@
 import React from 'react'
-import data from '../../data/data.json'
 import TeamListItem from './TeamListItem'
 import { Grid, Typography, Box } from '@material-ui/core'
+import PropTypes from "prop-types"
 
-export default function TeamList() {
-  const { developers } = data
+export default function TeamList( {developers} ) {
   return (
     <Grid item container sm={12}>
       <Grid item sm={12}>
@@ -16,9 +15,13 @@ export default function TeamList() {
       </Grid>
       <Grid item container spacing={2} sm={12}>
         {developers.map((developer, index) => (
-          <TeamListItem {...developer} index={index} key={developer.name} />
+          <TeamListItem {...developer} index={index} key={developer.title} />
         ))}
       </Grid>
     </Grid>
   )
+}
+
+TeamList.propTypes = {
+    developers: PropTypes.array.isRequired,
 }

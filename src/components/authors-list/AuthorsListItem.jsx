@@ -9,8 +9,6 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import { Grid, Typography } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
-
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
 const AuthorsListItem = ({
@@ -25,7 +23,7 @@ const AuthorsListItem = ({
 
   return (
     <Grid item md={3} sm={4} xs={12}>
-      <AnimationWrapper delay={0.1} style={{ height: '100%' }}>
+      <AnimationWrapper delay={0.1} className={classes.root}>
         <Card style={{ height: '100%' }}>
           <CardActionArea
             onClick={() => history.push(`/authors/${id}`)}

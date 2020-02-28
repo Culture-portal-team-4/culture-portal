@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../../../data/data.json';
 import styles from './author-information-style';
 import { Grid, Typography, Box } from '@material-ui/core';
 import Container from "@material-ui/core/Container";
@@ -8,12 +7,9 @@ import PropTypes from "prop-types";
 
 
 AuthorInformation.propTypes = {
-  id: PropTypes.number
+  author: PropTypes.object.isRequired,
 };
-AuthorInformation.defaultProps = {
-  id: 0,
-  photographers: data.photographers
-};
+
 export default function AuthorInformation({ author }) {
   const classes = styles();
   return (
@@ -24,7 +20,7 @@ export default function AuthorInformation({ author }) {
         </Box>
         <Box  color="text.title" mb={2} >
           <Typography variant="h4" component="h1">
-            {author.title}
+            {author.fullName}
           </Typography>
         </Box>
 

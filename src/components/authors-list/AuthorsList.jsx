@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
-import data from '../../data/data.json'
-import { Grid, Typography, Box } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
 import AuthorsListItem from './AuthorsListItem'
 import { doFilter } from '../../utils'
@@ -50,10 +49,7 @@ AuthorsList.propTypes = {
       name: PropTypes.string,
       img: PropTypes.string,
       description: PropTypes.string
-    })
+    }).isRequired
   )
 }
 
-AuthorsList.defaultProps = {
-  photographers: data.photographers
-}

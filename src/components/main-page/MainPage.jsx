@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../../data/data.json';
 import styles from './MainPageStyles';
 import { Grid, Typography, Box } from '@material-ui/core';
 import Container from "@material-ui/core/Container";
@@ -10,17 +9,20 @@ import Button from "@material-ui/core/Button";
 import {Link} from "react-router-dom";
 import TabPanelDescription from "./tab-panel/TabPanelDescription";
 
+const  mainPageData = {
+    "title": "Information on this portal is dedicated to\n\"Belarusian Photographers\"",
+    "rhyme": "In cold Belarus there once lived a bull \n  Who learned days and nights in Rolling scopes school \n\n React and redux, material and hooks\nOnce made him to think of photographers in Belarus\n\nThe bull used his brain and thoroughly thunk\nSo check out this site. Let’s hope it’s not junk! ",
+    "description": "So... The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?"
+}
+
 MainPage.propTypes = {
-    mainPageData: PropTypes.object,
-    photographers:PropTypes.array
+   photographers:PropTypes.array.isRequired,
+   developers:PropTypes.array.isRequired,
 };
-MainPage.defaultProps = {
-    mainPageData: data.mainPage,
-    photographers:data.photographers
-};
-export default function MainPage(props) {
+
+export default function MainPage({developers, photographers }) {
     const classes = styles();
-    const  rhyme = props.mainPageData.rhyme;
+    const  rhyme = mainPageData.rhyme;
     return (
         <Container>
             <Grid item container direction="column" alignItems="center" sm={12}>
@@ -40,7 +42,10 @@ export default function MainPage(props) {
                        Want to know more?
                    </Link>
                 </Button>
-                <TabPanelDescription mainPageData={props.mainPageData} randomAuthorData={props.photographers}/>
+                <TabPanelDescription
+                    mainPageData={mainPageData}
+                    photographers={photographers}
+                    developers={ developers }/>
             </Grid>
         </Container>
 
