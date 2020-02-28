@@ -1,5 +1,4 @@
-import React, { useState, Fragment } from 'react'
-import Menu from '../menu/Menu'
+import React, { useState } from 'react'
 
 export default navigations => {
   return Component => {
@@ -11,17 +10,14 @@ export default navigations => {
       }
 
       return (
-        <Fragment>
-          <Menu
+        <>
+          <Component
+            {...props}
             navigations={navigations}
             open={open}
-            onClose={handleOpenMenu}
+            handleOpenMenu={handleOpenMenu}
           />
-          <Component
-              {...props}
-              handleOpenMenu={handleOpenMenu}
-          />
-        </Fragment>
+        </>
       )
     }
   }

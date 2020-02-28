@@ -14,7 +14,7 @@ export default function AuthorsList({ photographers }) {
       doFilter(photographers, search, [
         'fullName',
         'yearsOfLife',
-         'placeOfLiving'
+        'placeOfLiving'
       ]).map(photographer => (
         <AuthorsListItem {...photographer} key={photographer.id} />
       )),
@@ -24,8 +24,8 @@ export default function AuthorsList({ photographers }) {
   return (
     <>
       <Grid item container justify="center" alignItems="center" sm={12}>
-        <Box mb={2} color="text.title" >
-          <Typography variant="h4" component="h1" >
+        <Box mb={2} color="text.title">
+          <Typography variant="h4" component="h1">
             List of Belarusian photographers
           </Typography>
         </Box>

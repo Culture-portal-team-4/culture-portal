@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const headerStyle = makeStyles(theme => ({
   header: {
-    // position: 'fixed',
     top: 0,
     left: 0,
     width: '100%',
@@ -13,28 +12,27 @@ const headerStyle = makeStyles(theme => ({
     display: 'flex',
     height: '100%',
     borderBottom: `1px solid ${theme.palette.secondary.border}`,
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   boxLeft: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: theme.spacing(3),
-    borderRight: `1px solid ${theme.palette.secondary.border}`
+    padding: theme.spacing(3)
   },
   boxCenter: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,
-    padding: '0 20px',
+    padding: '0 20px'
   },
   boxRight: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flex: 0,
-    paddingRight: 20,
+    paddingRight: 20
   },
   logoText: {
     background: `linear-gradient(135deg, ${theme.palette.secondary.gradientStart} 20%, ${theme.palette.secondary.gradientEnd} 70%)`,

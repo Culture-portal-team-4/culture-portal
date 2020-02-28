@@ -7,13 +7,14 @@ export default function AnimationWrapper({
   index,
   children,
   delay,
-  duration
+  duration,
+  show
 }) {
   const [isAnimated, setAnimated] = useState(false)
 
   useEffect(() => {
-    setAnimated(true)
-  }, [])
+    setAnimated(show)
+  })
 
   return (
     <motion.div
@@ -43,9 +44,10 @@ AnimationWrapper.defaultProps = {
     },
     off: {
       opacity: 0,
-      x: '-100%'
+      x: '100%'
     }
   },
   delay: 0.3,
-  index: 1
+  index: 1,
+  show: true
 }
