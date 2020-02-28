@@ -16,7 +16,7 @@ const Header = ({ handleOpenMenu, handleLocaleChange, locale, open }) => {
     <header className={classes.header}>
       <div className={classes.headerContainer}>
         <div className={classes.boxLeft}>
-          <IconButton onClick={handleOpenMenu}>
+          <IconButton onClick={handleOpenMenu} style={{ color: 'white' }}>
             {open ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>

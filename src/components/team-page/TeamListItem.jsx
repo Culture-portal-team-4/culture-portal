@@ -10,10 +10,7 @@ import ShareIcon from '@material-ui/icons/Share'
 import { Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
-
-const openUrl = url => {
-  window.open(url, '_blank')
-}
+import { openUrl } from '../../utils'
 
 export default function TeamListItem({ index, name, userPic, github }) {
   return (

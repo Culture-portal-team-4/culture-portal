@@ -25,9 +25,12 @@ const AuthorsListItem = ({
 
   return (
     <Grid item md={3} sm={4} xs={12}>
-      <AnimationWrapper delay={0.1}>
-        <Card>
-          <CardActionArea onClick={() => history.push(`/authors/${id}`)}>
+      <AnimationWrapper delay={0.1} style={{ height: '100%' }}>
+        <Card style={{ height: '100%' }}>
+          <CardActionArea
+            onClick={() => history.push(`/authors/${id}`)}
+            className={classes.card}
+          >
             <CardMedia
               component="img"
               className={classes.media}
@@ -50,9 +53,9 @@ const AuthorsListItem = ({
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" color="secondary">
+              <Typography variant="button" className={classes.cardMore}>
                 Learn More
-              </Button>
+              </Typography>
             </CardActions>
           </CardActionArea>
         </Card>

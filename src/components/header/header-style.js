@@ -6,7 +6,9 @@ const headerStyle = makeStyles(theme => ({
     left: 0,
     width: '100%',
     height: '80px',
-    zIndex: 302
+    zIndex: 302,
+    background: theme.palette.secondary.main,
+    boxShadow: '2px 2px 4px -2px rgba(147, 152, 167, 0.62)'
   },
   headerContainer: {
     display: 'flex',
@@ -35,10 +37,7 @@ const headerStyle = makeStyles(theme => ({
     paddingRight: 20
   },
   logoText: {
-    background: `linear-gradient(135deg, ${theme.palette.secondary.gradientStart} 20%, ${theme.palette.secondary.gradientEnd} 70%)`,
-    textFillColor: 'transparent',
-    WebkitBackgroundClip: 'text',
-    textTransform: 'uppercase',
+    color: 'white'
   }
 }))
 

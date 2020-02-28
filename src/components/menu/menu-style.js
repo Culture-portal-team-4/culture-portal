@@ -6,7 +6,8 @@ const style = makeStyles(theme => ({
     listStyle: 'none',
     borderRight: `1px solid ${theme.palette.secondary.border}`,
     width: theme.menuWidth,
-    height: `100%`
+    height: `100%`,
+    background: '#fff'
   },
   listItem: {
     display: 'flex',

@@ -6,13 +6,16 @@ import MainPage from './main-page/MainPage'
 import AuthorPage from './authorPage/AuthorPage'
 import withMenu from './HOC/withMenu'
 import HomeIcon from '@material-ui/icons/Home'
-import ListIcon from '@material-ui/icons/List'
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd'
+import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
+import AssignmentIcon from '@material-ui/icons/Assignment'
 import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import TeamList from './team-page/TeamList'
 import { Grid, Box } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
+import Worklog from './worklog/WorkLog'
 import Menu from './menu/Menu'
 import AnimationWrapper from './animation-wrapper/AnimationWrapper'
 
@@ -22,7 +25,7 @@ const style = makeStyles(theme => ({
     height: '100%'
   },
   container: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4, 2, 2, 2),
     alignItems: 'flex-start'
   }
 }))
@@ -45,7 +48,7 @@ function Root({ handleOpenMenu, navigations, open }) {
   const { data } = useSelector(state => ({
     data: state.localeReducer.data
   }))
-  const { photographers } = data
+  const { photographers, developers } = data
 
   return (
     <main className={classes.main}>
@@ -73,6 +76,10 @@ function Root({ handleOpenMenu, navigations, open }) {
               )}
             />
             <Route path="/team" component={TeamList} />
+            <Route
+              path="/worklog"
+              render={props => <Worklog {...props} developers={developers} />}
+            />
           </Switch>
         </Grid>
       </Box>
@@ -82,8 +89,17 @@ function Root({ handleOpenMenu, navigations, open }) {
 
 export default withMenu([
   { title: 'Main page', icon: <HomeIcon />, path: '/' },
-  { title: 'List of photographers', icon: <ListIcon />, path: '/authors' },
-  { title: 'Development team', icon: <ListIcon />, path: '/team' }
+  {
+    title: 'List of photographers',
+    icon: <PhotoCameraIcon />,
+    path: '/authors'
+  },
+  {
+    title: 'Development team',
+    icon: <AssignmentIndIcon />,
+    path: '/team'
+  },
+  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog' }
 ])(Root)
 
 Root.propTypes = {
