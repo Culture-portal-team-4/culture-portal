@@ -14,13 +14,13 @@ TabPanelDescription.defaultProps = {
 };
 
 export default function TabPanelDescription(props) {
-  const description = props.mainPageData.description
+  const description = props.mainPageData.description;
   const TITLES = ['Intro', 'Author of the day', 'Developer team']
 
   return (
     <ScrollableTabs
       titles={TITLES}
-      componentsList={[<Description description={description}/>, <AuthorOfDay/>, <TeamList/>]}
+      componentsList={[<Description description={description}/>, <AuthorOfDay randomAuthorData={props.randomAuthorData}/>, <TeamList/>]}
     />
   );
 }

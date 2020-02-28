@@ -15,9 +15,12 @@ export const doFilter = (values, filter, fields = ['name']) => {
 }
 
 export const doSort = (a, b, key) => {
-  if (a[key] > b[key]) {
+  const first = parseFloat(a[key].slice(0, -1))
+  const second = parseFloat(b[key].slice(0, -1))
+
+  if (first > second) {
     return 1
-  } else if (a[key] < b[key]) {
+  } else if (first < second) {
     return -1
   }
   return 0

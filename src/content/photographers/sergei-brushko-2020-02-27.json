@@ -8,8 +8,8 @@
   },
   "video": "https://www.youtube.com/embed/wFPNXczkHYg",
   "en": {
-    "fullName": "en",
-    "description": "description-en",
+    "fullName": "Sergei Brushko",
+    "description": "With his first camera received as a birthday gift at 6, Siarhei Brushko dedicated his entire life to photography.",
     "gallery": [
       {
         "year": "1970",
@@ -56,11 +56,11 @@
         "work": "Summer song"
       }
     ],
-    "placeOfLiving": "Maladziečna"
+    "placeOfLiving": "Molodechno"
   },
   "by": {
     "fullName": "Сяргей Брушко",
-    "description": "description-by",
+    "description": "З першай камерай, атрыманай у падарунак на дзень нараджэння ў 6, Сяргей Брушко ўсё сваё жыццё прысвяціў фатаграфіі.",
     "gallery": [
       {
         "year": "1970",
@@ -111,7 +111,7 @@
   },
   "ru": {
     "fullName": "Сергей Брушко",
-    "description": "description-ru",
+    "description": "Получив свою первую камеру в подарок на день рождения в 6 лет, Сергей Брушко посвятил всю свою жизнь фотографии.",
     "gallery": [
       {
         "year": "1970",

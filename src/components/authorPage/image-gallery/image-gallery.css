@@ -111,9 +111,9 @@
   .image-gallery-content.fullscreen {
     background: #000; }
   .image-gallery-content .image-gallery-slide .image-gallery-image {
-    height:400px; }
+    height:300px; }
   .image-gallery-content.left .image-gallery-slide .image-gallery-image, .image-gallery-content.right .image-gallery-slide .image-gallery-image {
-    height:400px; }
+    height:300px; }
 
 .image-gallery-slide-wrapper {
   position: relative; }

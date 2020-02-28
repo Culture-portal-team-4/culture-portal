@@ -6,10 +6,10 @@
     "lat": "53.9000000",
     "lng": "27.5666700"
   },
-  "video": "https://www.youtube.com/watch?v=zOW38EpkgA8",
+  "video": "https://www.youtube.com/embed/zOW38EpkgA8",
   "en": {
     "fullName": "Anton Prushinsky",
-    "description": "description",
+    "description": "Anton Prushinsky opened the first photo workshop in Belarus. It was located on the current Lenin Street in Minsk.",
     "gallery": [
       {
         "year": "1856",
@@ -52,7 +52,7 @@
   },
   "ru": {
     "fullName": "Антон Прушинский",
-    "description": "description-ru",
+    "description": "Антон Прушинский в 24 года открыл первое в Беларусии фотоателье",
     "gallery": [
       {
         "year": "1856",
@@ -60,7 +60,7 @@
       },
       {
         "year": "1860",
-        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+        "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
       }
     ],
     "biography": [
@@ -95,7 +95,7 @@
   },
   "by": {
     "fullName": "Антон Прушынскі",
-    "description": "description-by",
+    "description": "Калі Прушынскаму было 24 гады, ён адкрыў першую ў Беларусі фотамайстэрню. Ён знаходзіўся на цяперашняй вуліцы Леніна ў Мінску.",
     "gallery": [
       {
         "year": "1856",
@@ -103,7 +103,7 @@
       },
       {
         "year": "1860",
-        "link": "https://planetabelarus.by/upload/medialibrary/a96/a961f5c95e540f5bd0c535a127d8dbc0.jpg"
+        "link": "https://planetabelarus.by/upload/medialibrary/65e/65ec6544129e46c7cbc56cdb76cf0e8a.jpg"
       }
     ],
     "biography": [
@@ -121,7 +121,7 @@
       },
       {
         "year": "1861",
-        "info": "After the uprising, the photographer was arrested and exiled to Tomsk."
+        "info": "Пасля паўстання сасланы ў Томск"
       }
     ],
     "masterpiece": [

@@ -1,17 +1,36 @@
 import React from 'react'
-import { Drawer, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { NavLink } from 'react-router-dom'
 import styles from './menu-style'
+import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 
-export default function Menu({ navigations, open, onClose }) {
+const variants = {
+  on: {
+    opacity: 1,
+    x: '0%'
+  },
+  off: {
+    opacity: 0,
+    x: '-100%'
+  }
+}
+
+export default function Menu({ navigations, open }) {
   const classes = styles()
 
   return (
-    <Drawer open={open} onClose={onClose}>
-      <ul className={classes.list}>
-        {navigations.map(navigation => (
-          <li key={navigation.title}>
+    <ul className={classes.list}>
+      {navigations.map((navigation, index) => (
+        <AnimationWrapper
+          delay={open ? 0.3 : 0}
+          duration={open ? 0.1 : 0}
+          index={index}
+          key={navigation.title}
+          show={open}
+          variants={variants}
+        >
+          <li>
             <NavLink
               exact
               to={navigation.path}
@@ -24,8 +43,8 @@ export default function Menu({ navigations, open, onClose }) {
               <Typography>{navigation.title}</Typography>
             </NavLink>
           </li>
-        ))}
-      </ul>
-    </Drawer>
+        </AnimationWrapper>
+      ))}
+    </ul>
   )
 }

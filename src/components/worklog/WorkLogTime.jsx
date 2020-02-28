@@ -18,7 +18,8 @@ const COLORS = [
   '#FFBB28',
   '#FF8042',
   '#00C49F',
-  '#0088FE'
+  '#9c00fe',
+  '#f10000'
 ]
 
 const variants = {
@@ -31,20 +32,27 @@ const variants = {
     y: '100%'
   }
 }
-export default function WorkLogTime({ index, name, userPic, github, worklog }) {
+export default function WorkLogTime({ index, title, image, github, tasks }) {
   const classes = style()
-  const works = worklog.sort((a, b) => doSort(a, b, 'time'))
+  console.log(tasks)
+
+  const works = tasks.sort((a, b) => doSort(a, b, 'spentTime'))
 
   const renderTimeLine = () => {
     return (
       <Box display="flex">
-        {works.map(({ time }, index) => {
-          const fullTime = works.reduce((acc, { time }) => acc + time, 0)
+        {works.map(({ spentTime }, index) => {
+          const fullTime = works.reduce(
+            (acc, { spentTime }) => acc + parseFloat(spentTime.slice(0, -1)),
+            0
+          )
+          console.log(fullTime)
           return (
             <div
               key={index}
               style={{
-                width: `${(time / fullTime) * 100}%`,
+                width: `${(parseFloat(spentTime.slice(0, -1)) / fullTime) *
+                  100}%`,
                 height: '8px',
                 background: COLORS[index]
               }}
@@ -60,10 +68,10 @@ export default function WorkLogTime({ index, name, userPic, github, worklog }) {
       <AnimationWrapper index={index} variants={variants}>
         <Paper className={classes.paper}>
           <Box mb={1}>
-            {renderTimeLine(name)}
+            {renderTimeLine()}
             <CardHeader
-              avatar={<Avatar src={userPic} />}
-              title={name}
+              avatar={<Avatar src={image} />}
+              title={title}
               action={
                 <IconButton onClick={() => openUrl(github)}>
                   <ShareIcon />
@@ -83,7 +91,7 @@ export default function WorkLogTime({ index, name, userPic, github, worklog }) {
               </Grid>
               <Grid item sm={12} xs={12}>
                 <ul>
-                  {works.map(({ title, time }, index) => (
+                  {works.map(({ task, spentTime }, index) => (
                     <li className={classes.tableRow} key={index}>
                       <Box display="flex" alignItems="center">
                         <span
@@ -92,9 +100,9 @@ export default function WorkLogTime({ index, name, userPic, github, worklog }) {
                             background: COLORS[index]
                           }}
                         ></span>
-                        <Typography variant="body2">{title}</Typography>
+                        <Typography variant="body2">{task}</Typography>
                       </Box>
-                      <Typography variant="body2">{time}</Typography>
+                      <Typography variant="body2">{spentTime}</Typography>
                     </li>
                   ))}
                 </ul>

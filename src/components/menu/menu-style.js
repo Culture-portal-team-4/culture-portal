@@ -1,8 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const menuStyle = makeStyles(theme => ({
+const style = makeStyles(theme => ({
   list: {
-    marginTop: theme.spacing(2)
+    paddingTop: theme.spacing(0),
+    listStyle: 'none',
+    borderRight: `1px solid ${theme.palette.secondary.border}`,
+    width: theme.menuWidth,
+    height: `100%`
   },
   listItem: {
     display: 'flex',
@@ -11,11 +15,19 @@ const menuStyle = makeStyles(theme => ({
     color: theme.palette.primary.main,
     borderBottom: `1px solid ${theme.palette.secondary.border}`,
     '&:hover': {
-      backgroundColor: `${theme.palette.secondary.main}40`
+      backgroundColor: `${theme.palette.secondary.main}10`,
+      color: theme.palette.secondary.main,
+      '& svg': {
+        color: theme.palette.secondary.main
+      }
     }
   },
   listItemActive: {
-    backgroundColor: `${theme.palette.secondary.main}40`
+    color: theme.palette.secondary.main,
+    backgroundColor: `${theme.palette.secondary.main}10`,
+    '& svg': {
+      color: theme.palette.secondary.main
+    }
   },
   listItemIcon: {
     minWidth: 'auto',
@@ -23,4 +35,4 @@ const menuStyle = makeStyles(theme => ({
   }
 }))
 
-export default menuStyle
+export default style

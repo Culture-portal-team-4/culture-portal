@@ -8,6 +8,8 @@ import WorkLogDifficulties from './WorkLogDifficulties'
 import WorkLogEvaluation from './WorkLogEvaluation'
 
 export default function Worklog({ developers, difficulties, evaluations }) {
+  console.log(developers, difficulties, evaluations)
+
   return (
     <Grid item container sm={12} xs={12} spacing={2}>
       <Grid item sm={12} xs={12}>
@@ -18,7 +20,7 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       {developers.map((developer, index) => (
         <WorkLogTime {...developer} key={developer.name} index={index} />
       ))}
-      <Grid item sm={12} xs={12}>
+      {/* <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
             <Typography variant="h5">Difficulties</Typography>
@@ -31,15 +33,13 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
-            <Typography variant="h5" color="textSecondary" component="p">
-              Self-evaluation (230/240)
-            </Typography>
+            <Typography variant="h5">Self-evaluation (230/240)</Typography>
           </Box>
           {evaluations.map(evaluation => (
             <WorkLogEvaluation evaluation={evaluation} />
           ))}
         </Paper>
-      </Grid>
+      </Grid> */}
     </Grid>
   )
 }

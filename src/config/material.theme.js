@@ -3,7 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#000',
+      main: '#000'
     },
     secondary: {
       main: '#49c5b6',
@@ -11,7 +11,7 @@ const theme = createMuiTheme({
       border: '#E6EAEA',
       gradientStart: '#061207',
       gradientEnd: '#49c5b6',
-      tabBackground: '#EEEEEE',
+      tabBackground: '#EEEEEE'
     },
     text: {
       title: '#061207',
@@ -30,26 +30,27 @@ const theme = createMuiTheme({
     },
     h4: {
       '@media (max-width:750px)': {
-        fontSize: '1.8rem',
+        fontSize: '1.8rem'
       },
       '@media (max-width:460px)': {
-        fontSize: '1.3rem',
+        fontSize: '1.3rem'
       },
       '@media (max-width:360px)': {
-        fontSize: '0.8rem',
-      },
+        fontSize: '0.8rem'
+      }
     },
     h5: {
       fontSize: '1.5rem',
       '@media (max-width:930px)': {
-        fontSize: '1.3rem',
+        fontSize: '1.3rem'
       },
       '@media (max-width:830px)': {
-        fontSize: '1rem',
-      },
+        fontSize: '1rem'
+      }
     }
-
-  }
+  },
+  headerHeight: '80px',
+  menuWidth: '300px'
 })
 
 export default theme

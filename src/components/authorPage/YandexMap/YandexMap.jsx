@@ -8,8 +8,8 @@ function YandexMap(props) {
   const classes = style();
   return (
     <div className={classes.map}>
-      <Typography variant="h6" component="h2">
-        Значимое место
+      <Typography variant="h6" component="h2" className={classes.title}>
+        Place of author's major activity
       </Typography>
       <YMaps>
         <Map defaultState={{ center: [lat, lng], zoom: 11 }}>

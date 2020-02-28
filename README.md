@@ -23,7 +23,8 @@ npm run build
 | 0.75h | merge with develop branch  |
 | 2.5h | style artist's page, add tabs menu on this page |
 | 1h | add tabs menu on mane page |
-| 1.5h | style mane page |
+| 2.5h | style mane page |
+| 1h | fix - all text in English at first |
 
 *Viacheslav*
 
