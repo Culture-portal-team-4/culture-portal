@@ -25,7 +25,7 @@ const style = makeStyles(theme => ({
     height: '100%'
   },
   container: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4, 2, 2, 2),
     alignItems: 'flex-start'
   }
 }))
@@ -48,7 +48,7 @@ function Root({ handleOpenMenu, navigations, open }) {
   const { data } = useSelector(state => ({
     data: state.localeReducer.data
   }))
-  const { photographers, developers, difficulties, evaluations } = data
+  const { photographers, developers } = data
 
   return (
     <main className={classes.main}>
@@ -78,14 +78,7 @@ function Root({ handleOpenMenu, navigations, open }) {
             <Route path="/team" component={TeamList} />
             <Route
               path="/worklog"
-              render={props => (
-                <Worklog
-                  {...props}
-                  developers={developers}
-                  difficulties={difficulties}
-                  evaluations={evaluations}
-                />
-              )}
+              render={props => <Worklog {...props} developers={developers} />}
             />
           </Switch>
         </Grid>

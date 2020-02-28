@@ -23,15 +23,11 @@ export default function AuthorsList({ photographers }) {
 
   return (
     <>
-      <Grid item container justify="center" alignItems="center" sm={12}>
-        <Box mb={2} color="text.title">
-          <Typography variant="h4" component="h1">
-            List of Belarusian photographers
-          </Typography>
-        </Box>
-      </Grid>
-      <Grid item container justify="center" alignItems="center" sm={12}>
-        <Grid item md={4} sm={6} xs={10}>
+      <Grid item container justify="space-between" alignItems="center" sm={12}>
+        <Typography variant="h4" component="h1">
+          List of Belarusian photographers
+        </Typography>
+        <Grid item md={3} sm={3} xs={3}>
           <SearchField
             placeholder="Search photographers"
             onChange={event => {

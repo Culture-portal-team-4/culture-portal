@@ -7,20 +7,18 @@ import WorkLogTime from './WorkLogTime'
 import WorkLogDifficulties from './WorkLogDifficulties'
 import WorkLogEvaluation from './WorkLogEvaluation'
 
-export default function Worklog({ developers, difficulties, evaluations }) {
-  console.log(developers, difficulties, evaluations)
+import worklog from '../../data/worklog.json'
 
+export default function Worklog({ developers, difficulties, evaluations }) {
   return (
     <Grid item container sm={12} xs={12} spacing={2}>
       <Grid item sm={12} xs={12}>
-        <Box color="text.title">
-          <Typography variant="h4">Worklog</Typography>
-        </Box>
+        <Typography variant="h4">Worklog</Typography>
       </Grid>
       {developers.map((developer, index) => (
-        <WorkLogTime {...developer} key={developer.name} index={index} />
+        <WorkLogTime {...developer} key={developer.title} index={index} />
       ))}
-      {/* <Grid item sm={12} xs={12}>
+      <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
             <Typography variant="h5">Difficulties</Typography>
@@ -33,13 +31,13 @@ export default function Worklog({ developers, difficulties, evaluations }) {
       <Grid item sm={12} xs={12}>
         <Paper>
           <Box p={2}>
-            <Typography variant="h5">Self-evaluation (230/240)</Typography>
+            <Typography variant="h5">Self-evaluation (270/280)</Typography>
           </Box>
-          {evaluations.map(evaluation => (
-            <WorkLogEvaluation evaluation={evaluation} />
+          {evaluations.map((evaluation, index) => (
+            <WorkLogEvaluation evaluation={evaluation} key={index} />
           ))}
         </Paper>
-      </Grid> */}
+      </Grid>
     </Grid>
   )
 }
@@ -48,4 +46,9 @@ Worklog.propTypes = {
   developers: PropTypes.array,
   difficulties: PropTypes.array,
   evaluations: PropTypes.array
+}
+
+Worklog.defaultProps = {
+  difficulties: worklog.difficulties,
+  evaluations: worklog.evaluations
 }

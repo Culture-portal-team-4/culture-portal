@@ -19,7 +19,8 @@ const COLORS = [
   '#FF8042',
   '#00C49F',
   '#9c00fe',
-  '#f10000'
+  '#f10000',
+  '#9ff100'
 ]
 
 const variants = {
@@ -34,7 +35,6 @@ const variants = {
 }
 export default function WorkLogTime({ index, title, image, github, tasks }) {
   const classes = style()
-  console.log(tasks)
 
   const works = tasks.sort((a, b) => doSort(a, b, 'spentTime'))
 
@@ -46,7 +46,6 @@ export default function WorkLogTime({ index, title, image, github, tasks }) {
             (acc, { spentTime }) => acc + parseFloat(spentTime.slice(0, -1)),
             0
           )
-          console.log(fullTime)
           return (
             <div
               key={index}
@@ -65,9 +64,13 @@ export default function WorkLogTime({ index, title, image, github, tasks }) {
 
   return (
     <Grid item md={4} sm={6} xs={12}>
-      <AnimationWrapper index={index} variants={variants}>
+      <AnimationWrapper
+        index={index}
+        variants={variants}
+        style={{ height: '100%' }}
+      >
         <Paper className={classes.paper}>
-          <Box mb={1}>
+          <Box mb={0.5}>
             {renderTimeLine()}
             <CardHeader
               avatar={<Avatar src={image} />}

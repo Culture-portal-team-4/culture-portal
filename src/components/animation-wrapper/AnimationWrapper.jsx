@@ -8,7 +8,8 @@ export default function AnimationWrapper({
   children,
   delay,
   duration,
-  show
+  show,
+  ...other
 }) {
   const [isAnimated, setAnimated] = useState(false)
 
@@ -18,6 +19,7 @@ export default function AnimationWrapper({
 
   return (
     <motion.div
+      {...other}
       variants={variants}
       initial="off"
       transition={{ delay: index * delay, duration }}
