@@ -19,7 +19,22 @@ const Header = ({handleOpenMenu, handleLocaleChange, locale}) => {
           </IconButton>
         </div>
         <div className={classes.boxCenter}>
-          <Typography className={classes.logoText} variant="h4">Photographers of belarus</Typography>
+          <Typography className={classes.logoText} variant="h4">
+            {(() => {
+              switch (locale) {
+                case 'en':
+                return 'Photographers of Belarus'
+                case 'ru':
+                return 'Фотографы Белоруссии'
+                case 'by':
+                return'фатографы БЕЛАРУСІ'
+                default:
+                  return 'Photographers of Belarus'
+              }
+            })()}
+
+          </Typography>
+
         </div>
         <div className={classes.boxRight}>
           <Select id="select" value={locale} onChange={handleLocaleChange}>

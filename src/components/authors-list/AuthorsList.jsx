@@ -13,8 +13,9 @@ export default function AuthorsList({ photographers }) {
   const filterAuthors = useMemo(
     () =>
       doFilter(photographers, search, [
-        'name',
-        'yearsOfLife'
+        'title',
+        'yearsOfLife',
+         'placeOfLiving'
       ]).map(photographer => (
         <AuthorsListItem {...photographer} key={photographer.id} />
       )),
@@ -23,9 +24,9 @@ export default function AuthorsList({ photographers }) {
 
   return (
     <>
-      <Grid item sm={12}>
-        <Box mb={2} color="text.title">
-          <Typography variant="h4" component="h1">
+      <Grid item container justify="center" alignItems="center" sm={12}>
+        <Box mb={2} color="text.title" >
+          <Typography variant="h4" component="h1" >
             List of Belarusian photographers
           </Typography>
         </Box>
@@ -36,6 +37,7 @@ export default function AuthorsList({ photographers }) {
             placeholder="Search photographers"
             onChange={event => {
               setSearch(event.target.value)
+
             }}
           />
         </Grid>
