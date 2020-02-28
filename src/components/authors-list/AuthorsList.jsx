@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import data from '../../data/data.json'
-
 import { Grid, Typography, Box } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
 import AuthorsListItem from './AuthorsListItem'
@@ -13,7 +12,7 @@ export default function AuthorsList({ photographers }) {
   const filterAuthors = useMemo(
     () =>
       doFilter(photographers, search, [
-        'title',
+        'fullName',
         'yearsOfLife',
          'placeOfLiving'
       ]).map(photographer => (
@@ -37,7 +36,6 @@ export default function AuthorsList({ photographers }) {
             placeholder="Search photographers"
             onChange={event => {
               setSearch(event.target.value)
-
             }}
           />
         </Grid>
