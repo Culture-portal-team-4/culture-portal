@@ -8,6 +8,7 @@ import WorkLogDifficulties from './WorkLogDifficulties'
 import WorkLogEvaluation from './WorkLogEvaluation'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 import worklog from '../../data/worklog.json'
+import { withTranslation } from 'react-i18next'
 
 const variants = {
   on: {
@@ -20,12 +21,12 @@ const variants = {
   }
 }
 
-export default function Worklog({ developers, difficulties, evaluations }) {
+function Worklog({ developers, difficulties, evaluations, i18n }) {
   return (
     <>
       <Grid item sm={12} xs={12}>
         <Box ml={1} mb={1}>
-          <Typography variant="h4">Worklog</Typography>
+          <Typography variant="h4">{i18n.t('worklog')}</Typography>
         </Box>
       </Grid>
       <Grid item container spacing={2} className="no-margin">
@@ -45,7 +46,7 @@ export default function Worklog({ developers, difficulties, evaluations }) {
           >
             <Paper>
               <Box p={2}>
-                <Typography variant="h5">Difficulties</Typography>
+                <Typography variant="h5">{i18n.t('difficulties')}</Typography>
               </Box>
               <Box px={1} pb={1}>
                 <WorkLogDifficulties difficulties={difficulties} />
@@ -61,7 +62,7 @@ export default function Worklog({ developers, difficulties, evaluations }) {
           >
             <Paper>
               <Box p={2}>
-                <Typography variant="h5">Self-evaluation (270/280)</Typography>
+                <Typography variant="h5">{i18n.t('selfEvaluation')}</Typography>
               </Box>
               {evaluations.map((evaluation, index) => (
                 <WorkLogEvaluation evaluation={evaluation} key={index} />
@@ -84,3 +85,5 @@ Worklog.defaultProps = {
   difficulties: worklog.difficulties,
   evaluations: worklog.evaluations
 }
+
+export default withTranslation()(Worklog)

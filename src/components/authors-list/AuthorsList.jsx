@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
-import data from '../../data/data.json'
 import { Grid, Typography, Box } from '@material-ui/core'
 import SearchField from '../elements/TextField/SearchField'
 import AuthorsListItem from './AuthorsListItem'
 import { doFilter } from '../../utils'
+import { withTranslation } from 'react-i18next'
 
-export default function AuthorsList({ photographers }) {
+function AuthorsList({ photographers, i18n }) {
   const [search, setSearch] = useState(null)
 
   const filterAuthors = useMemo(
@@ -26,13 +26,13 @@ export default function AuthorsList({ photographers }) {
       <Grid item container justify="space-between" alignItems="center">
         <Box ml={1} mb={1}>
           <Typography variant="h4" component="h1">
-            List of Belarusian photographers
+            {i18n.t('photographersList')}
           </Typography>
         </Box>
         <Grid item md={3} sm={5} xs={12}>
           <Box mx={1} mb={1}>
             <SearchField
-              placeholder="Search photographers"
+              placeholder={i18n.t('search')}
               onChange={event => {
                 setSearch(event.target.value)
               }}
@@ -58,6 +58,4 @@ AuthorsList.propTypes = {
   )
 }
 
-AuthorsList.defaultProps = {
-  photographers: data.photographers
-}
+export default withTranslation()(AuthorsList)

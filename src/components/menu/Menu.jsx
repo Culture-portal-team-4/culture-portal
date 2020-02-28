@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import styles from './menu-style'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 import PropTypes from 'prop-types'
+import { withTranslation } from 'react-i18next'
 
 const variants = {
   on: {
@@ -17,7 +18,7 @@ const variants = {
   }
 }
 
-export default function Menu({ navigations, open, handleClick, ...other }) {
+function Menu({ navigations, open, i18n, handleClick, ...other }) {
   const classes = styles()
 
   return (
@@ -42,7 +43,7 @@ export default function Menu({ navigations, open, handleClick, ...other }) {
               <ListItemIcon className={classes.listItemIcon}>
                 {navigation.icon}
               </ListItemIcon>
-              <Typography>{navigation.title}</Typography>
+              <Typography>{i18n.t(navigation.title)}</Typography>
             </NavLink>
           </li>
         </AnimationWrapper>
@@ -60,3 +61,4 @@ Menu.propTypes = {
 Menu.defaultProps = {
   handleClick: () => {}
 }
+export default withTranslation()(Menu)

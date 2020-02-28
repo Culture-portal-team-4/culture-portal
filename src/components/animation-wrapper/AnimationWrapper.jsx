@@ -15,7 +15,7 @@ export default function AnimationWrapper({
 
   useEffect(() => {
     setAnimated(show)
-  })
+  }, [show])
 
   return (
     <motion.div

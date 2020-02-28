@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import styles from './style'
-
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
@@ -11,20 +10,22 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import { Grid, Typography, Box } from '@material-ui/core'
 
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
+import { withTranslation } from 'react-i18next'
 
 const AuthorsListItem = ({
   id,
   fullName,
   image,
   description,
-  placeOfLiving
+  placeOfLiving,
+  i18n
 }) => {
   const classes = styles()
   const history = useHistory()
 
   return (
     <Grid item md={3} sm={4} xs={12}>
-      <AnimationWrapper delay={0.1} style={{ height: '100%' }}>
+      <AnimationWrapper delay={0.1} className={classes.root}>
         <Card style={{ height: '100%' }}>
           <CardActionArea
             onClick={() => history.push(`/authors/${id}`)}
@@ -59,7 +60,7 @@ const AuthorsListItem = ({
               </CardContent>
               <CardActions>
                 <Typography variant="button" className={classes.cardMore}>
-                  Learn More
+                  {i18n.t('learnMore')}
                 </Typography>
               </CardActions>
             </Box>
@@ -77,4 +78,4 @@ AuthorsListItem.propTypes = {
   description: PropTypes.string
 }
 
-export default React.memo(AuthorsListItem)
+export default React.memo(withTranslation()(AuthorsListItem))

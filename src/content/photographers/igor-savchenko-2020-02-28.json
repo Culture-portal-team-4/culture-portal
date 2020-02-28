@@ -2,14 +2,14 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Igor_Savchenko_6-03-2014.JPG/773px-Igor_Savchenko_6-03-2014.JPG",
   "title": " Igor Savchenko",
   "yearsOfLife": "1962",
-  "video": "https://www.youtube.com/watch?v=CnKDG8zOvgg",
+  "video": "https://www.youtube.com/embed/WBeKQne2-SQ",
   "locationsCoords": {
-    "lat": "55.776952",
-    "lng": "37.389405"
+    "lat": "53.9000000",
+    "lng": "27.5666700"
   },
   "en": {
     "fullName": " Igor Savchenko",
-    "description": "In 1985-1991 Igor worked as an engineer. In 1988–89, he met with participants in the Studio of Creative Photography, Valery Lobko, Minsk. During this period, photography was rather a hobby for I. Savchenko. In 1991 he received the Kodak-Pate Prize at the International Salon of Photography in Royan, France. His work is not limited to photography, since 1994 he has been writing texts and prose.",
+    "description": "Igor was an engineer. In 1988–89, he met with participants in the Studio of Creative Photography, Valery Lobko, Minsk. During this period, photography was rather a hobby for I. Savchenko. In 1991 he received the Kodak-Pate Prize in Royan, France.",
     "placeOfLiving": "Minsk",
     "gallery": [
       {
@@ -88,7 +88,7 @@
   },
   "ru": {
     "fullName": "Игорь Савченко",
-    "description": "В 1985—1991 годах работал инженером. В 1988—89 годах познакомился с участниками Студии творческой фотографии Валерия Лобко, Минск. В этот период фотография была для И. Савченко скорее увлечением. В 1991 году получает Премию Кодак-Пате на Международном салоне фотографии в Рояне, Франция. Свое творчество не ограничивает фотографией, с 1994 года пишет тексты и прозу. ",
+    "description": "Игорь был инженером. В 1988–89 годах он встречался с участниками в студии творческой фотографии, Валерий Лобко, Минск. В этот период фотография была скорее хобби для И. Савченко. В 1991 году он получил премию Kodak-Pate в Руане, Франция. ",
     "placeOfLiving": "Минск",
     "gallery": [
       {
@@ -166,7 +166,7 @@
     ]
   },
   "by": {
-    "description": "У 1985-1991 гадах працаваў інжынерам. У 1988–89 гадах ён сустракаўся з удзельнікамі Студыі творчай фатаграфіі Валерыя Лобкі, Мінск. У гэты перыяд фатаграфія была хутчэй захапленнем для І. Саўчанкі. У 1991 годзе ён атрымаў прэмію Кадак-Патэ на Міжнародным салоне фатаграфіі ў горадзе Роян, Францыя. Яго творчасць не абмяжоўваецца фатаграфіяй, з 1994 г. ён піша тэксты і прозу.",
+    "description": "Ігар быў інжынерам. У 1988–89 гадах ён сустракаўся з удзельнікамі Студыі творчай фатаграфіі Валерыя Лобкі, Мінск. У гэты перыяд фатаграфія была хутчэй захапленнем для І. Саўчанкі. У 1991 годзе ён атрымаў прэмію Кодак-Патэ ў горадзе Роян, Францыя.",
     "fullName": "Iгар Саўчанка",
     "placeOfLiving": "Miнск",
     "gallery": [

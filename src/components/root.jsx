@@ -15,7 +15,7 @@ import TeamList from './team-page/TeamList'
 import { Grid, Box } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
-import Worklog from './worklog/WorkLog'
+import Worklog from './worklog/Worklog'
 import Menu from './menu/Menu'
 import AnimationWrapper from './animation-wrapper/AnimationWrapper'
 import FullScreenDialog from './menu/MobileMenu'
@@ -75,7 +75,12 @@ function Root({ handleOpenMenu, navigations, open }) {
             <Route
               exact
               path="/"
-              render={props => <MainPage photographers={photographers} />}
+              render={() => (
+                <MainPage
+                  photographers={photographers}
+                  developers={developers}
+                />
+              )}
             />
             <Route
               exact
@@ -88,7 +93,10 @@ function Root({ handleOpenMenu, navigations, open }) {
                 <AuthorPage {...props} photographers={photographers} />
               )}
             />
-            <Route path="/team" component={TeamList} />
+            <Route
+              path="/team"
+              render={props => <TeamList {...props} developers={developers} />}
+            />
             <Route
               path="/worklog"
               render={props => <Worklog {...props} developers={developers} />}
@@ -101,20 +109,20 @@ function Root({ handleOpenMenu, navigations, open }) {
 }
 
 export default withMenu([
-  { title: 'Main page', icon: <HomeIcon />, path: '/', exact: true },
+  { title: 'mainPage', icon: <HomeIcon />, path: '/', exact: true },
   {
-    title: 'List of photographers',
+    title: 'photographers',
     icon: <PhotoCameraIcon />,
     path: '/authors',
     exact: false
   },
   {
-    title: 'Development team',
+    title: 'developerTeam',
     icon: <AssignmentIndIcon />,
     path: '/team',
     exact: true
   },
-  { title: 'Worklog', icon: <AssignmentIcon />, path: '/worklog', exact: true }
+  { title: 'worklog', icon: <AssignmentIcon />, path: '/worklog', exact: true }
 ])(Root)
 
 Root.propTypes = {

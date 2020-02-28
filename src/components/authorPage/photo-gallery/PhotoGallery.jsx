@@ -1,19 +1,14 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import data from '../../../data/data.json';
-import './image-gallery.css';
+import './photoGalleryStyles.css';
 
 import PropTypes from "prop-types";
 
 
 PhotoGallery.propTypes = {
-    id: PropTypes.number,
-    photographers: PropTypes.array
+    author: PropTypes.object.isRequired,
 };
-PhotoGallery.defaultProps = {
-    id: 0,
-    photographers: data.photographers
-};
+
 export default function PhotoGallery(props) {
 
     const {author} = props;

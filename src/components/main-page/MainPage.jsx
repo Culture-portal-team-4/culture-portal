@@ -10,19 +10,25 @@ import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 import TabPanelDescription from './tab-panel/TabPanelDescription'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper.jsx'
+import { withTranslation } from 'react-i18next'
+
+const mainPageData = {
+  title:
+    'Information on this portal is dedicated to\n"Belarusian Photographers"',
+  rhyme:
+    'In cold Belarus there once lived a bull \n  Who learned days and nights in Rolling scopes school \n\n React and redux, material and hooks\nOnce made him to think of photographers in Belarus\n\nThe bull used his brain and thoroughly thunk\nSo check out this site. Let’s hope it’s not junk! ',
+  description:
+    'So... The history of Belarusian photography begins in the middle of the XIX century. Who were the first Belarusians who were carried away by this exciting and then still very expensive occupation, and most importantly, what fell into their lens?'
+}
 
 MainPage.propTypes = {
-  mainPageData: PropTypes.object,
-  photographers: PropTypes.array
-}
-MainPage.defaultProps = {
-  mainPageData: data.mainPage,
-  photographers: data.photographers
+  photographers: PropTypes.array.isRequired,
+  developers: PropTypes.array.isRequired
 }
 
-export default function MainPage(props) {
+function MainPage({ developers, photographers, i18n }) {
   const classes = styles()
-  const rhyme = props.mainPageData.rhyme
+  const rhyme = mainPageData.rhyme
 
   const variants = {
     on: {
@@ -67,7 +73,7 @@ export default function MainPage(props) {
                 </Box>
               </Box>
               <Button>
-                <Link to={'/authors'}>Want to know more?</Link>
+                <Link to={'/authors'}>{i18n.t('wantToLearnMore')}</Link>
               </Button>
             </Paper>
           </AnimationWrapper>
@@ -79,8 +85,10 @@ export default function MainPage(props) {
             style={{ height: '100%' }}
           >
             <TabPanelDescription
-              mainPageData={props.mainPageData}
-              randomAuthorData={props.photographers}
+              mainPageData={mainPageData}
+              photographers={photographers}
+              developers={developers}
+            />
             />
           </AnimationWrapper>
         </Grid>
@@ -88,3 +96,5 @@ export default function MainPage(props) {
     </>
   )
 }
+
+export default withTranslation()(MainPage)
