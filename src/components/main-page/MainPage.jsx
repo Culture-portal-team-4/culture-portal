@@ -1,8 +1,6 @@
 import React from 'react'
-import data from '../../data/data.json'
 import styles from './MainPageStyles'
 import { Grid, Typography, Box, Paper } from '@material-ui/core'
-import Container from '@material-ui/core/Container'
 import Avatar from '@material-ui/core/Avatar'
 import PropTypes from 'prop-types'
 import logo from './logo.png'
@@ -92,7 +90,6 @@ function MainPage({ developers, photographers, i18n }) {
               mainPageData={mainPageData}
               photographers={photographers}
               developers={developers}
-            />
             />
           </AnimationWrapper>
         </Grid>

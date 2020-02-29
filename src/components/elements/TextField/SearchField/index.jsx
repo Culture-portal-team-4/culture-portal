@@ -5,7 +5,7 @@ import InputAdornment from '@material-ui/core/InputAdornment'
 import SearchIcon from '@material-ui/icons/Search'
 import styles from './style'
 
-export default function CPSearchField(props) {
+export default function SearchField(props) {
   const { value, onChange, placeholder } = props
   const classes = styles()
 
@@ -28,7 +28,7 @@ export default function CPSearchField(props) {
   )
 }
 
-CPSearchField.propTypes = {
+SearchField.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string

@@ -37,7 +37,7 @@ const headerStyle = makeStyles(theme => ({
     paddingRight: 20
   },
   logoText: {
-    color: 'white'
+    color: '#fff !important'
   },
   select: {
     '& div': {
