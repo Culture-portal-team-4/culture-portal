@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 import Avatar from "@material-ui/core/Avatar";
 import PropTypes from "prop-types";
 import logo from "./logo.png";
-import Button from "@material-ui/core/Button";
+import CPButton from '../elements/Button/OutlinedButton/index'
 import { Link } from "react-router-dom";
 import TabPanelDescription from "./tab-panel/TabPanelDescription";
 import { withTranslation } from "react-i18next";
@@ -37,10 +37,7 @@ function MainPage({developers, photographers, i18n }) {
                     })}
                     </Typography>
                 </Box>
-
-                <Button>
-                    <Link to={"/authors"}>{i18n.t("wantToLearnMore")}</Link>
-                </Button>
+                    <Link to={"/authors"}><CPButton title={i18n.t("wantToLearnMore")} /></Link>
                 <TabPanelDescription
                     mainPageData={mainPageData}
                     photographers={photographers}
