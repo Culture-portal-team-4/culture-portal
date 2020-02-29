@@ -16,3 +16,11 @@ body {
 #root {
   height: inherit;
 }
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.MuiFormControl-marginDense {
+  margin: 0px !important;
+}

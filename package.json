@@ -18,6 +18,7 @@
     "react-image-gallery": "^1.0.6",
     "react-minimal-pie-chart": "^6.0.1",
     "react-redux": "^7.2.0",
+    "react-responsive": "^8.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-yandex-maps": "^4.2.0",

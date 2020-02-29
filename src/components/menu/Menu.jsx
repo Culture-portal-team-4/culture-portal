@@ -4,7 +4,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { NavLink } from 'react-router-dom'
 import styles from './menu-style'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
-import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'
+import { withTranslation } from 'react-i18next'
 
 const variants = {
   on: {
@@ -17,11 +18,11 @@ const variants = {
   }
 }
 
-function Menu({ navigations, open, i18n }) {
+function Menu({ navigations, open, i18n, handleClick, className }) {
   const classes = styles()
 
   return (
-    <ul className={classes.list}>
+    <ul className={`${classes.list} ${className}`}>
       {navigations.map((navigation, index) => (
         <AnimationWrapper
           delay={open ? 0.3 : 0}
@@ -33,10 +34,11 @@ function Menu({ navigations, open, i18n }) {
         >
           <li>
             <NavLink
-              exact
+              exact={navigation.exact}
               to={navigation.path}
               className={classes.listItem}
               activeClassName={classes.listItemActive}
+              onClick={() => handleClick()}
             >
               <ListItemIcon className={classes.listItemIcon}>
                 {navigation.icon}
@@ -50,4 +52,13 @@ function Menu({ navigations, open, i18n }) {
   )
 }
 
-export default withTranslation()(Menu);
+Menu.propTypes = {
+  navigations: PropTypes.array,
+  open: PropTypes.bool,
+  handleClick: PropTypes.func
+}
+
+Menu.defaultProps = {
+  handleClick: () => {}
+}
+export default withTranslation()(Menu)
