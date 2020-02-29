@@ -6,7 +6,7 @@ const style = makeStyles(theme => ({
       backgroundColor: 'transparent',
       color: theme.palette.secondary.main,
       borderColor: theme.palette.secondary.main
-    }
+    },
   }
 }))
 
