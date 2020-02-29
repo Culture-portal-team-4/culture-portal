@@ -1,16 +1,16 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { ThemeProvider } from '@material-ui/core/styles'
 import theme from './config/material.theme'
 import Root from './components/root'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={theme}>
         <Root />
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

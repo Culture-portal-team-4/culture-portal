@@ -37,7 +37,15 @@ const headerStyle = makeStyles(theme => ({
     paddingRight: 20
   },
   logoText: {
-    color: 'white'
+    color: '#fff !important'
+  },
+  select: {
+    '& div': {
+      color: '#fff'
+    },
+    '& svg': {
+      color: '#fff'
+    }
   }
 }))
 

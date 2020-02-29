@@ -1,17 +1,24 @@
 import { makeStyles } from '@material-ui/core/styles'
 
 const styles = makeStyles(theme => ({
-
-  large: {
-    width: theme.spacing(30),
-    height: theme.spacing(30),
-
+  container: {
+    height: 'calc(100% - 50px)'
   },
-  link: {
-    textDecorationLine: 'none',
-    textDecoration: 'none',
+  paper: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between'
+  },
+  avatar: {
+    background: '#f3f3f3',
+    padding: theme.spacing(2),
+    '& div': {
+      width: theme.spacing(30),
+      height: theme.spacing(30),
+      margin: '0 auto'
+    }
   }
-
-}));
+}))
 
 export default styles

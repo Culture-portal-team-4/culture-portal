@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Culture-portal-team-4/culture-portal
-  branch: develop
+  branch: master
   commit_messages:
     create: 'Netlify-cms: Create {{collection}} “{{slug}}”'
     update: 'Netlify-cms: Update {{collection}} “{{slug}}”'

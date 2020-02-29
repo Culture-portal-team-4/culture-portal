@@ -18,6 +18,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import Worklog from './worklog/Worklog'
 import Menu from './menu/Menu'
 import AnimationWrapper from './animation-wrapper/AnimationWrapper'
+import FullScreenDialog from './menu/MobileMenu'
+import { useMediaQuery } from 'react-responsive'
 
 const style = makeStyles(theme => ({
   main: {
@@ -26,7 +28,8 @@ const style = makeStyles(theme => ({
   },
   container: {
     padding: theme.spacing(4, 2, 2, 2),
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    height: 'calc(100% - 80px)'
   }
 }))
 
@@ -44,25 +47,40 @@ const variants = {
 }
 function Root({ handleOpenMenu, navigations, open }) {
   const classes = style()
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
   const { data } = useSelector(state => ({
-    data: state.localeReducer.data,
+    data: state.localeReducer.data
   }))
   const { photographers, developers } = data
 
   return (
     <main className={classes.main}>
-      <AnimationWrapper show={open} variants={variants} delay={0}>
-        <Menu navigations={navigations} open={open} />
-      </AnimationWrapper>
+      {isTabletOrMobile ? (
+        <FullScreenDialog
+          navigations={navigations}
+          open={open}
+          handleOpenMenu={handleOpenMenu}
+        />
+      ) : (
+        <AnimationWrapper show={open} variants={variants} delay={0}>
+          <Menu navigations={navigations} open={open} />
+        </AnimationWrapper>
+      )}
+
       <Box width="100%" height="100%">
         <HeaderContainer handleOpenMenu={handleOpenMenu} open={open} />
-        <Grid container spacing={2} className={classes.container}>
+        <Grid container className={classes.container}>
           <Switch>
             <Route
               exact
               path="/"
-              render={()=> <MainPage photographers={photographers}  developers={developers} />}
+              render={() => (
+                <MainPage
+                  photographers={photographers}
+                  developers={developers}
+                />
+              )}
             />
             <Route
               exact
@@ -75,10 +93,9 @@ function Root({ handleOpenMenu, navigations, open }) {
                 <AuthorPage {...props} photographers={photographers} />
               )}
             />
-            <Route path="/team"
-                   render={props => (
-                       <TeamList {...props} developers={developers} />
-                   )}
+            <Route
+              path="/team"
+              render={props => <TeamList {...props} developers={developers} />}
             />
             <Route
               path="/worklog"
@@ -92,18 +109,20 @@ function Root({ handleOpenMenu, navigations, open }) {
 }
 
 export default withMenu([
-  { title: 'mainPage', icon: <HomeIcon />, path: '/' },
+  { title: 'mainPage', icon: <HomeIcon />, path: '/', exact: true },
   {
     title: 'photographers',
     icon: <PhotoCameraIcon />,
-    path: '/authors'
+    path: '/authors',
+    exact: false
   },
   {
     title: 'developerTeam',
     icon: <AssignmentIndIcon />,
-    path: '/team'
+    path: '/team',
+    exact: true
   },
-  { title: 'worklog', icon: <AssignmentIcon />, path: '/worklog' }
+  { title: 'worklog', icon: <AssignmentIcon />, path: '/worklog', exact: true }
 ])(Root)
 
 Root.propTypes = {

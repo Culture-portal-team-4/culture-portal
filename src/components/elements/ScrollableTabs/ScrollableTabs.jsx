@@ -4,7 +4,8 @@ import styles from './scrollableTabsStyle'
 import StyledTab from './StyledTab/StyledTab'
 import StyledTabs from './StyledTabs/StyledTabs'
 import TabPanel from './TabPanel/TabPanel'
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
+import { Paper } from '@material-ui/core'
 
 export default function ScrollableTabs(props) {
   const { titles, componentsList } = props
@@ -16,39 +17,47 @@ export default function ScrollableTabs(props) {
   }
 
   return (
-      <div className={classes.root}>
-        <AppBar position="static" color="default">
-          <StyledTabs
-              value={activeTabIndex}
-              onChange={changeActiveTab}
-              indicatorColor="primary"
-              textColor="primary"
-              variant="scrollable"
-              scrollButtons="auto"
-              aria-label="scrollable auto tabs example"
-          >
-            {titles.map((title, index) => {
-              return <StyledTab
-                  key={`${index}${title}`}
-                  label={title}
-                  id = {`scrollable-auto-tab-${index}`}
-                  aria-controls = {`scrollable-auto-tabpanel-${index}`}
+    <Paper className={classes.root}>
+      <AppBar position="static" color="default">
+        <StyledTabs
+          value={activeTabIndex}
+          onChange={changeActiveTab}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="scrollable auto tabs example"
+        >
+          {titles.map((title, index) => {
+            return (
+              <StyledTab
+                key={`${index}${title}`}
+                label={title}
+                id={`scrollable-auto-tab-${index}`}
+                aria-controls={`scrollable-auto-tabpanel-${index}`}
               />
-            })}
-          </StyledTabs>
-        </AppBar>
+            )
+          })}
+        </StyledTabs>
+      </AppBar>
 
-        {componentsList.map((component, index) => {
-          return <TabPanel key={`${index}${component}`} activeTabIndex={activeTabIndex} index={index}> {component} </TabPanel>
-        })}
-      </div>
-  );
+      {componentsList.map((component, index) => {
+        return (
+          <TabPanel
+            key={`${index}${component}`}
+            activeTabIndex={activeTabIndex}
+            index={index}
+          >
+            {' '}
+            {component}{' '}
+          </TabPanel>
+        )
+      })}
+    </Paper>
+  )
 }
 
 ScrollableTabs.propTypes = {
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
-  componentsList: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(PropTypes.element),
-  ]).isRequired,
+  componentsList: PropTypes.arrayOf(PropTypes.element).isRequired
 }
