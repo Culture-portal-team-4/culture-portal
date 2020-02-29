@@ -28,26 +28,6 @@ const theme = createMuiTheme({
       fontSize: 12,
       fontWeight: 300
     },
-    h4: {
-      '@media (max-width:750px)': {
-        fontSize: '1.8rem'
-      },
-      '@media (max-width:460px)': {
-        fontSize: '1.3rem'
-      },
-      '@media (max-width:360px)': {
-        fontSize: '0.8rem'
-      }
-    },
-    h5: {
-      fontSize: '1.5rem',
-      '@media (max-width:930px)': {
-        fontSize: '1.3rem'
-      },
-      '@media (max-width:830px)': {
-        fontSize: '1rem'
-      }
-    },
     h1: {
       fontSize: '60px',
       fontWeight: '500',
@@ -78,7 +58,16 @@ const theme = createMuiTheme({
       fontFamily: 'apercu, sans-serif',
       color: '#061207',
       lineHeight: 1.375,
-      letterSpacing: '.06em'
+      letterSpacing: '.06em',
+      '@media (max-width:750px)': {
+        fontSize: '1.8rem'
+      },
+      '@media (max-width:460px)': {
+        fontSize: '1.3rem'
+      },
+      '@media (max-width:360px)': {
+        fontSize: '0.8rem'
+      }
     },
     h5: {
       fontSize: '24px',
@@ -86,7 +75,13 @@ const theme = createMuiTheme({
       fontFamily: 'apercu, sans-serif',
       color: '#061207',
       lineHeight: 1.375,
-      letterSpacing: '.06em'
+      letterSpacing: '.06em',
+      '@media (max-width:930px)': {
+        fontSize: '1.3rem'
+      },
+      '@media (max-width:830px)': {
+        fontSize: '1rem'
+      }
     },
     h6: {
       fontSize: '19px',

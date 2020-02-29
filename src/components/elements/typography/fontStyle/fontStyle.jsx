@@ -1,11 +1,9 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import signatureStyle from './signatureStyle'
-import paragraphStyle from './paragraphStyle'
 
 export default function FontStyle() {
   const signature = signatureStyle()
-  const paragraph = paragraphStyle()
 
   return (
     <>

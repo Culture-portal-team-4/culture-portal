@@ -9,7 +9,7 @@ import ListIcon from '@material-ui/icons/List'
 
 export default function Icons() {
   return (
-    <div>
+    <div >
       <HomeIcon />
       <AssignmentIndIcon />
       <PhotoCameraIcon />
