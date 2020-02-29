@@ -18,6 +18,10 @@ const styles = makeStyles(theme => ({
       height: theme.spacing(30),
       margin: '0 auto'
     }
+  },
+  link: {
+    textDecoration: 'none',
+    margin: '10px auto',
   }
 }))
 

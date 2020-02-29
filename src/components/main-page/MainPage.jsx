@@ -4,11 +4,11 @@ import { Grid, Typography, Box, Paper } from '@material-ui/core'
 import Avatar from '@material-ui/core/Avatar'
 import PropTypes from 'prop-types'
 import logo from './logo.png'
-import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 import TabPanelDescription from './tab-panel/TabPanelDescription'
 import AnimationWrapper from '../animation-wrapper/AnimationWrapper.jsx'
 import { withTranslation } from 'react-i18next'
+import OutlineButton from '../elements/Button/OutlinedButton/index'
 
 const mainPageData = {
   title:
@@ -74,9 +74,9 @@ function MainPage({ developers, photographers, i18n }) {
                   </Typography>
                 </Box>
               </Box>
-              <Button>
-                <Link to={'/authors'}>{i18n.t('wantToLearnMore')}</Link>
-              </Button>
+              <Link to={'/authors'} className={classes.link}>
+                  <OutlineButton title={i18n.t('wantToLearnMore')} />
+              </Link>
             </Paper>
           </AnimationWrapper>
         </Grid>
