@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from '@material-ui/core'
 import styles from './style'
 
-export default function CPButton(props) {
+export default function OutlineButton(props) {
   const { title, ...other } = props
   const classes = styles()
 
