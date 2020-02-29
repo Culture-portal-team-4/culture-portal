@@ -5,7 +5,6 @@ const scrollableTabsStyle = makeStyles(theme => ({
     flexGrow: 1,
     width: '100%',
     height: 'auto',
-    // backgroundColor: theme.palette.secondary.tabBackground
   }
 }))
 
