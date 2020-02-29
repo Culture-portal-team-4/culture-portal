@@ -37,7 +37,7 @@ function MainPage({developers, photographers, i18n }) {
                     })}
                     </Typography>
                 </Box>
-                    <Link to={"/authors"}><CPButton title={i18n.t("wantToLearnMore")} /></Link>
+                    <Link className={classes.link} to={"/authors"}><CPButton title={i18n.t("wantToLearnMore")} /></Link>
                 <TabPanelDescription
                     mainPageData={mainPageData}
                     photographers={photographers}
