@@ -93,7 +93,6 @@ function MainPage({ developers, photographers, i18n }) {
               photographers={photographers}
               developers={developers}
             />
-            />
           </AnimationWrapper>
         </Grid>
       </Grid>
