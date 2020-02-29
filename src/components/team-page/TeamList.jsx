@@ -8,7 +8,7 @@ function TeamList({ developers, i18n, showTitle }) {
   return (
     <Grid item container sm={12}>
       {showTitle && (
-        <Grid item sm={12} spacing={2}>
+        <Grid item sm={12}>
           <Box ml={1} mb={1}>
             <Typography variant="h4" component="h1">
               {i18n.t('developerTeam')}

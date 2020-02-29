@@ -43,10 +43,10 @@ function MainPage({ developers, photographers, i18n }) {
 
   return (
     <>
-      <Grid item sm={12} spacing={2}>
+      <Grid item sm={12}>
         <Box ml={1} mb={1}>
           <Typography variant="h4" component="h1">
-            Main page
+            {i18n.t('mainPage')}
           </Typography>
         </Box>
       </Grid>
@@ -57,7 +57,7 @@ function MainPage({ developers, photographers, i18n }) {
         spacing={2}
         className={`${classes.container} no-margin`}
       >
-        <Grid item sm={4}>
+        <Grid item md={4} sm={12} xs={12}>
           <AnimationWrapper variants={variants} style={{ height: '100%' }}>
             <Paper className={classes.paper}>
               <Box>
@@ -65,7 +65,11 @@ function MainPage({ developers, photographers, i18n }) {
                   <Avatar alt="RS bull" src={logo} variant="rounded" />
                 </Box>
                 <Box p={2}>
-                  <Typography variant="body1" paragraph={true}>
+                  <Typography
+                    variant="body1"
+                    component={'span'}
+                    paragraph={true}
+                  >
                     {rhyme.split('\n').map((i, index) => {
                       return <p key={index}>{i}</p>
                     })}
@@ -78,7 +82,7 @@ function MainPage({ developers, photographers, i18n }) {
             </Paper>
           </AnimationWrapper>
         </Grid>
-        <Grid item sm={8}>
+        <Grid item md={8} sm={12} xs={12}>
           <AnimationWrapper
             variants={variants}
             delay={0.6}

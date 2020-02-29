@@ -18,11 +18,11 @@ const variants = {
   }
 }
 
-function Menu({ navigations, open, i18n, handleClick, ...other }) {
+function Menu({ navigations, open, i18n, handleClick, className }) {
   const classes = styles()
 
   return (
-    <ul className={classes.list} {...other}>
+    <ul className={`${classes.list} ${className}`}>
       {navigations.map((navigation, index) => (
         <AnimationWrapper
           delay={open ? 0.3 : 0}
