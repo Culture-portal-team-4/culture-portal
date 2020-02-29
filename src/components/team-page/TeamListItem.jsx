@@ -24,7 +24,7 @@ export default function TeamListItem({
   const classes = styles()
 
   return (
-    <Grid item md={3} sm={6} xs={12}>
+    <Grid item md={4} sm={6} xs={12}>
       <AnimationWrapper index={index} className={classes.root}>
         <Card className={classes.root}>
           <CardHeader

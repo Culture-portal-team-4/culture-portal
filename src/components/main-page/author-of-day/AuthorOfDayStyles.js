@@ -11,10 +11,9 @@ const styles = makeStyles(theme => ({
     maxHeight: 340,
     objectFit: 'contain',
     display: 'block',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
-    // paddingTop: '100%', // 16:9
   },
   expand: {
     transform: 'rotate(0deg)',
