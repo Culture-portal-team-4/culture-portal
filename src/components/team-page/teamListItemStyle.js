@@ -10,6 +10,7 @@ const style = makeStyles(theme => ({
   },
   root: {
     height: '100%',
+    minWidth: '185px',
   },
 }))
 
