@@ -1,5 +1,5 @@
 TextField:
 
 ```js
-<CPSearchField value="Search" />
+<SearchField value="Search" />
 ```
