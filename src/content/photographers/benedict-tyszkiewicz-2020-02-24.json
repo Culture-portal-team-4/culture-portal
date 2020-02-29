@@ -1,0 +1,139 @@
+{
+  "title": "Benedict Tyszkiewicz",
+  "image": "https://planetabelarus.by/upload/medialibrary/430/430b31cd9b8b26abe8b3c002964e67b6.jpg",
+  "yearsOfLife": "1852-1935",
+  "video": "https://www.youtube.com/embed/ZXLNSBkEpyU",
+  "locationsCoords": {
+    "lat": "54.0088871",
+    "lng": "26.2513793"
+  },
+  "en": {
+    "fullName": "Benedict Tyszkiewicz",
+    "description": "Tyszkiewicz became a real reporter, taking pictures of rural residents, aristocrats, the whole life of Belarus at the turn of the century.",
+    "gallery": [
+      {
+        "year": "1878",
+        "link": "https://planetabelarus.by/upload/medialibrary/e13/e1316dc466dd948ff12384aa816d1f33.jpg"
+      },
+      {
+        "year": "1880",
+        "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1852",
+        "info": "Benedict Tyszkiewicz was born in 1852. And while more and more photo studios appeared in Minsk, the young aristocrat received a versatile education, made archaeological expeditions to the East and traveled around Africa."
+      },
+      {
+        "year": "1880",
+        "info": "In the early 1880s, after the death of his wife, left with three young children, thirty-year-old Benedict returned to his native land and settled in a hunting estate on the edge of the Nalibokskaya Pushcha. The count was actively carried away by photography, mastered the technique in detail, arranged a darkroom in his estate and captured the life around him on camera."
+      },
+      {
+        "year": "1890",
+        "info": "Tyszkiewicz became a real reporter, taking pictures of rural residents, aristocrats, the whole life of Belarus at the turn of the century."
+      },
+      {
+        "year": "1900",
+        "info": "Already at the time of Tyszkiewicz it was not enough just to master the technique of photography, it was necessary to masterfully capture the moment, catch the mood and convey the idea using the picture."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1878",
+        "work": "Afternoon tea"
+      },
+      {
+        "year": "1880",
+        "work": "Hold me the straw"
+      }
+    ],
+    "placeOfLiving": "Nalibokskaya Pushcha"
+  },
+  "by": {
+    "fullName": "Бенедыкт Тышкевіч",
+    "description": "Тышкевіч стаў сапраўдным рэпарцёрам, фатаграфаваўшы вясковых жыхароў, арыстакратаў, усё жыццё Беларусі на мяжы стагоддзяў.",
+    "gallery": [
+      {
+        "year": "1878",
+        "link": "https://planetabelarus.by/upload/medialibrary/e13/e1316dc466dd948ff12384aa816d1f33.jpg"
+      },
+      {
+        "year": "1880",
+        "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1852",
+        "info": "Бэнэдыкт Тышкевіч нарадзіўся ў 1852 г. І, пакуль у Мінску з'яўлялася ўсё больш фотастудый, малады арыстакрат атрымаў рознабаковую адукацыю, праводзіў археалагічныя экспедыцыі на Усход і падарожнічаў па Афрыцы."
+      },
+      {
+        "year": "1880",
+        "info": "У пачатку 1880-х гадоў, пасля смерці жонкі, якая засталася з трыма маленькімі дзецьмі, трыццацігадовы Бенедыкт вярнуўся на родную зямлю і пасяліўся ў паляўнічым маёнтку на ўскрайку Налібоцкай пушчы. Граф актыўна захапляўся фатаграфіяй, дэталёва асвоіў тэхніку, уладкаваў цёмную залу ў сваім маёнтку і захапіў жыццё на камеру."
+      },
+      {
+        "year": "1890",
+        "info": "Тышкевіч стаў сапраўдным рэпарцёрам, фатаграфаваўшы вясковых жыхароў, арыстакратаў, усё жыццё Беларусі на мяжы стагоддзяў."
+      },
+      {
+        "year": "1900",
+        "info": "Already at the time of Tyszkiewicz it was not enough just to master the technique of photography, it was necessary to masterfully capture the moment, catch the mood and convey the idea using the picture."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1878",
+        "work": "Падвячорак"
+      },
+      {
+        "year": "1880",
+        "work": "Трымай мяне саломінку"
+      }
+    ],
+    "placeOfLiving": "Налібоцкая пушча"
+  },
+  "ru": {
+    "fullName": "Бенедикт Тышкевич",
+    "description": "Тышкевич стал настоящим репортером, фотографируя сельских жителей, аристократов, всю жизнь Беларуси на рубеже веков.",
+    "gallery": [
+      {
+        "year": "1878",
+        "link": "https://planetabelarus.by/upload/medialibrary/e13/e1316dc466dd948ff12384aa816d1f33.jpg"
+      },
+      {
+        "year": "1880",
+        "link": "https://planetabelarus.by/upload/medialibrary/563/5632f6c0c59d097a6f4fe4d653bbab0f.jpeg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1852",
+        "info": "Бенедикт Тышкевич родился в 1852 году. И хотя в Минске появлялось все больше и больше фотостудий, молодой аристократ получил разностороннее образование, совершил археологические экспедиции на Восток и путешествовал по Африке."
+      },
+      {
+        "year": "1880",
+        "info": "В начале 1880-х годов, после смерти его жены, оставшийся с тремя маленькими детьми, тридцатилетний Бенедикт вернулся на родину и поселился в охотничьем хозяйстве на краю Налибокской пущи. Граф активно увлекался фотографией, подробно осваивал технику, устроил темную комнату в своем имении и снимал на камеру жизнь вокруг него."
+      },
+      {
+        "year": "1890",
+        "info": "Тышкевич стал настоящим репортером, фотографируя сельских жителей, аристократов, всю жизнь Беларусии на рубеже веков."
+      },
+      {
+        "year": "1900",
+        "info": "Уже во времена Тышкевича было недостаточно просто овладеть техникой фотографии, нужно было мастерски запечатлеть момент, уловить настроение и передать идею, используя картинку."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1856",
+        "work": "Послеполуденное чаепитие"
+      },
+      {
+        "year": "1860",
+        "work": "Держи меня солому"
+      }
+    ],
+    "placeOfLiving": "Налибокская пуща"
+  }
+}

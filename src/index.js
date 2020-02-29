@@ -1,21 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import AuthorList from './components/AuthorsList';
-import Main from './components/Main';
-import AuthorPage from './components/AuthorPage';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import './index.css'
+import App from './App'
+import store from './store';
 
-ReactDOM.render((
-  <BrowserRouter>
-    <App>
-      <Switch>
-        <Route exact path='/' component={Main} />
-        <Route exact path='/authors' component={AuthorList} />
-        <Route path='/authors/:id' component={AuthorPage} />
-      </Switch>
-    </App>
-  </BrowserRouter>
-  ), document.getElementById('root')
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 )

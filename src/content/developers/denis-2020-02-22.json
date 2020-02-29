@@ -1,0 +1,52 @@
+{
+  "title": "Denis",
+  "github": "https://github.com/iosDeveloperDK",
+  "image": "/img/react.png",
+  "tasks": [
+    {
+      "task": "Add react-styleguidist",
+      "spentTime": "0.5h",
+      "description": "Add react-styleguidist"
+    },
+    {
+      "task": "Add material-ui + theme",
+      "spentTime": "1h",
+      "description": "Add material-ui + theme"
+    },
+    {
+      "task": "Add theme wrapper for styleguidist",
+      "spentTime": "1h",
+      "description": "Add theme wrapper for styleguidist"
+    },
+    {
+      "task": "Add navigation menu",
+      "spentTime": "1h",
+      "description": "Add navigation menu"
+    },
+    {
+      "task": "Add all animations",
+      "spentTime": "2h",
+      "description": "Add all animations"
+    },
+    {
+      "task": "Create photographers page",
+      "spentTime": "1h",
+      "description": "Create photographers page"
+    },
+    {
+      "task": "Create team page",
+      "spentTime": "2h",
+      "description": "Create team page"
+    },
+    {
+      "task": "Create worklog page",
+      "spentTime": "2h",
+      "description": "Create worklog page"
+    }
+  ],
+  "fullName": {
+    "en": "Denis",
+    "by": "Дзяніс",
+    "ru": "Денис"
+  }
+}

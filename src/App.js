@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react'
+import { HashRouter } from 'react-router-dom'
+import { ThemeProvider } from '@material-ui/core/styles'
+import theme from './config/material.theme'
+import Root from './components/root'
 
-import Header from './components/Header'
-import Footer from "./components/footer";
-
-function App( { children } ) {
+function App() {
   return (
-    <Fragment>
-      <Header select='select lang'/>
-      <main> { children } </main>
-      <Footer/>
-    </Fragment>
-  );
+    <HashRouter>
+      <ThemeProvider theme={theme}>
+        <Root />
+      </ThemeProvider>
+    </HashRouter>
+  )
 }
 
-export default App;
+export default App

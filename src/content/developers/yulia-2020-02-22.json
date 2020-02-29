@@ -1,0 +1,22 @@
+{
+  "title": "Yuliya",
+  "github": "https://github.com/yuliagushcha",
+  "image": "/img/img_0199.jpg",
+  "tasks": [
+    {
+      "task": "Fix styles on main page",
+      "spentTime": "2h",
+      "description": "Change main styles"
+    },
+    {
+      "task": "Making styleguide",
+      "description": "Add styles of main typography",
+      "spentTime": "4h"
+    }
+  ],
+  "fullName": {
+    "en": "Yuliya Hushcha",
+    "by": "Юлiя Гушча",
+    "ru": "Юлия Гуща"
+  }
+}

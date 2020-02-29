@@ -1,0 +1,211 @@
+{
+  "title": "Vadim Kachan",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87_%D0%9A%D0%B0%D1%87%D0%B0%D0%BD.jpeg",
+  "yearsOfLife": "1958 ",
+  "video": "https://www.youtube.com/embed/iVRBdOqvo00",
+  "locationsCoords": {
+    "lat": "52.1558",
+    "lng": "25.5157"
+  },
+  "en": {
+    "fullName": "Vadim Kachan",
+    "description": "He is one of the organizers and the first chairman of the Belarusian Public Association \"Photography\" in 2003. Actively participates in collective exhibitions in different countries. Since 2007 she has been teaching photography.",
+    "gallery": [
+      {
+        "year": "2010",
+        "link": "http://vadimkachan.by/wp-content/uploads/2013/12/0031.jpg"
+      },
+      {
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/04/1012886_577419308999899_391370956_n.jpg",
+        "year": "2013"
+      },
+      {
+        "year": "1987",
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/12/scan0056%D0%BE%D0%B1%D1%80%D0%B0%D0%B1-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2-01%D0%B3%D0%BE%D1%82.jpg"
+      },
+      {
+        "year": "2015",
+        "link": "http://vadimkachan.by/wp-content/uploads/2015/08/028.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "was born in the village of Zalyadynye, Ivanovo district, Brest region"
+      },
+      {
+        "year": "1980",
+        "info": "He graduated from the Belarusian Technological Institute. S. M. Kirov in Minsk"
+      },
+      {
+        "year": "1981",
+        "info": "Vadim Kachan was a member of the photo club \"Evening Minsk\""
+      },
+      {
+        "year": "1991",
+        "info": "He was not actively involved in photography"
+      },
+      {
+        "year": "2003",
+        "info": "Vadim Kachan returned to photograph with his personal exhibition “Shards” in the gallery “NOVA” (Minsk)"
+      },
+      {
+        "year": "2007",
+        "info": "He was teaching photography"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "2003",
+        "work": "\"Shards\", NOVA Gallery of Visual Arts"
+      },
+      {
+        "year": "2004",
+        "work": "“Old Minsk”, National Museum of the History and Culture of Belarus"
+      },
+      {
+        "year": "2006",
+        "work": "“Photos of past years”, Russian Museum of Photography, Nizhny Novgorod"
+      },
+      {
+        "year": "2010",
+        "work": " «Litsa», NVTS «BelEkspo» 22/5000 \"Faces\", NEC \"BelExpo\""
+      }
+    ],
+    "placeOfLiving": "Minsk"
+  },
+  "by": {
+    "fullName": "Вадзім Качан",
+    "description": "Ён з'яўляецца адным з арганізатараў і першым старшынёй Беларускага грамадскага аб'яднання \"Фатаграфія\" ў 2003 годзе. Актыўна ўдзельнічае ў калектыўных выставах у розных краінах. З 2007 года яна выкладае фатаграфію.",
+    "gallery": [
+      {
+        "year": "2010",
+        "link": "http://vadimkachan.by/wp-content/uploads/2013/12/0031.jpg"
+      },
+      {
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/04/1012886_577419308999899_391370956_n.jpg",
+        "year": "2013"
+      },
+      {
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/12/scan0056%D0%BE%D0%B1%D1%80%D0%B0%D0%B1-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2-01%D0%B3%D0%BE%D1%82.jpg",
+        "year": "1987"
+      },
+      {
+        "link": "http://vadimkachan.by/wp-content/uploads/2015/08/028.jpg",
+        "year": "2015"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "нарадзіўся ў вёсцы Залядыныя Іванаўскага раёна Брэсцкай вобласці"
+      },
+      {
+        "year": "1980",
+        "info": "Скончыў Беларускі тэхналагічны інстытут. С. М. Кірава ў Мінску"
+      },
+      {
+        "year": "1981",
+        "info": "Вадзім Качан быў членам фотаклуба «Вячэрні Мінск»"
+      },
+      {
+        "year": "1991",
+        "info": "Ён не ўдзельнічаў актыўна ў фатаграфіі"
+      },
+      {
+        "year": "2003",
+        "info": "Вадзім Качан вярнуўся, каб сфатаграфавацца з асабістай выставай \"Асколкі\" ў галерэі \"NOVA\" (Мінск)"
+      },
+      {
+        "year": "2007 ",
+        "info": "Ён выкладае фатаграфію"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "2003",
+        "work": "\"Асколкі\", галерэя выяўленчых мастацтваў NOVA"
+      },
+      {
+        "year": "2004",
+        "work": "\"Стары Мінск\", Нацыянальны музей гісторыі і культуры Беларусі"
+      },
+      {
+        "work": "\"Фотаздымкі мінулых гадоў\", Рускі музей фатаграфіі, Ніжні Ноўгарад",
+        "year": "2006"
+      },
+      {
+        "year": "2010",
+        "work": "«Ліца», НВЦ «БелЭкспа», 22/5000 «Асобы», НВК «БелЭкспа»"
+      }
+    ],
+    "placeOfLiving": "Miнск"
+  },
+  "ru": {
+    "fullName": "Вадим Качан",
+    "description": "Он является одним из организаторов и первым председателем Белорусского общественного объединения «Фотография» в 2003 году. Активно участвует в коллективных выставках в разных странах. С 2007 года она преподает фотографию.",
+    "gallery": [
+      {
+        "year": "2010",
+        "link": "http://vadimkachan.by/wp-content/uploads/2013/12/0031.jpg"
+      },
+      {
+        "year": "2013",
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/04/1012886_577419308999899_391370956_n.jpg"
+      },
+      {
+        "year": "1987",
+        "link": "http://vadimkachan.by/wp-content/uploads/2014/12/scan0056%D0%BE%D0%B1%D1%80%D0%B0%D0%B1-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2-01%D0%B3%D0%BE%D1%82.jpg"
+      },
+      {
+        "year": "2015",
+        "link": "http://vadimkachan.by/wp-content/uploads/2015/08/028.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "Родился 8 октября 1958, Залядынье, Ивановский район (Брестская область)) — современный белорусский фотограф, преподаватель фотографии."
+      },
+      {
+        "year": "1980",
+        "info": "Окончил Белорусский технологический институт. С. М. Кирова в Минске"
+      },
+      {
+        "year": "1981",
+        "info": "Вадим Качан был членом фотоклуба \"Вечерний Минск\""
+      },
+      {
+        "year": "1991",
+        "info": "Он не был активно вовлечен в фотографию"
+      },
+      {
+        "year": "2003",
+        "info": "Вадим Качан вернулся к фотографии со своей персональной выставки «Осколки» в галерее «НОВА» (Минск)"
+      },
+      {
+        "year": "2007",
+        "info": "Занимается преподаванием фотографии"
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "2003",
+        "work": "\"Осколки\", Галерея визуальных искусств NOVA"
+      },
+      {
+        "year": "2004",
+        "work": "«Старый Минск», Национальный музей истории и культуры Беларуси"
+      },
+      {
+        "year": "2006",
+        "work": "«Фотографии прошлых лет», Русский музей фотографии, Нижний Новгород"
+      },
+      {
+        "year": "2010",
+        "work": "«Лица», НВЦ «БелЭкспо» 22/5000 «Лица», НВЦ «БелЭкспо»"
+      }
+    ],
+    "placeOfLiving": "Минск"
+  }
+}

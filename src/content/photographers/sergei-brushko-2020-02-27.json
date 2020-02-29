@@ -1,0 +1,163 @@
+{
+  "title": "Sergei Brushko",
+  "image": "http://arhiv.znyata.com/brushko/brushko_sergej_400.jpg",
+  "yearsOfLife": "1958–2000",
+  "locationsCoords": {
+    "lat": "54.3167000",
+    "lng": "26.8540000"
+  },
+  "video": "https://www.youtube.com/embed/wFPNXczkHYg",
+  "en": {
+    "fullName": "Sergei Brushko",
+    "description": "With his first camera received as a birthday gift at 6, Siarhei Brushko dedicated his entire life to photography.",
+    "gallery": [
+      {
+        "year": "1970",
+        "link": "http://arhiv.znyata.com/brushko/brushko_18.jpg"
+      },
+      {
+        "year": "1990",
+        "link": "http://arhiv.znyata.com/brushko/brushko_39.jpg"
+      },
+      {
+        "year": "1996",
+        "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "Siarhei Brushko, born on 28 May 1958 in the town of Haradzieja, near Niasviž, Minsk Region"
+      },
+      {
+        "year": "1964",
+        "info": "With his first camera received as a birthday gift at 6, Siarhei Brushko dedicated his entire life to photography. In his youth, Brushko earned extra money by shooting village holidays, and with the money he bought chemicals for photography and rare Czech photo magazines, for which he travelled to Lithuania."
+      },
+      {
+        "year": "1975",
+        "info": "After graduating from school, he decided to study geography at the Belarusian State University, but was one point below the passing score at the entrance exams. Brushko returned to photography, when, after the army, he went to be trained as a photography technologist at a vocational school in Maladziečna."
+      },
+      {
+        "year": "1998",
+        "info": "The active period lasted about 10 years. In the mid-90s, the photographer was diagnosed with incurable Raynaud’s syndrome. It was during this time that his only book was published, Brushko’s co-project with the Swiss photographer Hugo Jaeggi “Die Hoffnung stirbt zuletzt: Belarus im Jahre Zwölf nach Tschernobyl” (1998)."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1970",
+        "work": "Autumn"
+      },
+      {
+        "year": "1990",
+        "work": "Learning to live"
+      },
+      {
+        "year": "1996",
+        "work": "Summer song"
+      }
+    ],
+    "placeOfLiving": "Molodechno"
+  },
+  "by": {
+    "fullName": "Сяргей Брушко",
+    "description": "З першай камерай, атрыманай у падарунак на дзень нараджэння ў 6, Сяргей Брушко ўсё сваё жыццё прысвяціў фатаграфіі.",
+    "gallery": [
+      {
+        "year": "1970",
+        "link": "http://arhiv.znyata.com/brushko/brushko_18.jpg"
+      },
+      {
+        "year": "1990",
+        "link": "http://arhiv.znyata.com/brushko/brushko_39.jpg"
+      },
+      {
+        "year": "1996",
+        "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "Сяргей Брушко, нарадзіўся 28 мая 1958 г. у мястэчку Гарадзея каля Нясвіжа Мінскай вобласці."
+      },
+      {
+        "year": "1964",
+        "info": "З першай камерай, атрыманай у падарунак на дзень нараджэння ў 6, Сяргей Брушко ўсё сваё жыццё прысвяціў фатаграфіі. У юнацтве Брушко зарабляў дадатковыя грошы, здымаючы вясковыя канікулы, а на грошы набываў хімічныя рэчывы для фатаграфіі і рэдкія чэшскія фота часопісы, за якімі ездзіў у Літву."
+      },
+      {
+        "year": "1975",
+        "info": "Пасля заканчэння школы ён вырашыў вывучаць геаграфію ў Беларускім дзяржаўным універсітэце, але быў на адзін бал ніжэйшы за балы на ўступных экзаменах. Брушко вярнуўся да фатаграфіі, калі пасля арміі перайшоў на навучанне ў якасці тэхнолага па фатаграфіі ў прафесійна-тэхнічнае вучылішча ў Маладзечне."
+      },
+      {
+        "year": "1998",
+        "info": "Актыўны перыяд доўжыўся каля 10 гадоў. У сярэдзіне 90-х фатограф паставіў дыягназ невылечны сіндром Рэйна. Менавіта ў гэты час выйшла яго адзіная кніга - сумесны праект Брушка са швейцарскім фатографам Уга Яегі «Die Hoffnung stirbt zuletzt: Belarus im Jahre Zwölf nach Tschernobyl» (1998)."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1970",
+        "work": "Восень"
+      },
+      {
+        "year": "1990",
+        "work": "Вучыцца жыць"
+      },
+      {
+        "year": "1996",
+        "work": "Летняя песня"
+      }
+    ],
+    "placeOfLiving": "Маладзечна"
+  },
+  "ru": {
+    "fullName": "Сергей Брушко",
+    "description": "Получив свою первую камеру в подарок на день рождения в 6 лет, Сергей Брушко посвятил всю свою жизнь фотографии.",
+    "gallery": [
+      {
+        "year": "1970",
+        "link": "http://arhiv.znyata.com/brushko/brushko_18.jpg"
+      },
+      {
+        "year": "1990",
+        "link": "http://arhiv.znyata.com/brushko/brushko_39.jpg"
+      },
+      {
+        "year": "1996",
+        "link": "http://arhiv.znyata.com/brushko/brushko_17.jpg"
+      }
+    ],
+    "biography": [
+      {
+        "year": "1958",
+        "info": "Сергей Брушко, родился 28 мая 1958 года в городе Городье, недалеко от Несвижа, Минской области"
+      },
+      {
+        "year": "1964",
+        "info": "Получив свою первую камеру в подарок на день рождения в 6 лет, Сергей Брушко посвятил всю свою жизнь фотографии. В молодости Брушко зарабатывал дополнительные деньги, снимая деревенские праздники, и на эти деньги он покупал химикаты для фотографии и редкие чешские фотожурналы, за которыми он ездил в Литву."
+      },
+      {
+        "year": "1975",
+        "info": "После окончания школы он решил изучать географию в Белорусском государственном университете, но был на один балл ниже проходного балла на вступительных экзаменах. Брушко вернулся к фотографии, когда после армии отправился учиться на технолога фотографии в профессионально-техническое училище в Маладзечне."
+      },
+      {
+        "year": "1998",
+        "info": "Активный период длился около 10 лет. В середине 90-х у фотографа был диагностирован синдром неизлечимого Рейно. Именно в это время была опубликована его единственная книга, совместный проект Брушко со швейцарским фотографом Уго Яегги «Die Hoffnung stirbt zuletzt: Belarus im Jahre Zwölf nach Tschernobyl» (1998)."
+      }
+    ],
+    "masterpiece": [
+      {
+        "year": "1970",
+        "work": "Осень"
+      },
+      {
+        "year": "1990",
+        "work": "Учиться жить"
+      },
+      {
+        "year": "1996",
+        "work": "Летняя песня"
+      }
+    ],
+    "placeOfLiving": "Молодечно"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Viacheslav",
+  "github": "https://github.com/Viacheslav-ed",
+  "image": "/img/react.png",
+  "tasks": [
+    {
+      "task": "Create an organization",
+      "description": "Create an organization on github and invait all members",
+      "spentTime": "1h"
+    },
+    {
+      "task": "Netlify-cms",
+      "description": "Add netlify-cms to the application, setup netlify and github, add collections for application",
+      "spentTime": "8h"
+    },
+    {
+      "task": "Organization of data for application",
+      "description": "Create service for getting data from json files, add reducer and action for addiing data to redux state",
+      "spentTime": "4h"
+    },
+    {
+      "task": "Add data to content",
+      "description": "Add data with translation into content (JSON files)",
+      "spentTime": "2h"
+    }
+  ],
+  "fullName": {
+    "en": "Viacheslav Vozniuk",
+    "by": "Вячаслаў Вознюк",
+    "ru": "Вячеслав Вознюк"
+  }
+}

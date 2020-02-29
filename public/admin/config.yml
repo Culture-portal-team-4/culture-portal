@@ -1,0 +1,134 @@
+backend:
+  name: github
+  repo: Culture-portal-team-4/culture-portal
+  branch: master
+  commit_messages:
+    create: 'Netlify-cms: Create {{collection}} “{{slug}}”'
+    update: 'Netlify-cms: Update {{collection}} “{{slug}}”'
+    delete: 'Netlify-cms: Delete {{collection}} “{{slug}}”'
+    uploadMedia: 'Netlify-cms: Upload “{{path}}”'
+    deleteMedia: 'Netlify-cms: Delete “{{path}}”'
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: "developers"
+    label: "developers"
+    folder: "src/content/developers"
+    extension: "json"
+    create: true
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Github", name: "github", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - label: "Tasks"
+        name: "tasks"
+        widget: "list"
+        fields: 
+          - {label: "Task", name: "task", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Spent time", name: "spentTime", widget: "string"}
+      - label: "Full name"
+        name: "fullName"
+        widget: "object"
+        fields:
+          - {label: "EN", name: "en", widget: "string"}
+          - {label: "BY", name: "by", widget: "string"}
+          - {label: "RU", name: "ru", widget: "string"}
+
+  - name: "photographers"
+    label: "photographers"
+    folder: "src/content/photographers"
+    extension: "json"
+    create: true
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "string"}
+      - {label: "Years of life", name: "yearsOfLife", widget: "string"}
+      - {label: "Video", name: "video", widget: "string"}
+      - label: "Locations Coords"
+        name: "locationsCoords"
+        widget: "object"
+        fields:
+          - {label: "LAT", name: "lat", widget: "string"}
+          - {label: "LNG", name: "lng", widget: "string"}
+      - label: "EN"
+        name: "en"
+        widget: "object"
+        fields:
+          - {label: "Full name", name: "fullName", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Biography"
+            name: "biography"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Info", name: "info", widget: "string"}
+          - label: "Masterpiece"
+            name: "masterpiece"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Work", name: "work", widget: "string"}
+          - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}
+
+      - label: "BY"
+        name: "by"
+        widget: "object"
+        fields:
+          - {label: "Full name", name: "fullName", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Biography"
+            name: "biography"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Info", name: "info", widget: "string"}
+          - label: "Masterpiece"
+            name: "masterpiece"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Work", name: "work", widget: "string"}
+          - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}
+
+      - label: "RU"
+        name: "ru"
+        widget: "object"
+        fields:
+          - {label: "Full name", name: "fullName", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Biography"
+            name: "biography"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Info", name: "info", widget: "string"}
+          - label: "Masterpiece"
+            name: "masterpiece"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Work", name: "work", widget: "string"}
+          - {label: "PlaceOfLiving", name: "placeOfLiving", widget: "string"}
