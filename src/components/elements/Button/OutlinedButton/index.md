@@ -1,5 +1,5 @@
 Button:
 
 ```js
-<OutlineButton title="CPButton" />
+<OutlineButton title="Button" />
 ```
