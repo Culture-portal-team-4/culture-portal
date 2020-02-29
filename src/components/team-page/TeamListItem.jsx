@@ -13,7 +13,14 @@ import AnimationWrapper from '../animation-wrapper/AnimationWrapper'
 import { openUrl } from '../../utils'
 import styles from './teamListItemStyle'
 
-export default function TeamListItem({ index, fullName, image, github, tasks, title }) {
+export default function TeamListItem({
+  index,
+  fullName,
+  image,
+  github,
+  tasks,
+  title
+}) {
   const classes = styles()
 
   return (
@@ -29,19 +36,27 @@ export default function TeamListItem({ index, fullName, image, github, tasks, ti
               </IconButton>
             }
           />
-          <CardMedia
-            image="/static/images/cards/paella.jpg"
-            title="Photo"
-          />
           <CardContent>
             <ul>
               {tasks.map((task, indexTask) => {
-                return <li className={classes.list} key={`${indexTask}-${title}-${index}`}>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    <span className={classes.hours} > {`${task.spentTime}, `} </span>
-                    { `${task.task}`}
-                  </Typography>
-                </li>
+                return (
+                  <li
+                    className={classes.list}
+                    key={`${indexTask}-${title}-${index}`}
+                  >
+                    <Typography
+                      variant="body2"
+                      color="textPrimary"
+                      component="p"
+                    >
+                      <span className={classes.hours}>
+                        {' '}
+                        {`${task.spentTime}, `}{' '}
+                      </span>
+                      {`${task.task}`}
+                    </Typography>
+                  </li>
+                )
               })}
             </ul>
           </CardContent>
@@ -57,5 +72,5 @@ TeamListItem.propTypes = {
   image: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   tasks: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }
