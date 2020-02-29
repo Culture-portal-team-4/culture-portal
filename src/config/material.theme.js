@@ -38,7 +38,7 @@ const theme = createMuiTheme({
       fontSize: '48px',
       fontWeight: '500',
       fontFamily: 'apercu, sans-serif',
-      color: '#41A69A',
+      color: '#061207',
       lineHeight: 1.375,
       letterSpacing: '.06em'
     },
@@ -46,7 +46,7 @@ const theme = createMuiTheme({
       fontSize: '40px',
       fontWeight: '500',
       fontFamily: 'apercu, sans-serif',
-      color: '#3B8F85',
+      color: '#061207',
       lineHeight: 1.375,
       letterSpacing: '.06em'
     },
@@ -54,7 +54,7 @@ const theme = createMuiTheme({
       fontSize: '32px',
       fontWeight: '500',
       fontFamily: 'apercu, sans-serif',
-      color: '#367D75',
+      color: '#061207',
       lineHeight: 1.375,
       letterSpacing: '.06em'
     },
@@ -62,7 +62,7 @@ const theme = createMuiTheme({
       fontSize: '24px',
       fontWeight: '500',
       fontFamily: 'apercu, sans-serif',
-      color: '#307069',
+      color: '#061207',
       lineHeight: 1.375,
       letterSpacing: '.06em'
     },
@@ -70,14 +70,14 @@ const theme = createMuiTheme({
       fontSize: '19px',
       fontWeight: '500',
       fontFamily: 'apercu, sans-serif',
-      color: '#224F4A',
+      color: '#061207',
       lineHeight: 1.375,
       letterSpacing: '.06em'
     },
     signature: {
       fontSize: '11px',
       fontFamily: 'apercu, sans-serif',
-      color: '#bdbdbd'
+      color: '#061207'
     },
     paragraph: {
       fontSize: '16px',

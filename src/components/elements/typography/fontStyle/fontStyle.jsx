@@ -9,20 +9,22 @@ export default function CPFontStyle() {
 
   return (
     <>
-      <Typography variant="h1">Header 1</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #49c5b6</Typography>
-      <Typography variant="h2">Header 2</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #41A69A</Typography>
-      <Typography variant="h3">Header 3</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #3B8F85</Typography>
-      <Typography variant="h4">Header 4</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #367D75</Typography>
-      <Typography variant="h5">Header 5</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #307069</Typography>
-      <Typography variant="h6">Header 6</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #224F4A</Typography>
-      <Typography className={paragraph.root}>Paragraph</Typography>
-      <Typography className={signature.root}>Font: apercu, sans-serif / Color: #4b4b4b;</Typography>
+      <Typography variant="h4">Logo</Typography>
+      <Typography className={signature.root}>
+        Font: apercu, sans-serif / Color: #061207
+      </Typography>
+      <Typography variant="h5">Header</Typography>
+      <Typography className={signature.root}>
+        Font: apercu, sans-serif / Color: #061207
+      </Typography>
+      <Typography variant="body1">Title</Typography>
+      <Typography className={signature.root}>
+        Font: apercu, sans-serif / Color: #061207
+      </Typography>
+      <Typography variant="body2">Body</Typography>
+      <Typography className={signature.root}>
+        Font: apercu, sans-serif / Color: #061207
+      </Typography>
     </>
   )
 }
